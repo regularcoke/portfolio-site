@@ -9,12 +9,12 @@
     <body>
         <header>
             <div id="mainDiv">
-                <p class="font"><a href="index.html">HUGO ADRIAN MARIN</a></p>
+                <p class="font"><a href="home.html">HUGO ADRIAN MARIN</a></p>
             </div>
             <div class="dropdown">
                 <form method="POST" action="/handle-projects" class="dropdown">
                     <select name="project" id="project-select" onchange="redirectToPage()">
-                        <option value="index.html">--</option>
+                        <option value="home.html">--</option>
                         <option value="cv.html">cv/resume</option>
                         <option value="selfportrait.html">photography</option>
                         <option value="miracledealer.html" disabled selected>graphic design</option>
@@ -26,9 +26,17 @@
         </header>
         <section class="discription">
             <p><em>Miracle Dealer</em>, 2022</p>
+            <p>logo, graphics, & tech pack for streetwear brand <a href="deadwwrong.com">Dead Wrong</a></p>
         </section>
-        <section class="bodyimg">
-            <img class src="img/dw_icon.png" width="600" />
+        <section class="desktop">
+            <div class="bodyimg">
+                <img src="img/miracledealer_techpack.png" width="800" />
+            </div>
+            <!--
+            <div class="icon" style="left: 50%;">
+                <img src="img/i-need-a-miracledealer-text.png" width="" />
+            </div>
+            -->
         </section>
         <footer>
             <input type="text" placeholder="contact me" class="contact" />
