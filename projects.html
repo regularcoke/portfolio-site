@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>projects</title>
+        <link rel="stylesheet" href="styles.css" />
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <p class="font">HUGO ADRIAN MARIN</p>
+        <div class="dropdown">
+           <form method="POST" action="/handle-projects" class="dropdown">
+            <select name="project" id="project-select" onchange="redirectToPage()">
+                <option value="index.html">index</option>
+                <option value="" disabled selected>projects</option>
+                <option value="email.html">email</option>
+                <option value="cv.html">CV</option>
+                <option value="socialmedia.html">social media</option>
+            </select>
+        </form>
+        </div>
+        <div class="prjct-list"> 
+            <p>photography</p>
+            <p>graphic design</p>
+            <p>net.art</p>
+            <p>3D modeling</p>
+        </div>
+        <div class="prjct-img"></div>
+    </body>
+</html>

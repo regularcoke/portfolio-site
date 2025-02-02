@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>hugo adrian marin</title>
+        <link rel="stylesheet" href="styles.css" />
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <header>
+            <div id="mainDiv">
+                <p class="font"><a href="home.html">HUGO ADRIAN MARIN</a></p>
+            </div>
+            <div class="dropdown">
+                <form method="POST" action="/handle-projects" class="dropdown">
+                    <select name="project" id="project-select" onchange="redirectToPage()">
+                        <option value="home.html">--</option>
+                        <option value="cv.html">cv/resume</option>
+                        <option value="photography.html">photography</option>
+                        <option value="graphicdesign.html">graphic design</option>
+                        <option value="netart.html">net art</option>
+                        <option value="3dmodeling.html">3d modeling</option>
+                    </select>
+                </form>
+            </div>
+        </header>
+        <section class="discription">
+            <p><em>Miracle Dealer</em>, 2022</p>
+        </section>
+        <section class="bodyimg">
+            <img class src="img/self%2.0portrait%20img%202.jpg" width="600" />
+        </section>
+        <footer>
+            <input type="text" placeholder="contact me" class="contact" />
+            <input type="submit" value="send" />
+        </footer>
+    </body>
+</html>

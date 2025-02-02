@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>hugo adrian marin</title>
+        <link rel="stylesheet" href="styles.css" />
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <header>
+            <p class="font"><a href="home.html">HUGO ADRIAN MARIN</a></p>
+            <div class="dropdown">
+                <form method="POST" action="/handle-projects" class="dropdown">
+                    <select name="project" id="project-select" onchange="redirectToPage()">
+                        <option value="home.html" disabled selected>--</option>
+                        <option value="cv.html">cv/resume</option>
+                        <option value="selfportrait.html">photography</option>
+                        <option value="graphicdesign.html">graphic design</option>
+                        <option value="howlifehasfelt.html">net art</option>
+                        <option value="otto.html">3d modeling</option>
+                    </select>
+                </form>
+            </div>
+        </header>
+        <section class="desktop">
+            <div class="icon" style="top: 110px; left: 60%">
+                <a href="selfportrait.html">
+                    <img src="img/self%20portrait%20img%201.jpg" width="450px" />
+                </a>
+            </div>
+            <div class="icon" style="top: 120px; left: 20%">
+                <a href="cye.html">
+                    <img src="img/cye_icon.png" width="250px" />
+                </a>
+            </div>
+            <div class="icon" style="top: 50px; left: 30%">
+                <a href="otto.html"> <img src="img/otto_icon.png" width="90px" /></a>
+            </div>
+            <div class="icon" style="top: 220px; left: 50%">
+                <a href="graphicdesign.html">
+                    <img src="img/deanblunt_poster_icon.png" width="95px" />
+                </a>
+            </div>
+              <div class="icon" style="top: 300px; left: 3%">
+                <a href="howlifehasfelt.html">
+                    <img src="img/how%20life%20has%20felt%20ever%20since%20i%20turned%2013.png" width="600px" />
+                </a>
+            </div>
+
+            <div class="icon" style="top:100px; left: 9%">
+                <a href="miracledealer.html">
+                    <img src="img/dw_icon.png" width="100px" />
+                </a>
+            </div>
+            <div class="icon" style="top: 84%; left: 80%">
+                <a href="cv.html"
+                    ><img
+                        src="https://www.folders.com/media/catalog/product/1/9/191-1161-000_side-open.png?quality=80&fit=bounds&height=700&width=700&canvas=700:700&format=jpeg"
+                        width="80px"
+                /></a>
+            </div>
+        </section>
+        <footer>
+            <input type="text" placeholder="hugoparisz@gmail.com" class="contact" />
+            <input type="submit" value="send" />
+        </footer>
+    </body>
+</html>

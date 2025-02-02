@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>email</title>
+        <link rel="stylesheet" href="styles.css" />
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <header>
+            <div id="mainDiv">
+                <p class="font"><a href="index.html">HUGO ADRIAN MARIN</a></p>
+            </div>
+            <div class="dropdown">
+                <form method="POST" action="/handle-projects" class="dropdown">
+                    <select name="project" id="project-select" onchange="redirectToPage()">
+                        <option value="photography.html">photography</option>
+                        <option value="graphicdesign.html">graphic design</option>
+                        <option value="netart.html">net art</option>
+                        <option value="3dmodeling.html" disabled selected>3d modeling</option>
+                    </select>
+                </form>
+            </div>
+        </header>
+        <section class="icons">
+            <img src="img/otto_icon.png" width=80px>
+        </section>
+    </body>
+</html>

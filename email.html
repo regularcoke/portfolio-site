@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>email</title>
+        <link rel="stylesheet" href="styles.css" />
+        <script src="script.js"></script>
+    </head>
+    <body>
+    <p class="font">hugoparisz@gmail.com</p>
+        <!--<p class=font> email:</p>-->
+    <div class="dropdown">
+           <form method="POST" action="/handle-projects" class="dropdown">
+            <select name="project" id="project-select" onchange="redirectToPage()">
+                <option value="index.html">index</option>
+                <option value="projects.html">projects</option>
+                <option value="" disabled selected>email</option>
+                <option value="cv.html">CV</option>
+                <option value="socialmedia.html">social media</option>
+            </select>
+        </form>
+        </div>
+        </body>
+</html>

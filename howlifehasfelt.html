@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>hugo adrian marin</title>
+        <link rel="stylesheet" href="styles.css" />
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <header>
+            <p class="font"><a href="home.html">HUGO ADRIAN MARIN</a></p>
+            <div class="dropdown">
+                <form method="POST" action="/handle-projects" class="dropdown">
+                    <select name="project" id="project-select" onchange="redirectToPage()">
+                        <option value="home.html">--</option>
+                        <option value="cv.html">cv/resume</option>
+                        <option value="selfportrait.html">photography</option>
+                        <option value="graphicdesign.html">graphic design</option>
+                        <option value="howlifehasfelt.html" disabled selected>net art</option>
+                        <option value="otto.html">3d modeling</option>
+                    </select>
+                </form>
+            </div>
+        </header>
+        <section class="discription">
+            <p>
+                <em>how life has felt ever since i have turned 13</em> (2024) is a scroll-through web story depicting
+                adolensence dysphoria. Told through the captions of femcel meme culture, the homogeneity of commerical
+                stock images is disrupted.
+            </p>
+            <p>open <a href="https://users.dma.ucla.edu/~hugoperez/p3/">how life has felt ever since i turned 13</a></p>
+        </section>
+        <section class="bodyimg">
+            <img src="img/how%20life%20has%20felt%20ever%20since%20i%20turned%2013.png" width="800" />
+            <img src="img/how%20life%20has%20felt%20ever%20sinced%20i%20turned%2013_2.png" width="800" />
+        </section>
+        <footer>
+            <input type="text" placeholder="contact me" class="contact" />
+            <input type="submit" value="send" />
+        </footer>
+    </body>
+</html>

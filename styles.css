@@ -1,0 +1,58 @@
+.title {
+    color: black;
+    font-size: 12px;
+}
+.font {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+}
+.center{
+    text-align: center;
+}
+.dropdown{
+    position: fixed;
+    top: 20px;
+    right: 17px;
+}
+.prjct-list{
+    padding-top: 10px;
+}
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 5px;
+    font-size: 13px;
+}
+.bodyimg{
+    text-align: center;
+    
+}
+.icon{
+    position: absolute;
+    color: blue;
+}
+.desktop{
+    flex-grow: 1;
+    min-height: 700px;
+    padding-top:50px;
+    position: relative;
+    overflow: hidden;
+}
+.discription{
+    padding-top: 30px;
+    padding-right: 60%;
+}
+header{
+    position: fixed;
+}
+footer{
+    position:fixed; 
+    bottom: 20px; 
+    padding-left: 10px;
+    
+}
+
+.bodygd{
+    background:#d1d1d1;
+    text-align: center;
+    padding: 50px;
+}

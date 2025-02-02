@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>hugo adrian marin</title>
+        <link rel="stylesheet" href="styles.css" />
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <header>
+            <p class="font"><a href="home.html">HUGO ADRIAN MARIN</a></p>
+            <div class="dropdown">
+                <form method="POST" action="/handle-projects" class="dropdown">
+                    <select name="project" id="project-select" onchange="redirectToPage()">
+                        <option value="home.html">--</option>
+                        <option value="cv.html">cv/resume</option>
+                        <option value="selfportrait.html">photography</option>
+                        <option value="graphicdesign.html">graphic design</option>
+                        <option value="howlifehasfelt.html" disabled selected>net art</option>
+                        <option value="otto.html">3d modeling</option>
+                    </select>
+                </form>
+            </div>
+        </header>
+        <section class="discription">
+            <p><em>CYE</em>, 2022. html, javascript.</p>
+            <p>CYE was created to promote accessible photo based art through the use of webcams. The user is prompted to explore the possibilities of themselves and their environment to perform in front of their computer webcam. The final composition of this faux website is left to the user to create by uploading their unedited images captured on their webcam to their personal online gallery. You can find a live version of this project <a href="https://editor.p5js.org/hugoperez/full/cmE5Hahcp"> here</a>.</p>
+        </section>
+        <section class="bodyimg">
+            <img class src="img/cye%20screen%20grab-2.png" width="800" />
+        </section>
+        <footer>
+            <input type="text" placeholder="hugoparisz@gmail.com" class="contact" />
+            <input type="submit" value="send" />
+        </footer>
+    </body>
