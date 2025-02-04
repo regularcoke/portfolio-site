@@ -28,11 +28,10 @@ p{
 }
 .icon{
     position: absolute;
-    color: blue;
 }
 .desktop{
     flex-grow: 1;
-    min-height: 700px;
+    min-height: 900px;
     padding-top:50px;
     position: relative;
     overflow: hidden;
