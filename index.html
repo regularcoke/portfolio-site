@@ -1,77 +1,47 @@
+<!doctype html>
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <title>hugo adrian marin</title>
+        <title>Title</title>
         <link rel="stylesheet" href="styles.css" />
         <script src="script.js"></script>
-            <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-            <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-            <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-            <link rel="manifest" href="/site.webmanifest">
     </head>
     <body>
-        <header>
-            <p class="font"><a href="index.html">HUGO ADRIAN MARIN</a></p>
-            <div class="dropdown">
-                <form method="POST" action="/handle-projects" class="dropdown">
-                    <select name="project" id="project-select" onchange="redirectToPage()">
-                        <option value="home.html" disabled selected>--</option>
-                        <option value="cv.html">cv/resume</option>
-                        <option value="selfportrait.html">photography</option>
-                        <option value="sketches.html">clothes design</option>
-                        <option value="graphicdesign.html">graphic design</option>
-                        <option value="howlifehasfelt.html">net art</option>
-                        <option value="otto.html">3d modeling</option>
-                    </select>
-                </form>
-            </div>
-        </header>
-        <p>... </p>
-        <section class="desktop">
-            <div class="icon" style="top: 23%; left: 58%">
-                <a href="selfportrait.html">
-                    <img src="img/self%20portrait%20img%201.jpg" width="470px" />
-                </a>
-            </div>
-            <div class="icon" style="top:18%; left: 31%">
-                <a href="cye.html">
-                <img src="img/cye_icon2.png" width="290px"/></a>
-            </div>
-            <div class="icon" style="top: 10%; left: 24%">
-                <a href="otto.html"> <img src="img/otto_icon.png" width="120px" /></a>
-            </div>
-            <div class="icon" style="top: 28%; left: 50%">
-                <a href="graphicdesign.html">
-                    <img src="img/deanblunt_poster_icon.png" width="130px" />
-                </a>
-            </div>
-            <div class="icon" style="top: 40%; left: 3%">
-                <a href="howlifehasfelt.html">
-                    <img src="img/how%20life%20has%20felt%20ever%20sinced%20i%20turned%2013_2.png" width="610px" />
-                </a>
-            </div>
+        <div class="main">
+            <section class="nav">
+                <section>
+                    <header>
+                        <h1>Hugo Adrian Marin</h1>
+                    </header>
+                    <footer>
+                        <p><a href="mailto:hugoparizs@gmail.com">Email me</a></p>
+                    </footer>
+                </section>
 
-            <div class="icon" style="top: 15%; left: 9%">
-                <a href="sketches.html">
-                    <img src="img/sketch_icon.png" width="150px" />
-                </a>
-            </div>
-            <div class="icon" style="top: 8%; left: 80%">
-                <a href="cv.html"
-                    ><img
-                        src="https://www.folders.com/media/catalog/product/1/9/191-1161-000_side-open.png?quality=80&fit=bounds&height=700&width=700&canvas=700:700&format=jpeg"
-                        width="80px"
-                /></a>
-            </div>
-            <div class="icon" style="top: 65%; left: 69%">
-                <a href="miracledealer.html">
-                    <img src="img/dw_icon2.png" width="150px" />
-                </a>
-            </div>
-        </section>
-        <footer>
-            <input type="text" placeholder="hugoparisz@gmail.com" class="contact" />
-            <input type="submit" value="send" />
-        </footer>
+                <section>
+                    <h3>Selected works.</h3>
+                    <p>
+                        <span>2024 </span>
+                        <a href="#" onclick="loadProject('proj1')">En Defensa de Mi Padre</a>
+                    </p>
+                    <p><span>2024 </span><a href="#" onclick="loadProject('proj2')">iheartwebcam.com</a></p>
+                    <p><span>2024 </span><a href="#" onclick="loadProject('proj5')">how life has felt ever </a></p>
+                    <p><span>2022 </span><a href="#" onclick="loadProject('proj3')">Otto</a></p>
+                    <p><span>2022 </span><a href="#" onclick="loadProject('proj4')">Self Portait on Webcam</a></p>
+                </section>
+
+                <section>
+                    <h3>Skills.</h3>
+                    <p onclick="loadProject('graphics')">Graphic Design</p>
+                    <p onclick="loadProject('threed')">3d Modeling</p>
+                    <p onclick="loadProject('fab')">Fabrication</p>
+                    <p onclick="loadProject('sketches')">Sketches</p>
+                </section>
+            </section>
+            <section class="container">
+                <p id="caption"></p>
+                <section class="gallery" id="gallery"></section>
+            </section>
+        </div>
     </body>
 </html>
