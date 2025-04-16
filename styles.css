@@ -7,10 +7,10 @@ body {
     display: flex;
 }
 .gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(313px, 1fr));
-    gap: 10px;
-    padding: 20px 36px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* exactly 2 columns */
+  gap: 10px;
+  padding: 20px 36px;
 }
 
 .gallery img {
@@ -20,13 +20,41 @@ body {
     object-fit: cover;
     border-radius: 1px;
 }
+
+
+
 .nav {
+    padding-top: 1px;
    flex: 1;
 }
-#caption{
-     padding: 7px 36px;
-    
+#caption {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: black;
+  padding: 0 36px;
 }
+
+#caption h2 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.3rem;
+}
+
+#caption em {
+  color: #777;
+  font-size: 0.9rem;
+}
+
+#caption p {
+  margin: 0.5rem 0;
+}
+
+.full-span {
+  grid-column: span 2;
+  width: 100%;
+}
+
+
 .container{
     flex:4;
 }
