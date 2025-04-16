@@ -50,6 +50,19 @@
     medium: "Web story",
     description: "A scroll-through story depicting adolescent dysphoria, told through captions of femcel meme culture. It disrupts the homogeneity of commercial stock imagery."
   },
+  proj6: {
+    images: [
+      "img/libraryofbabel1.jpeg",
+      "img/libraryofbabel2.jpeg",
+      "img/libraryofbabel3.jpeg",
+      "img/libraryofbabel4.jpeg",
+      "img/libraryofbabel5.jpeg"
+    ],
+    title: "EN/ES The Library of Babel",
+    year: "2023",
+    medium: "Book, printed on cotton paper",
+    description: "A typographic translation of The Library of Babel by Jorge Luis Borges, originally published in 1941 as part of his collection El Jardín de senderos que se bifurcan (The Garden of Forking Paths). Set entirely in 8pt New Courier, the Spanish to English manuscript becomes a quiet echo of Borges’ infinite library—an endless grid of letters, rooms, and silence."
+  },
   graphics: {
     images: [
       "img/Dean Blunt Poster.png",
@@ -98,8 +111,12 @@ function loadProject(projectKey) {
       const img = document.createElement('img');
       img.src = src;
       img.alt = project.title || 'Project image';
+      if (projectKey === 'graphics') {
+        img.classList.add('graphic-border');
+      }
       if (project.images.length === 1) {
         img.classList.add('full-span');
+        
       }
       gallery.appendChild(img);
     });
