@@ -3,18 +3,29 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-
-h3:hover{
-    color:white;
+h1 {
+    font-weight: 100;
 }
-.main{
+h3 {
+    font-weight: 100;
+}
+a, .list {
+    font-size: .9em;
+    color: black;
+    text-decoration: none;
+}
+
+h3:hover {
+    color: white;
+}
+.main {
     display: flex;
 }
 .gallery {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* exactly 2 columns */
-  gap: 10px;
-  padding: 20px 36px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* exactly 2 columns */
+    gap: 10px;
+    padding: 20px 36px;
 }
 
 .gallery img {
@@ -25,45 +36,48 @@ h3:hover{
     border-radius: 1px;
 }
 
-
-
 .nav {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     padding-top: 1px;
-   flex: 1;
+    position: sticky; /* or fixed if you want it to always stay on screen */
+    top: 0;
 }
+
+
+
 #caption {
-  font-size: 1rem;
-  line-height: 1.6;
-  color: black;
-  padding: 0 36px;
+    font-size: 1em;
+    line-height: 1.6;
+    color: black;
+    padding: 0 36px;
 }
 
 #caption h2 {
-  font-size: 1.2rem;
-  font-weight: bold;
-  margin-bottom: 0.3rem;
+    font-size: 1.2rem;
+    font-weight: 100;
+    margin-bottom: 0.8rem;
 }
 
-#caption em {
-  color: #777;
-  font-size: 0.9rem;
+#caption il {
+    color: #777;
+    font-size: 0.9rem;
 }
 
 #caption p {
-  margin: 0.5rem 0;
+    margin: 0.5rem 0;
 }
 
 .full-span {
-  grid-column: span 2;
-  width: 100%;
+    grid-column: span 2;
+    width: 100%;
 }
 
 .graphic-border {
     border: 1px solid #bcbcbc;
 }
-.container{
-    flex:4;
+.container {
+    flex: 4;
 }
-p{
-    cursor: pointer;
-}
+

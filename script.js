@@ -123,7 +123,7 @@ function loadProject(projectKey) {
 
     caption.innerHTML = `
       <h2>${project.title || ''}</h2>
-      ${(project.year || project.medium) ? `<p><em>${project.year} ${project.medium ? '· ' + project.medium : ''}</em></p>` : ''}
+      ${(project.year || project.medium) ? `<p><il>${project.year} ${project.medium ? '· ' + project.medium : ''}</il></p>` : ''}
       <p>${project.description || ''}</p>
     `;
   }
