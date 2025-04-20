@@ -5,10 +5,10 @@
       "img/idomf1.png",
       "img/idomf2.jpeg"
     ],
-    title: "Welded steel belt, prototype",
+    title: "En Defensa de Mi Padre",
     year: "2024",
     medium: "Steel",
-    description: "Inspired by my father's bull riding experience, the buckle morphs from a symbol of masculinity to a weapon of protection."
+    description: "Prototype welded steel belt buckle. Commemortaing bull riding, this piece reimagines the traditional buckle—transforming a symbol of masculinity into an object of protection. In this context, the belt buckle functions not only utilitarian but as an exaggerated symbol of hypermasculinity—often oversized, ornate, and awarded as a trophy. This piece critically reinterprets the buckle's role, transforming it from a performative emblem of dominance into a defensive form—recasting the object as both artifact and armor."
   },
   proj2: {
     images: ["img/iheartwebcam.png"],
@@ -26,7 +26,7 @@
     title: "Otto",
     year: "2022",
     medium: "Blender",
-    description: "These digital plushies are a new breed of children's toys."
+    description: "These digital plushies are a new breed of children's toys. Comforting those that grew up on the internet."
   },
   proj4: {
     images: [
@@ -37,7 +37,7 @@
     title: "Untitled (self portrait on webcam)",
     year: "2022",
     medium: "Webcam photography",
-    description: "The webcam is my mirror."
+    description: "En mi espejo me veo tan guapx, pero en mi computadora no lo se."
   },
   proj5: {
     images: [
@@ -48,7 +48,7 @@
     title: "how life has felt ever since i have turned 13",
     year: "2024",
     medium: "Web story",
-    description: "A scroll-through story depicting adolescent dysphoria, told through captions of femcel meme culture. It disrupts the homogeneity of commercial stock imagery."
+    description: "A scroll-through web story depicting adolescent dysphoria, told through the captions of femcel memes. These new genre of silhouettes disrupt the homogeneity of commercial stock imagery."
   },
   proj6: {
     images: [
@@ -94,7 +94,7 @@
     title: "Sketches",
     year: "",
     medium: "",
-    description: "Fashion process drawings and visual development."
+    description: "Fashion process drawings and visual development"
   }
 };
 
