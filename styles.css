@@ -1,8 +1,14 @@
 body {
-    padding: 5px 25px;
+    height: 100vh;
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    
 }
 
+p{
+   font-size: small; 
+}
 h1 {
     font-weight: 100;
 }
@@ -17,13 +23,11 @@ a, .list {
 
 .list{
     line-height: 9px;
+    cursor: pointer;
 }
 
 h3:hover {
     color: white;
-}
-.main {
-    display: flex;
 }
 .gallery {
     display: grid;
@@ -41,22 +45,26 @@ h3:hover {
 }
 
 .nav {
+    padding-left: 20px;
     display: flex;
-    min-width: fit-content;
     flex-direction: column;
-    max-height: 100vh;
-    padding-top: 1px;
-    position: sticky; /* or fixed if you want it to always stay on screen */
-    top: 0;
+    min-width: fit-content;
+    position: fixed;
+    height: 100vh; /* fill full viewport height */
+}
+
+footer {
+    margin-top: auto;
+    margin-bottom: 25px;
+}
+
+.footer{
+    font-size: 8px;
 }
 
 
-
-
-
 #caption {
-    font-size: 1em;
-    line-height: 1.6;
+    line-height: 1.4;
     color: black;
     padding: 0 36px;
 }
@@ -69,12 +77,12 @@ h3:hover {
 
 #caption il {
     color: #777;
-    font-size: 0.9rem;
 }
 
 #caption p {
     margin: 0.5rem 0;
     font-size: .9em;
+    line-height: 1.5em;
 }
 
 .full-span {
@@ -86,6 +94,8 @@ h3:hover {
     border: 1px solid #bcbcbc;
 }
 .container {
-    flex: 4;
+    margin-left: 240px; /* adjust to match nav width */
+    height: 100vh;
+    overflow-y: scroll;
 }
 

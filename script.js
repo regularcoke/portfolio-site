@@ -13,7 +13,7 @@
   proj2: {
     images: ["img/iheartwebcam.png"],
     title: "iheartwebcam.com",
-    year: "2024",
+    year: "2025",
     medium: "Website",
     description: "An online image-sharing platform stripped to its core, using only tags as the search engine. A webcam image-sharing platform offering intimacy in the age of digital presence."
   },
