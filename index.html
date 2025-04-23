@@ -15,60 +15,51 @@
                     </header>
                 </section>
 
-                <section>
-                    <h3>Selected Works</h3>
-                    <div class="list">
-                        <p>
-                            <span style="color: #777">2025 </span
-                            ><a href="#" onclick="loadProject('proj2')">iheartwebcam.com</a>
-                        </p>
-                        <p>
-                            <span style="color: #777">2024 </span>
-                            <a href="#" onclick="loadProject('proj1')">En Defensa de Mi Padre</a>
-                        </p>
-            
-                        <p>
-                            <span style="color: #777">2024 </span
-                            ><a href="#" onclick="loadProject('proj5')">how life has felt ever since i turned 13</a>
-                        </p>
-                        <p>
-                            <span style="color: #777">2023 </span
-                            ><a href="#" onclick="loadProject('proj6')">EN/ES The Library of Babel</a>
-                        </p>
-                        <p><span style="color: #777">2022 </span><a href="#" onclick="loadProject('proj3')">Otto</a></p>
-                        <p>
-                            <span style="color: #777">2022 </span
-                            ><a href="#" onclick="loadProject('proj4')">Self Portait on Webcam</a>
-                        </p>
-                    </div>
-                </section>
+                <div class="nav-body">
+                    <section>
+                        <h3 style="cursor: pointer" data-toggle-id="worksList" onclick="toggleSection(this)">Works</h3>
+                        <div class="list" id="worksList" style="display: none">
+                            <p>2025 <a href="#" onclick="loadProject('proj2')">iheartwebcam.com</a></p>
+                            <p>2024 <a href="#" onclick="loadProject('proj1')">En Defensa de Mi Padre</a></p>
+                            <p>
+                                2024
+                                <a href="#" onclick="loadProject('proj5')">how life has felt ever since i turned 13</a>
+                            </p>
+                            <p>2023 <a href="#" onclick="loadProject('proj6')">EN/ES The Library of Babel</a></p>
+                            <p>2022 <a href="#" onclick="loadProject('proj3')">Otto</a></p>
+                            <p>2022 <a href="#" onclick="loadProject('proj4')">Self Portrait on Webcam</a></p>
+                        </div>
+                    </section>
 
-                <section>
-                    <h3>Focus</h3>
-                    <div class="list">
-                        <p onclick="loadProject('graphics')">Graphic Design</p>
-                        <p onclick="loadProject('threed')">3d Modeling</p>
-                        <p onclick="loadProject('fab')">Fabrication</p>
-                        <p onclick="loadProject('sketches')">Sketches</p>
+                    <section>
+                        <h3 style="cursor: pointer" data-toggle-id="focusList" onclick="toggleSection(this)">Focus</h3>
+                        <div class="list" id="focusList" style="display: none">
+                            <p onclick="loadProject('graphics')">Graphic Design</p>
+                            <p onclick="loadProject('threed')">3D Modeling</p>
+                            <p onclick="loadProject('fab')">Fabrication</p>
+                            <p onclick="loadProject('sketches')">Sketches</p>
+                        </div>
+                    </section>
+                    <section>
+                        <h3 style="cursor: pointer" data-toggle-id="resumeList" onclick="toggleSection(this)">CV + Resume</h3>
+                        <div class="list" id="resumeList" style="display: none">
+                            <p><a href="https://users.dma.ucla.edu/~hugoperez/">BA UCLA Design Media Arts (2025)</a></p>
+                            <p>
+                                <a
+                                    href="https://docs.google.com/document/d/e/2PACX-1vTMGdbEE7yDFOYvxL4mQwBKC4P9VLan03VWlPu8n_QAPYPTUk0EHJEECBl_sbxUFWLt0MCw2Lm9Ak-y/pub">
+                                    Resume
+                                </a>
+                            </p>
+                        </div>
+                    </section>
                     </div>
-                </section>
-                <section>
-                    <h3>CV + Resume</h3>
-                    <div class="list">
-                        <p> <a href="https://users.dma.ucla.edu/~hugoperez/">BA UCLA Design Media Arts (2025)</a></p>
-                    <p>
-                        <a
-                            href="https://docs.google.com/document/d/e/2PACX-1vTMGdbEE7yDFOYvxL4mQwBKC4P9VLan03VWlPu8n_QAPYPTUk0EHJEECBl_sbxUFWLt0MCw2Lm9Ak-y/pub"
-                            >Resume</a
-                        ></p>
-                    </div>
-                </section>
-                <footer>
+                    <footer>
                         <p><a href="mailto:hugoparizs@gmail.com">Email</a></p>
-                        <p class="footer"> this is website was handmade by hugo</p>
+                        <p class="footer">this is website was handmade by hugo</p>
                     </footer>
-               
+                
             </section>
+
             <section class="container">
                 <p id="caption"></p>
                 <section class="gallery" id="gallery"></section>
