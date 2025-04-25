@@ -63,7 +63,7 @@ h3.active {
     flex-direction: column;
     min-width: fit-content;
     position: fixed;
-    height: 100vh; 
+    height: 100vh;
     justify-content: space-between;
     background-color: transparent;
 }
@@ -72,16 +72,12 @@ h3.active {
     display: flex;
     flex-direction: column;
     justify-content: center;
-
 }
 
 .container {
     margin-left: 260px; /* adjust to match nav width */
     height: 100vh;
     overflow-y: scroll;
-}
-
-footer {
 }
 
 .footer {
@@ -128,20 +124,21 @@ footer {
     h1,
     h3,
     #caption h2 {
-        font-size: large !important;
+        font-size: larger !important;
     }
 
     .footer {
         font-size: small !important;
+        position: relative;
+        float: right;
     }
     .nav {
-        width: 50%;
+        width: 100%;
         height: auto;
         flex-direction: row;
         padding: 10px 36px;
         justify-content: space-between;
         gap: 20px;
-
     }
 
     .nav-body {
@@ -158,8 +155,6 @@ footer {
     }
 
     .list {
-        padding-left: 36px ;
+        padding-left: 36px;
     }
-
-    
 }
