@@ -69,12 +69,22 @@ h3.active {
     
 }
 
+.container {
+    margin-left: 260px; /* adjust to match nav width */
+    height: 100vh;
+    overflow-y: scroll;
+}
+
 footer {
-    margin-bottom: 25px;
+    
 }
 
 .footer{
-    font-size: 8px;
+    position: absolute;
+    bottom:0;
+    right:0;
+    padding: 5px 15px;
+    font-size: 9px;
 }
 
 
@@ -107,9 +117,43 @@ footer {
 .graphic-border {
     border: 1px solid #bcbcbc;
 }
-.container {
-    margin-left: 260px; /* adjust to match nav width */
-    height: 100vh;
-    overflow-y: scroll;
-}
 
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+  body, p, h1, h3, #caption h2 {
+    font-size: large !important;
+  }
+
+  .footer {
+    font-size: small !important;
+  }
+.nav {
+    position: static;
+    width: 50%;
+    height: auto;
+    flex-direction: row;
+    padding: 10px 40px;
+    justify-content: space-between;
+    gap: 20px;
+
+
+  }
+
+  .nav-body {
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 10px;
+  }
+
+  .container {
+    margin-left: 0;
+    
+    height: calc(100vh - 60px); /* leave room for nav */
+    overflow-y: scroll;
+  }
+
+}

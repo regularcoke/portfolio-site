@@ -13,15 +13,15 @@ const projects = {
     year: "2025",
     medium: "Website",
     description:
-      "An online image-sharing platform stripped to its core, using only tags as the search engine. A webcam image-sharing platform offering intimacy in the age of digital presence."
+      "Inspired by early Tumblr, iheartwebcam.com is an online image-sharing platform stripped to its core, using only tags as iys sole search method. The webcam image-sharing platform explores intimacy in the age of digital presence, blurring the line between artistic self-portraiture and cam modeling. It fosters a sense of anonymous connection, deliberately rejecting the engagement-focused mechanics of mainstream social media. UI/UX design and development by Hugo Adrian Marin. Database development and engineering by Diego Romero Ramirez."
   },
   proj3: {
     images: ["img/monibel.png", "img/otto2.jpeg", "img/otto3.jpeg"],
-    title: "Otto",
+    title: "Otto (Para Gabriel)",
     year: "2022",
     medium: "Blender",
     description:
-      "These digital plushies are a new breed of children's toys. Comforting those that grew up on the internet."
+      "Otto is a digital plush brought into the physical world. Otto was created as a digital gift to comfort a loved one 3000 miles away. Existing in the digital world, Otto reflects how virtual spaces offer the ability to connect when loved ones are far away."
   },
   proj4: {
     images: ["img/self portrait img 1.jpg", "img/self portrait img 2.jpg", "img/selfportrait-4.jpg"],
@@ -50,10 +50,27 @@ const projects = {
     year: "2023",
     medium: "Book, printed on cotton paper",
     description:
-      "A typographic translation of The Library of Babel by Jorge Luis Borges, originally published in 1941 as part of his collection El Jardín de senderos que se bifurcan (The Garden of Forking Paths). Set entirely in 8pt New Courier, the Spanish to English manuscript becomes a quiet echo of Borges’ infinite library—an endless grid of letters, rooms, and silence."
+      "A typographic translation of The Library of Babel by Jorge Luis Borges, originally published in 1941 as part of his collection El Jardín de senderos que se bifurcan (The Garden of Forking Paths). Set entirely in 8pt New Courier, this 42 page, Spanish to English manuscript becomes a quiet echo of Borges’ infinite library—an endless grid of letters, rooms, and silence."
   },
+  
+  proj7: {
+    images: [
+      "img/webcambook5.jpeg",
+      "img/webcambook4.jpeg",
+      "img/webcambook3.jpeg",
+      "img/webcambook2.jpeg",
+      "img/webcambook1.jpeg",
+      "img/webcambook6.jpeg"
+    ],
+    title: "A Webcam Photo Series",
+    year: "2024",
+    medium: "Java Script, Book, printed on cotton paper",
+    description:
+      "A Webcam Photo Series is a 15-page book featuring images captured by various users through a custom webcam filter built with p5.js. The series includes two distinct filters: one based on a recursive subdivision algorithm, and another developed from scratch by Hugo Adrian Marin using JavaScript. This book showcases the creative compositions users generated through these interactive tools."
+  },
+  
   graphics: {
-    images: ["img/Dean Blunt Poster.png", "img/lolinaflyer.png"],
+    images: ["img/Dean Blunt Poster.png", "img/lolinaflyer.png", "img/dw_suit.png"],
     title: "Graphic Design",
     year: "",
     medium: "",
