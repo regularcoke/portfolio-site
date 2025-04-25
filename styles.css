@@ -3,29 +3,35 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
-    
 }
 
-p{ 
-   /*margin:0.3em;*/
-   font-size: small; 
+p {
+    /*margin:0.3em;*/
+    font-size: small;
 }
 h1 {
-    font-size: small; 
+    font-size: small;
     font-weight: 100;
 }
 h3 {
-    font-size: small; 
+    font-size: small;
     font-weight: 100;
 }
-a, .list {
+a,
+.list {
     color: black;
     text-decoration: none;
 }
 
-.list{
+.list {
     line-height: 9px;
     cursor: pointer;
+    padding-left: 3px;
+}
+
+#focusList,
+#resumeList {
+    padding-left: 36px;
 }
 
 h3:hover {
@@ -65,8 +71,6 @@ h3.active {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
-    
 }
 
 .container {
@@ -76,17 +80,15 @@ h3.active {
 }
 
 footer {
-    
 }
 
-.footer{
+.footer {
     position: absolute;
-    bottom:0;
-    right:0;
+    bottom: 0;
+    right: 0;
     padding: 5px 15px;
     font-size: 9px;
 }
-
 
 #caption {
     line-height: 1.4;
@@ -118,42 +120,43 @@ footer {
     border: 1px solid #bcbcbc;
 }
 
+@media only screen and (min-device-width: 320px) and (max-device-width: 1812px) and (-webkit-min-device-pixel-ratio: 2) {
+    body,
+    p,
+    h1,
+    h3,
+    #caption h2 {
+        font-size: large !important;
+    }
 
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 812px) 
-  and (-webkit-min-device-pixel-ratio: 2) {
+    .footer {
+        font-size: small !important;
+    }
+    .nav {
+        position: static;
+        width: 50%;
+        height: auto;
+        flex-direction: row;
+        padding: 10px 40px;
+        justify-content: space-between;
+        gap: 20px;
+    }
 
-  body, p, h1, h3, #caption h2 {
-    font-size: large !important;
-  }
+    .nav-body {
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 10px;
+    }
 
-  .footer {
-    font-size: small !important;
-  }
-.nav {
-    position: static;
-    width: 50%;
-    height: auto;
-    flex-direction: row;
-    padding: 10px 40px;
-    justify-content: space-between;
-    gap: 20px;
+    .container {
+        margin-left: 0;
+        height: calc(100vh - 60px); /* leave room for nav */
+        overflow-y: scroll;
+    }
 
+    .list {
+        padding-left: 36px ;
+    }
 
-  }
-
-  .nav-body {
-    flex-direction: row;
-    justify-content: flex-start;
-    gap: 10px;
-  }
-
-  .container {
-    margin-left: 0;
     
-    height: calc(100vh - 60px); /* leave room for nav */
-    overflow-y: scroll;
-  }
-
 }

@@ -124,7 +124,7 @@ function loadProject(projectKey) {
 
 function toggleSection(clickedHeader) {
     const allHeaders = document.querySelectorAll('.nav h3');
-    const allLists = document.querySelectorAll('.nav .list');
+    const allLists = document.querySelectorAll('.list');
 
     const targetId = clickedHeader.getAttribute('data-toggle-id');
     const targetList = document.getElementById(targetId);
