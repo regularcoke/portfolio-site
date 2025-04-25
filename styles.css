@@ -63,15 +63,16 @@ h3.active {
     flex-direction: column;
     min-width: fit-content;
     position: fixed;
-    height: 100vh; /* fill full viewport height */
+    height: 100vh; 
     justify-content: space-between;
-    color: transparent;
+    background-color: transparent;
 }
 
 .nav-body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+
 }
 
 .container {
@@ -87,7 +88,7 @@ footer {
     position: absolute;
     bottom: 0;
     right: 0;
-    padding: 5px 15px;
+    padding: 0 15px;
     font-size: 9px;
 }
 
@@ -134,13 +135,13 @@ footer {
         font-size: small !important;
     }
     .nav {
-        position: static;
         width: 50%;
         height: auto;
         flex-direction: row;
-        padding: 10px 40px;
+        padding: 10px 36px;
         justify-content: space-between;
         gap: 20px;
+
     }
 
     .nav-body {
@@ -150,6 +151,7 @@ footer {
     }
 
     .container {
+        padding-top: 50px;
         margin-left: 0;
         height: calc(100vh - 60px); /* leave room for nav */
         overflow-y: scroll;
