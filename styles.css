@@ -65,6 +65,7 @@ h3.active {
     position: fixed;
     height: 100vh; /* fill full viewport height */
     justify-content: space-between;
+    color: transparent;
 }
 
 .nav-body {
@@ -120,7 +121,7 @@ footer {
     border: 1px solid #bcbcbc;
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 1812px) and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 2) {
     body,
     p,
     h1,
