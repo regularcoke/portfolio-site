@@ -135,7 +135,7 @@ h3.active {
         float: right;
     }
     .nav {
-        width: 100%;
+        width: 55%;
         height: auto;
         flex-direction: row;
         padding: 10px 36px;
