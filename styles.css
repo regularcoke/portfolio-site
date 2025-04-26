@@ -131,8 +131,8 @@ h3.active {
 
     .footer {
         font-size: small !important;
-        position: relative;
-        float: right;
+        position: absolute;
+
     }
     .nav {
         width: 55%;

@@ -93,10 +93,10 @@ const projects = {
   
   bio: {
     images: ["img/me.png"],
-    title: "#me #busy",
-    year: "",
-    medium: "",
-    description: "Artist first, designer second. El mas guapx del internet, Hugo A. Marin (b. 2001) is a Mexican multidiscplinary artist-designer, working in both physical spaces and virtual spaces. Intimacy + queerness are central to Marin's artistic practice, while essentialist and spartan design choices define their typographic work."
+    title: "",
+    year: "#busy",
+    medium: "#me",
+    description: "Artist first, designer second, el mas guapx del internet, Hugo A. Marin (b. 2001) is a Mexican multidiscplinary artist-designer, working in both physical spaces and virtual spaces. Intimacy, community, and queerness are central to Marin's artistic practice, while essentialist and spartan design choices define their design and typographic work."
   }
 };
 
