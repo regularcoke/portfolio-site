@@ -27,6 +27,7 @@ a,
     line-height: 9px;
     cursor: pointer;
     padding-left: 3px;
+    padding-top: 5px;
 }
 
 #focusList,
@@ -156,5 +157,6 @@ h3.active {
 
     .list {
         padding-left: 36px;
+        padding-top: 0;
     }
 }

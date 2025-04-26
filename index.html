@@ -11,7 +11,7 @@
             <section class="nav">
                 <section>
                     <header>
-                        <h1>Hugo Adrian Marin</h1>
+                        <h1 onclick="loadProject('bio')">Hugo Adrian Marin</h1>
                     </header>
                 </section>
                 <div class="nav-body">
@@ -23,50 +23,50 @@
                         <h3 style="cursor: pointer" data-toggle-id="focusList" onclick="toggleSection(this)">Focus</h3>
                     </section>
                     <section>
-                        <h3 style="cursor: pointer" data-toggle-id="resumeList" onclick="toggleSection(this)">CV + Resume</h3>
+                        <h3 style="cursor: pointer" data-toggle-id="resumeList" onclick="toggleSection(this)">
+                            CV + Resume
+                        </h3>
                     </section>
-                    </div>
-                    <footer>
-                        <p><a href="mailto:hugoparizs@gmail.com">Email</a></p>
-                    </footer>
-                
+                </div>
+                <footer>
+                    <p><a href="mailto:hugoparizs@gmail.com">Email</a></p>
+                </footer>
             </section>
 
             <section class="container">
                 <section>
                     <div class="list" id="worksList" style="display: none">
-                            <p>2025 <a href="#" onclick="loadProject('proj2')">iheartwebcam.com</a></p>
-                            <p>2024 <a href="#" onclick="loadProject('proj1')">En Defensa de Mi Padre</a></p>
-                            <p>
-                                2024
-                                <a href="#" onclick="loadProject('proj5')">how life has felt ever since i turned 13</a>
-                            </p>
-                            <p>2023 <a href="#" onclick="loadProject('proj6')">EN/ES The Library of Babel</a></p>
-                            <p>2024 <a href="#" onclick="loadProject('proj7')">A Webcam Photo Series</a></p>
-                            <p>2022 <a href="#" onclick="loadProject('proj3')">Otto</a></p>
-                            <p>2022 <a href="#" onclick="loadProject('proj4')">Self Portrait on Webcam</a></p>
-                        </div>
+                        <p>2025 <a href="#" onclick="loadProject('proj2')">iheartwebcam.com</a></p>
+                        <p>2024 <a href="#" onclick="loadProject('proj1')">En Defensa de Mi Padre</a></p>
+                        <p>
+                            2024
+                            <a href="#" onclick="loadProject('proj5')">how life has felt ever since i turned 13</a>
+                        </p>
+                        <p>2023 <a href="#" onclick="loadProject('proj6')">EN/ES The Library of Babel</a></p>
+                        <p>2024 <a href="#" onclick="loadProject('proj7')">A Webcam Photo Series</a></p>
+                        <p>2022 <a href="#" onclick="loadProject('proj3')">Otto</a></p>
+                        <p>2022 <a href="#" onclick="loadProject('proj4')">Self Portrait on Webcam</a></p>
+                    </div>
                     <div class="list" id="focusList" style="display: none">
-                            <p onclick="loadProject('graphics')">Graphic Design</p>
-                            <p onclick="loadProject('threed')">3D Modeling</p>
-                            <p onclick="loadProject('fab')">Fabrication</p>
-                            <p onclick="loadProject('sketches')">Sketches</p>
-                        </div>
+                        <p onclick="loadProject('graphics')">Graphic Design</p>
+                        <p onclick="loadProject('threed')">3D Modeling</p>
+                        <p onclick="loadProject('fab')">Fabrication</p>
+                        <p onclick="loadProject('sketches')">Sketches</p>
+                    </div>
                     <div class="list" id="resumeList" style="display: none">
-                            <p><a href="https://users.dma.ucla.edu/~hugoperez/">BA UCLA Design Media Arts (2025)</a></p>
-                            <p>
-                                <a
-                                    href="https://docs.google.com/document/d/e/2PACX-1vTMGdbEE7yDFOYvxL4mQwBKC4P9VLan03VWlPu8n_QAPYPTUk0EHJEECBl_sbxUFWLt0MCw2Lm9Ak-y/pub">
-                                    Resume
-                                </a>
-                            </p>
-                        </div>
+                        <p><a href="https://users.dma.ucla.edu/~hugoperez/">BA UCLA Design Media Arts (2025)</a></p>
+                        <p>
+                            <a
+                                href="https://docs.google.com/document/d/e/2PACX-1vTMGdbEE7yDFOYvxL4mQwBKC4P9VLan03VWlPu8n_QAPYPTUk0EHJEECBl_sbxUFWLt0MCw2Lm9Ak-y/pub">
+                                Resume
+                            </a>
+                        </p>
+                    </div>
                 </section>
                 <section>
-                <p id="caption"></p>
-                <div class="gallery" id="gallery">
-                    </div>
-                <p class="footer">this is website was handmade by hugo</p>
+                    <p id="caption"></p>
+                    <div class="gallery" id="gallery"></div>
+                    <p class="footer">this is website was handmade by hugo</p>
                 </section>
             </section>
         </div>

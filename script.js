@@ -89,6 +89,14 @@ const projects = {
     year: "",
     medium: "",
     description: "Fashion process drawings and visual development"
+  },
+  
+  bio: {
+    images: ["img/me.png"],
+    title: "#me #busy",
+    year: "",
+    medium: "",
+    description: "Artist first, designer second. El mas guapx del internet, Hugo A. Marin (b. 2001) is a Mexican multidiscplinary artist-designer, working in both physical spaces and virtual spaces. Intimacy + queerness are central to Marin's artistic practice, while essentialist and spartan design choices define their typographic work."
   }
 };
 
@@ -99,6 +107,14 @@ function loadProject(projectKey) {
   caption.innerHTML = "";
 
   const project = projects[projectKey];
+  
+  if (projectKey === "bio") {
+    const allLists = document.querySelectorAll('.list');
+    allLists.forEach(list => list.style.display = 'none');
+
+    const allHeaders = document.querySelectorAll('.nav h3');
+    allHeaders.forEach(h => h.classList.remove('active'));
+  }
 
   if (project) {
     project.images.forEach((src, i) => {
@@ -123,20 +139,26 @@ function loadProject(projectKey) {
 }
 
 function toggleSection(clickedHeader) {
-    const allHeaders = document.querySelectorAll('.nav h3');
-    const allLists = document.querySelectorAll('.list');
+  const allHeaders = document.querySelectorAll('.nav h3');
+  const allLists = document.querySelectorAll('.list');
 
-    const targetId = clickedHeader.getAttribute('data-toggle-id');
-    const targetList = document.getElementById(targetId);
-    const isOpen = targetList.style.display === 'block';
+  // 🧹 Clear any loaded project
+  const gallery = document.getElementById("gallery");
+  const caption = document.getElementById("caption");
+  gallery.innerHTML = "";
+  caption.innerHTML = "";
 
-    // Close all
-    allHeaders.forEach(h => h.classList.remove('active'));
-    allLists.forEach(list => list.style.display = 'none');
+  const targetId = clickedHeader.getAttribute('data-toggle-id');
+  const targetList = document.getElementById(targetId);
+  const isOpen = targetList.style.display === 'block';
 
-    // Open clicked one if not already open
-    if (!isOpen) {
-      targetList.style.display = 'block';
-      clickedHeader.classList.add('active');
-    }
+  // Close all lists and deactivate headers
+  allHeaders.forEach(h => h.classList.remove('active'));
+  allLists.forEach(list => list.style.display = 'none');
+
+  // Open clicked one if not already open
+  if (!isOpen) {
+    targetList.style.display = 'block';
+    clickedHeader.classList.add('active');
   }
+}
