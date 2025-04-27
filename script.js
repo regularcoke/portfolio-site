@@ -37,7 +37,7 @@ const projects = {
     year: "2024",
     medium: "Web story",
     description:
-      "A scroll-through web story depicting adolescent dysphoria, told through the captions of femcel memes. This net.art piece depicts  gender dysphoria in response to popular internet cultures. By configuring and distorting adobe stock images with unexpected silohuetts, these new genre of silhouettes disrupt the homogeneity of commercial stock imagery."
+      'A scroll-through web story depicting adolescent dysphoria, told through the captions of femcel memes. This net.art piece depicts  gender dysphoria in response to popular internet cultures. By configuring and distorting adobe stock images with unexpected silohuetts, these new genre of silhouettes disrupt the homogeneity of commercial stock imagery. Find a live version here: <a href=" https://users.dma.ucla.edu/~hugoperez/p3/" target="_blank" rel="noopener">how life has felt ever since i turned 13</a>'
   },
   proj6: {
     images: [
