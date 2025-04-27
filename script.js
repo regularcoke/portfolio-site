@@ -13,7 +13,7 @@ const projects = {
     year: "2025",
     medium: "Website",
     description:
-      "Inspired by early Tumblr, iheartwebcam.com is an online image-sharing platform stripped to its core, using only tags as its sole search method. The webcam image-sharing platform explores intimacy in the age of digital presence, blurring the line between artistic self-portraiture and cam modeling. It fosters a sense of anonymous connection, deliberately rejecting the engagement-focused mechanics of mainstream social media. UI/UX design and development by Hugo Adrian Marin. Database development and engineering by Diego Romero Ramirez."
+      "Inspired by early Tumblr, iheartwebcam.com is an online image-sharing platform stripped to its core, using only tags as iys sole search method. The webcam image-sharing platform explores intimacy in the age of digital presence, blurring the line between artistic self-portraiture and cam modeling. It fosters a sense of anonymous connection, deliberately rejecting the engagement-focused mechanics of mainstream social media. UI/UX design and development by Hugo Adrian Marin. Database development and engineering by Diego Romero Ramirez."
   },
   proj3: {
     images: ["img/monibel.png", "img/otto2.jpeg", "img/otto3.jpeg"],
@@ -28,7 +28,8 @@ const projects = {
     title: "Untitled (Self Portrait on Webcam)",
     year: "2022",
     medium: "Webcam photography",
-    description: "A self portait composed on the webcam. This collection of personal objects display a movement bewteen feminity and masculinity. Como dijo Rebe, ''en mi espejo me veo tan guapx, pero en tu cuarto no lo se.''"
+    description:
+      "A self portait composed on the webcam. This collection of personal objects display a movement bewteen feminity and masculinity. Como dijo Rebe, ''en mi espejo me veo tan guapx, pero en tu cuarto no lo se.''"
   },
   proj5: {
     images: ["img/howlifehasfelt.png", "img/howlifehasfelt2.png", "img/howlifehasfelt3.png"],
@@ -52,7 +53,7 @@ const projects = {
     description:
       "A typographic translation of The Library of Babel by Jorge Luis Borges, originally published in 1941 as part of his collection El Jardín de senderos que se bifurcan (The Garden of Forking Paths). Set entirely in 8pt New Courier, this 42 page, Spanish to English manuscript becomes a quiet echo of Borges’ infinite library—an endless grid of letters, rooms, and silence."
   },
-  
+
   proj7: {
     images: [
       "img/webcambook5.jpeg",
@@ -68,7 +69,7 @@ const projects = {
     description:
       "A Webcam Photo Series is a 15-page book featuring images captured by various users through a custom webcam filter built with p5.js. The series includes two distinct filters: one based on a recursive subdivision algorithm, and another developed from scratch by Hugo Adrian Marin using JavaScript. This book showcases the creative compositions users generated through these interactive tools."
   },
-  
+
   graphics: {
     images: ["img/Dean Blunt Poster.png", "img/lolinaflyer.png", "img/dw_suit.png"],
     title: "Graphic Design",
@@ -90,13 +91,14 @@ const projects = {
     medium: "",
     description: "Fashion process drawings and visual development"
   },
-  
+
   bio: {
     images: ["img/me.png"],
     title: "",
     year: "",
     medium: "",
-    description: "Artist first, designer second, “el más guapx del internet,” Hugo A. Marin (b. 2001) is a Mexican multidisciplinary artist-designer working across physical and virtual spaces. Intimacy, community, and queerness are central to Marin's artistic practice, while essentialist and spartan design choices define their design and typographic work. They are currently based in Los Angeles, CA. #busy #me #lookingforwork"
+    description:
+      "Artist first, designer second, “el más guapx del internet,” Hugo A. Marin (b. 2001) is a Mexican multidisciplinary artist-designer working across physical and virtual spaces. Intimacy, community, and queerness are central to Marin's artistic practice, while essentialist and spartan design choices define their design and typographic work. They currently based in Los Angeles, CA. #busy #me #lookingforwork"
   }
 };
 
@@ -107,25 +109,32 @@ function loadProject(projectKey) {
   caption.innerHTML = "";
 
   const project = projects[projectKey];
-  
-  if (projectKey === "bio") {
-    const allLists = document.querySelectorAll('.list');
-    allLists.forEach(list => list.style.display = 'none');
 
-    const allHeaders = document.querySelectorAll('.nav h3');
-    allHeaders.forEach(h => h.classList.remove('active'));
+  if (projectKey === "bio") {
+    const allLists = document.querySelectorAll(".list");
+    allLists.forEach((list) => (list.style.display = "none"));
+
+    const allHeaders = document.querySelectorAll(".nav h3");
+    allHeaders.forEach((h) => h.classList.remove("active"));
   }
 
   if (project) {
     project.images.forEach((src, i) => {
+      const a = document.createElement("a");
+      a.href = src; // link to the image itself
+      a.target = "_blank"; // open in a new tab
+      a.rel = "noopener";
+
       const img = document.createElement("img");
       img.src = src;
       img.alt = project.title || "Project image";
       img.loading = "lazy";
+      img.classList.add("lazy");
       if (projectKey === "graphics") {
         img.classList.add("graphic-border");
       }
-      gallery.appendChild(img);
+      a.appendChild(img);
+      gallery.appendChild(a);
     });
 
     caption.innerHTML = `
@@ -137,8 +146,8 @@ function loadProject(projectKey) {
 }
 
 function toggleSection(clickedHeader) {
-  const allHeaders = document.querySelectorAll('.nav h3');
-  const allLists = document.querySelectorAll('.list');
+  const allHeaders = document.querySelectorAll(".nav h3");
+  const allLists = document.querySelectorAll(".list");
 
   // 🧹 Clear any loaded project
   const gallery = document.getElementById("gallery");
@@ -146,17 +155,17 @@ function toggleSection(clickedHeader) {
   gallery.innerHTML = "";
   caption.innerHTML = "";
 
-  const targetId = clickedHeader.getAttribute('data-toggle-id');
+  const targetId = clickedHeader.getAttribute("data-toggle-id");
   const targetList = document.getElementById(targetId);
-  const isOpen = targetList.style.display === 'block';
+  const isOpen = targetList.style.display === "block";
 
   // Close all lists and deactivate headers
-  allHeaders.forEach(h => h.classList.remove('active'));
-  allLists.forEach(list => list.style.display = 'none');
+  allHeaders.forEach((h) => h.classList.remove("active"));
+  allLists.forEach((list) => (list.style.display = "none"));
 
   // Open clicked one if not already open
   if (!isOpen) {
-    targetList.style.display = 'block';
-    clickedHeader.classList.add('active');
+    targetList.style.display = "block";
+    clickedHeader.classList.add("active");
   }
 }
