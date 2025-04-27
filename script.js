@@ -8,7 +8,7 @@ const projects = {
       "Prototype welded steel belt buckle. Commemortaing bull riding, this piece reimagines the traditional buckle—transforming a symbol of masculinity into an object of protection. In this context, the belt buckle functions not only utilitarian but as an exaggerated symbol of hypermasculinity—often oversized, ornate, and awarded as a trophy. This piece critically reinterprets the buckle's role, transforming it from a performative emblem of dominance into a defensive form—recasting the object as both artifact and armor."
   },
   proj2: {
-    images: ["img/iheartwebcam.png"],
+    images: ["img/iheartwebcam1.png", "img/iheartwebcam2.png", "img/iheartwebcam3.png"],
     title: "iheartwebcam.com",
     year: "2025",
     medium: "Website",
@@ -28,7 +28,7 @@ const projects = {
     title: "Untitled (Self Portrait on Webcam)",
     year: "2022",
     medium: "Webcam photography",
-    description: "En mi espejo me veo tan guapx, pero en mi computadora no lo se."
+    description: "A self portait composed on the webcam. This collection of personal objects display a movement bewteen feminity and masculinity. Como dijo Rebe, ''en mi espejo me veo tan guapx, pero en tu cuarto no lo se.''"
   },
   proj5: {
     images: ["img/howlifehasfelt.png", "img/howlifehasfelt2.png", "img/howlifehasfelt3.png"],
@@ -36,7 +36,7 @@ const projects = {
     year: "2024",
     medium: "Web story",
     description:
-      "A scroll-through web story depicting adolescent dysphoria, told through the captions of femcel memes. These new genre of silhouettes disrupt the homogeneity of commercial stock imagery."
+      "A scroll-through web story depicting adolescent dysphoria, told through the captions of femcel memes. This net.art piece depicts  gender dysphoria in response to popular internet cultures. By configuring and distorting adobe stock images with unexpected silohuetts, these new genre of silhouettes disrupt the homogeneity of commercial stock imagery."
   },
   proj6: {
     images: [
@@ -94,9 +94,9 @@ const projects = {
   bio: {
     images: ["img/me.png"],
     title: "",
-    year: "#busy",
-    medium: "#me",
-    description: "Artist first, designer second, el mas guapx del internet, Hugo A. Marin (b. 2001) is a Mexican multidiscplinary artist-designer, working in both physical spaces and virtual spaces. Intimacy, community, and queerness are central to Marin's artistic practice, while essentialist and spartan design choices define their design and typographic work."
+    year: "",
+    medium: "",
+    description: "Artist first, designer second, “el más guapx del internet,” Hugo A. Marin (b. 2001) is a Mexican multidisciplinary artist-designer working across physical and virtual spaces. Intimacy, community, and queerness are central to Marin's artistic practice, while essentialist and spartan design choices define their design and typographic work. They currently based in Los Angeles, CA. #busy #me #lookingforwork"
   }
 };
 
@@ -121,11 +121,9 @@ function loadProject(projectKey) {
       const img = document.createElement("img");
       img.src = src;
       img.alt = project.title || "Project image";
+      img.loading = "lazy";
       if (projectKey === "graphics") {
         img.classList.add("graphic-border");
-      }
-      if (project.images.length === 1) {
-        img.classList.add("full-span");
       }
       gallery.appendChild(img);
     });

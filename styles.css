@@ -46,9 +46,13 @@ h3.active {
 
 .gallery {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* exactly 2 columns */
+    grid-template-columns: repeat(2, 1fr);
     gap: 10px;
     padding: 20px 36px;
+}
+
+.gallery > *:nth-last-child(1):nth-child(odd) {
+    grid-column: 1 / -1;
 }
 
 .gallery img {
@@ -57,6 +61,16 @@ h3.active {
     display: block;
     object-fit: cover;
     border-radius: 1px;
+    opacity: 0;
+    transform: translateY(10px);
+    transition:
+        opacity 0.5s ease,
+        transform 0.5s ease;
+}
+
+.gallery img[loading="lazy"] {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .nav {
@@ -111,11 +125,6 @@ h3.active {
     line-height: 1.5em;
 }
 
-.full-span {
-    grid-column: span 2;
-    width: 100%;
-}
-
 .graphic-border {
     border: 1px solid #bcbcbc;
 }
@@ -126,17 +135,16 @@ h3.active {
     h1,
     h3,
     #caption h2 {
-        font-size: larger !important;
+        font-size: x-large;
     }
 
     .footer {
         font-size: small !important;
         position: absolute;
-
     }
     .nav {
-        width: 55%;
-        height: auto;
+        width: 60%;
+        height: 20px;
         flex-direction: row;
         padding: 10px 36px;
         justify-content: space-between;
@@ -159,5 +167,13 @@ h3.active {
     .list {
         padding-left: 36px;
         padding-top: 0;
+        z-index: 1;
+    }
+    
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr; /* 1 image per row */
+        gap: 10px;
+        padding: 20px 36px;
     }
 }
