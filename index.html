@@ -19,9 +19,11 @@
                         <h3 style="cursor: pointer" data-toggle-id="worksList" onclick="toggleSection(this)">Works</h3>
                     </section>
 
+                    <!--
                     <section>
                         <h3 style="cursor: pointer" data-toggle-id="focusList" onclick="toggleSection(this)">Focus</h3>
                     </section>
+                    -->
                     <section>
                         <h3 style="cursor: pointer" data-toggle-id="resumeList" onclick="toggleSection(this)">
                             CV + Resume
@@ -36,16 +38,16 @@
             <section class="container">
                 <section>
                     <div class="list" id="worksList" style="display: none">
-                        <p>2025 <a href="#" onclick="loadProject('proj2')">iheartwebcam.com</a></p>
-                        <p>2024 <a href="#" onclick="loadProject('proj1')">En Defensa de Mi Padre</a></p>
+                        <p>2025 <a href="#" onclick="loadProject('proj2', this)">iheartwebcam.com</a></p>
+                        <p>2024 <a href="#" onclick="loadProject('proj1', this)">En Defensa de Mi Padre</a></p>
                         <p>
                             2024
-                            <a href="#" onclick="loadProject('proj5')">how life has felt ever since i turned 13</a>
+                            <a href="#" onclick="loadProject('proj5', this)">how life has felt ever since i turned 13</a>
                         </p>
-                        <p>2023 <a href="#" onclick="loadProject('proj6')">EN/ES The Library of Babel</a></p>
-                        <p>2024 <a href="#" onclick="loadProject('proj7')">A Webcam Photo Series</a></p>
-                        <p>2022 <a href="#" onclick="loadProject('proj3')">Otto</a></p>
-                        <p>2022 <a href="#" onclick="loadProject('proj4')">Self Portrait on Webcam</a></p>
+                        <p>2023 <a href="#" onclick="loadProject('proj6', this)">EN/ES The Library of Babel</a></p>
+                        <p>2024 <a href="#" onclick="loadProject('proj7', this)">A Webcam Photo Series</a></p>
+                        <p>2022 <a href="#" onclick="loadProject('proj3', this)">Otto</a></p>
+                        <p>2022 <a href="#" onclick="loadProject('proj4', this)">Self Portrait on Webcam</a></p>
                     </div>
                     <div class="list" id="focusList" style="display: none">
                         <p onclick="loadProject('graphics')">Graphic Design</p>
@@ -66,7 +68,7 @@
                 <section>
                     <p id="caption"></p>
                     <div class="gallery" id="gallery"></div>
-                    <p class="footer">this website was handmade by hugo</p>
+                    <p class="footer">this website was handmade by me!</p>
                 </section>
             </section>
         </div>

@@ -68,6 +68,12 @@ h3.active {
         transform 0.5s ease;
 }
 
+.gallery img.lazy {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
 .gallery img[loading="lazy"] {
     opacity: 1;
     transform: translateY(0);
@@ -127,6 +133,10 @@ h3.active {
 
 .graphic-border {
     border: 1px solid #bcbcbc;
+}
+
+.list a.active {
+  text-decoration: underline;
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 2) {

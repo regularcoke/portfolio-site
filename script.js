@@ -102,14 +102,22 @@ const projects = {
   }
 };
 
-function loadProject(projectKey) {
+function loadProject(projectKey, clickedLink) {
   const gallery = document.getElementById("gallery");
   const caption = document.getElementById("caption");
   gallery.innerHTML = "";
   caption.innerHTML = "";
 
   const project = projects[projectKey];
+  
+  const allLinks = document.querySelectorAll(".list a");
+  allLinks.forEach((link) => link.classList.remove("active"));
 
+  // Add 'active' to the clicked link
+  if (clickedLink) {
+    clickedLink.classList.add("active");
+  }
+  
   if (projectKey === "bio") {
     const allLists = document.querySelectorAll(".list");
     allLists.forEach((list) => (list.style.display = "none"));
@@ -167,5 +175,12 @@ function toggleSection(clickedHeader) {
   if (!isOpen) {
     targetList.style.display = "block";
     clickedHeader.classList.add("active");
+    
+    if (targetId === "worksList") {
+    const firstLink = targetList.querySelector("a");
+    if (firstLink) {
+      firstLink.click(); // Triggers the same onclick with 'this'
+    }
+  }
   }
 }
