@@ -98,7 +98,7 @@ const projects = {
     year: "",
     medium: "",
     description:
-      "Artist first, designer second, “el más guapx del internet,” Hugo A. Marin (b. 2001) is a Mexican multidisciplinary artist-designer working across physical and virtual spaces. Intimacy, community, and queerness are central to Marin's artistic practice, while essentialist and spartan design choices define their design and typographic work. They currently based in Los Angeles, CA. #busy #me #lookingforwork"
+      "Artist first, designer second, Hugo A. Marin (b. 2001) is a Mexican multidisciplinary artist-designer working across physical and virtual spaces. Intimacy, community, and queerness are central to Marin's artistic practice, while essentialist and spartan design choices define their design and typographic work. They currently based in Los Angeles, CA. #busy #me #lookingforwork"
   }
 };
 
