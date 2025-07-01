@@ -49,7 +49,7 @@ const projects = {
     year: "2022",
     medium: "Webcam photography",
     description:
-      "A self portait composed on the webcam. This collection of personal objects display a movement bewteen feminity and masculinity. Como dijo Rebe, ''en mi espejo me veo tan guapx, pero en tu cuarto no lo se.''"
+      "A self portait composed on the webcam. This collection of personal objects display a movement bewteen feminity and masculinity."
   },
   proj5: {
     images: ["img/howlifehasfelt.png", "img/howlifehasfelt2.png", "img/howlifehasfelt3.png"],
