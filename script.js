@@ -97,6 +97,21 @@ const projects = {
     description:
       "Concept research book documenting the devlopment of graphics surrounding the topic of militarism and gay bodies. This 72 page book dissects how militarized masculinties appropriates feminity through warped ideas of brotherhood using media and the internet as methods of normalization."
   },
+  
+  proj10: {
+    images: [
+      "img/quieromorir1.jpeg",
+      "img/quieromorir2.jpeg",
+      "img/quieromorir3.jpeg",
+      "img/quieromorir4.jpeg",
+      "img/quieromorir5.jpeg"
+    ],
+    title: "quiero morir muy cerca de ti",
+    year: "2025",
+    medium: "Found photography, wooden panels", 
+    description:
+      "Found google street images across the streets of Bogota, Colombia, and the most romantic city, Villa de Leyva, Colombia, capture couples displaying physical acts of affection. These images are mounted on handmade wooden panels. Accompanying these photos is a text by the artist: <br><br><span style=font-style:italic>'I have overcomplicated my relationship with physical affection. I think my past lovers would say it is my love language. My mother would agree. And I, would not disagree with them. Yet, I find it difficult to admit to this. Not verbally as I am doing so now, but, I cannot perform this for others. In a stranger’s eyes I find doubt and judgment. Perhaps this comes from growing up in a place where I could not stray from the line that has been there for centuries. Or perhaps, it is an insecurity to how I love. <br><br>More than likely, it is the latter. But, I will have payed for it by the time I have chosen love.'</span>" 
+  },
 
   graphics: {
     images: ["img/Dean Blunt Poster.png", "img/lolinaflyer.png", "img/dw_suit.png"],
