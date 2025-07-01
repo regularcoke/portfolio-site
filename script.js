@@ -13,7 +13,7 @@ const projects = {
     year: "2025",
     medium: "Website",
     description:
-      "Inspired by early Tumblr, iheartwebcam.com is an online image-sharing platform stripped to its core, using only tags as iys sole search method. The webcam image-sharing platform explores intimacy in the age of digital presence, blurring the line between artistic self-portraiture and cam modeling. It fosters a sense of anonymous connection, deliberately rejecting the engagement-focused mechanics of mainstream social media. UI/UX design and development by Hugo Adrian Marin. Database development and engineering by Diego Romero Ramirez and Hugo Adrian Marin."
+      "Inspired by early Tumblr, iheartwebcam.com is an online image-sharing platform stripped to its core, using only tags as its only searching method. The webcam image-sharing platform explores intimacy in the age of digital presence, blurring the line between artistic self-portraiture and cam modeling. It fosters a sense of anonymous connection, deliberately rejecting the engagement-focused mechanics of mainstream social media and reverting back to early internet interactions. UI/UX development by Hugo Adrian Marin. Web development and engineering by Diego Romero Ramirez and Hugo Adrian Marin."
   },
   proj3: {
     images: ["img/monibel.png", "img/otto2.jpeg", "img/otto3.jpeg"],
@@ -29,7 +29,7 @@ const projects = {
     year: "2022",
     medium: "Webcam photography",
     description:
-      "A self portait composed on the webcam. This collection of personal objects display a movement bewteen feminity and masculinity. Como dijo Rebe, ''en mi espejo me veo tan guapx, pero en tu cuarto no lo se.''"
+      "A self portrait composed on the webcam. This collection of personal objects display a movement bewteen feminity and masculinity."
   },
   proj5: {
     images: ["img/howlifehasfelt.png", "img/howlifehasfelt2.png", "img/howlifehasfelt3.png"],
@@ -79,7 +79,7 @@ const projects = {
     year: "2024",
     medium: "Wood, misc metal, found objects. 7.5 x 11 x 2.5", 
     description:
-      "In collaboration with Rachel Lee. Using a contact mic, this handmade box adorned with misc items including a zipper, buttons, and metal scraps acts as instrument. Fabrication and sound production by Hugo Adrian Marin. Development, fabrication, video production, and sound production by Rachel Lee."
+      "In collaboration with Rachel Lee. Using a contact mic, this handmade box adorned with misc items including a zipper, buttons, and metal scraps acts as instrument. Fabrication and sound production by Hugo Adrian Marin and Rachel Lee. Development and video production by Rachel Lee."
   },
   
   proj9: {
