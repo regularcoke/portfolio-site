@@ -2,6 +2,12 @@
 
 const blogEntries = [
   {
+    date: "2025-07-01",
+    title: "new month",
+    content: "on june 6th i went whale watching w my class <br><br>it is a new month",
+    images: ["img/blog/IMG_8226.jpeg",]
+  },
+  {
     date: "2025-06-30",
     title: "manifesto",
     content: "book I got from the bookstore for $6 <br> titled 'manifesto' by anonymous <br> had to look it up since the front n back are completly blank,,,",
