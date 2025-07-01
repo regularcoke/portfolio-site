@@ -1,5 +1,5 @@
 body {
-    height: 100dvh;
+    height: 100vh;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
@@ -36,12 +36,16 @@ a,
     padding-left: 36px;
 }
 
-h3:hover {
-    color: white;
+h1:hover,
+h3:hover,
+a:hover {
+  color: white;
 }
 
+h1.active,
 h3.active {
     color: white;
+    filter: brightness(.5);
 }
 
 .gallery {
@@ -85,13 +89,12 @@ h3.active {
     flex-direction: column;
     min-width: fit-content;
     position: fixed;
-    height: 100dvh;
+    height: 100vh;
     justify-content: space-between;
     background-color: transparent;
 }
 
 .nav-body {
-    display: flex;
     flex-direction: column;
     justify-content: center;
 }
@@ -117,9 +120,10 @@ h3.active {
 }
 
 #caption h2 {
+    text-decoration: underline;
     font-size: small;
     font-weight: 100;
-    margin-bottom: 0.8rem;
+    margin-bottom: 0.5rem;
 }
 
 #caption il {
@@ -138,7 +142,6 @@ h3.active {
 .list a.active {
   text-decoration: underline;
 }
-
 @media only screen and (min-device-width: 320px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 2) {
     body,
     p,

@@ -13,7 +13,7 @@ const projects = {
     year: "2025",
     medium: "Website",
     description:
-      "Inspired by early Tumblr, iheartwebcam.com is an online image-sharing platform stripped to its core, using only tags as iys sole search method. The webcam image-sharing platform explores intimacy in the age of digital presence, blurring the line between artistic self-portraiture and cam modeling. It fosters a sense of anonymous connection, deliberately rejecting the engagement-focused mechanics of mainstream social media. UI/UX design and development by Hugo Adrian Marin. Database development and engineering by Diego Romero Ramirez."
+      "Inspired by early Tumblr, iheartwebcam.com is an online image-sharing platform stripped to its core, using only tags as iys sole search method. The webcam image-sharing platform explores intimacy in the age of digital presence, blurring the line between artistic self-portraiture and cam modeling. It fosters a sense of anonymous connection, deliberately rejecting the engagement-focused mechanics of mainstream social media. UI/UX design and development by Hugo Adrian Marin. Database development and engineering by Diego Romero Ramirez and Hugo Adrian Marin."
   },
   proj3: {
     images: ["img/monibel.png", "img/otto2.jpeg", "img/otto3.jpeg"],
@@ -56,18 +56,46 @@ const projects = {
 
   proj7: {
     images: [
-      "img/webcambook5.jpeg",
-      "img/webcambook4.jpeg",
-      "img/webcambook3.jpeg",
-      "img/webcambook2.jpeg",
-      "img/webcambook1.jpeg",
-      "img/webcambook6.jpeg"
+      "img/webcam_photo_series/webcamphotoseries1.png",
+      "img/webcam_photo_series/webcamphotoseries2.png",
+      "img/webcam_photo_series/webcamphotoseries3.png",
+      "img/webcam_photo_series/webcamphotoseries4.png",
+      "img/webcam_photo_series/webcamphotoseries5.png",
+      "img/webcam_photo_series/webcamphotoseries6.png",
+      "img/webcam_photo_series/webcamphotoseries7.png",
     ],
     title: "A Webcam Photo Series",
     year: "2024",
     medium: "Java Script, Book, printed on cotton paper",
     description:
       "A Webcam Photo Series is a 15-page book featuring images captured by various users through a custom webcam filter built with p5.js. The series includes two distinct filters: one based on a recursive subdivision algorithm, and another developed from scratch by Hugo Adrian Marin using JavaScript. This book showcases the creative compositions users generated through these interactive tools."
+  },
+  
+   proj8: {
+    images: [
+      "img/sex:box1.png"
+    ],
+    title: "Sex / Box",
+    year: "2024",
+    medium: "Wood, misc metal, found objects. 7.5 x 11 x 2.5", 
+    description:
+      "In collaboration with Rachel Lee. Using a contact mic, this handmade box adorned with misc items including a zipper, buttons, and metal scraps acts as instrument. Fabrication and sound production by Hugo Adrian Marin. Development, fabrication, video production, and sound production by Rachel Lee."
+  },
+  
+  proj9: {
+    images: [
+      "img/mysonisasoldier.png",
+      "img/mysonisasoldier2.png",
+      "img/mysonisasoldier6.png",
+      "img/mysonisasoldier3.png",
+      "img/mysonisasoldier4.png",
+      "img/mysonisasoldier7.png"
+    ],
+    title: "MY SON IS A SOL(DIE)R",
+    year: "2025",
+    medium: "Book, 72 pages", 
+    description:
+      "Concept research book documenting the devlopment of graphics surrounding the topic of militarism and gay bodies. This 72 page book dissects how militarized masculinties appropriates feminity through warped ideas of brotherhood using media and the internet as methods of normalization."
   },
 
   graphics: {
@@ -98,9 +126,20 @@ const projects = {
     year: "",
     medium: "",
     description:
-      "Artist first, designer second, Hugo A. Marin (b. 2001) is a Mexican multidisciplinary artist-designer working across physical and virtual spaces. Intimacy, community, and queerness are central to Marin's artistic practice, while essentialist and spartan design choices define their design and typographic work. They currently based in Los Angeles, CA. #busy #me #lookingforwork"
+      "Artist first, designer second, Hugo A. Marin (b. 2001) is a Mexican multidisciplinary artist-designer working across physical and virtual spaces. Intimacy, community, and queerness are central to Marin's artistic practice, while essentialist and spartan design choices define their design and typographic work. They currently based in Los Angeles, CA. <span style=color:gray>#busy #me #lookingforwork</span>"
   }
 };
+
+function preloadAllProjectImages(projects) {
+  Object.values(projects).forEach((project) => {
+    if (project.images && Array.isArray(project.images)) {
+      project.images.forEach((src) => {
+        const img = new Image();
+        img.src = src;
+      });
+    }
+  });
+}
 
 function loadProject(projectKey, clickedLink) {
   const gallery = document.getElementById("gallery");
@@ -184,3 +223,7 @@ function toggleSection(clickedHeader) {
   }
   }
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  preloadAllProjectImages(projects);
+});
