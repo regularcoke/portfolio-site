@@ -166,17 +166,25 @@ const projects = {
   }
 };
 
-function preloadAllProjectImages(projects) {
+function preloadAllImages(projects, blogEntries) {
   Object.values(projects).forEach((project) => {
-    if (project.images && Array.isArray(project.images)) {
+    if (Array.isArray(project.images)) {
       project.images.forEach((src) => {
         const img = new Image();
         img.src = src;
       });
     }
   });
-}
 
+  blogEntries.forEach((entry) => {
+    if (Array.isArray(entry.images)) {
+      entry.images.forEach((src) => {
+        const img = new Image();
+        img.src = src;
+      });
+    }
+  });
+}
 
 function loadProject(projectKey, clickedLink) {
   const gallery = document.getElementById("gallery");
@@ -320,5 +328,5 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 document.addEventListener("DOMContentLoaded", () => {
-  preloadAllProjectImages(projects);
+  preloadAllImages(projects, blogEntries);
 });
