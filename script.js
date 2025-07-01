@@ -3,14 +3,14 @@
 const blogEntries = [
   {
     date: "2025-06-30",
-    title: "kansas",
-    content: "I leave kansas tomorrow. Here is a book I got from the bookstore. Its titled 'manifesto' by anonymous. I had to look it up since the front n back are completly blank.",
+    title: "manifesto",
+    content: "book I got from the bookstore for $6 <br> titled 'manifesto' by anonymous <br> had to look it up since the front n back are completly blank,,,",
     images:[ "img/blog/IMG_8684.jpeg",]
   },
   {
     date: "2025-06-29",
     title: "idk what love is",
-    content: "I know my parents have warped ideas of love. I know that the love they have now. Is love that they know. I like to think that they are practcing everyday how to love with us, even if that means they are no longer head over heels for each other.",
+    content: "my dad carved his and my mom's name into this bench <br> i like to think that they are practicing everyday how to love with us, even if that means they are no longer head over heels for each other",
     images:[ "img/blog/IMG_8546.jpeg",
             "img/blog/IMG_8542.jpeg",
             ]
@@ -176,6 +176,7 @@ function preloadAllProjectImages(projects) {
   });
 }
 
+
 function loadProject(projectKey, clickedLink) {
   const gallery = document.getElementById("gallery");
   const caption = document.getElementById("caption");
@@ -258,7 +259,6 @@ function toggleSection(clickedHeader) {
       }
     }
 
-    // ✅ Moved outside the above block:
     if (targetId === "blog") {
       loadBlog();
     }
@@ -277,11 +277,10 @@ function loadBlog() {
   blogDates.innerHTML = ""; // clear previous
 
   blogEntries.forEach((entry, index) => {
-    // Create blog nav link inside <p>
     const link = document.createElement("a");
     link.href = "#entry-" + index;
     link.textContent = entry.date;
-    link.style.display = "block"; // optional: one per line
+    link.style.display = "block"; 
     link.onclick = (e) => {
       e.preventDefault();
       document.getElementById("entry-" + index).scrollIntoView({ behavior: "smooth" });
@@ -305,6 +304,19 @@ function loadBlog() {
     blogFeed.appendChild(post);
   });
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  const hash = window.location.hash;
+  
+  preloadAllProjectImages(projects);
+
+  if (hash === "#blog") {
+    const blogHeader = document.querySelector('[data-toggle-id="blog"]');
+    if (blogHeader) {
+      toggleSection(blogHeader);
+    }
+  }
+});
 
 document.addEventListener("DOMContentLoaded", () => {
   preloadAllProjectImages(projects);
