@@ -89,6 +89,7 @@ h3.active {
     flex-direction: column;
     min-width: fit-content;
     position: fixed;
+    z-index: 1;
     height: 100dvh;
     justify-content: space-between;
     background-color: transparent;
