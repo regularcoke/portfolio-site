@@ -187,7 +187,8 @@ h3.active {
     p,
     h1,
     h3,
-    #caption h2 {
+    #caption h2,
+    .blog-entry h2{
         font-size: x-large;
     }
 
