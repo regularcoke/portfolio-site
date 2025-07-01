@@ -104,12 +104,13 @@ const projects = {
   
   proj9: {
     images: [
-      "img/mysonisasoldier.png",
+      "img/mysonisasoldier9.png",
       "img/mysonisasoldier2.png",
-      "img/mysonisasoldier6.png",
+      "img/mysonisasoldier5.png",
       "img/mysonisasoldier3.png",
-      "img/mysonisasoldier4.png",
-      "img/mysonisasoldier7.png"
+      "img/mysonisasoldier10.png",
+      "img/mysonisasoldier1.png",
+      "img/mysonisasoldier7.png",
     ],
     title: "MY SON IS A SOL(DIE)R",
     year: "2025",
