@@ -29,6 +29,9 @@
                             CV + Resume
                         </h3>
                     </section>
+                     <section>
+                        <h3 style="cursor: pointer" data-toggle-id="blog" onclick="toggleSection(this)">;;</h3>
+                    </section>
                 </div>
                 <footer>
                     <p><a href="mailto:hugoparizs@gmail.com">Email</a></p>
@@ -44,20 +47,30 @@
                         <p>2024 <a href="#" onclick="loadProject('proj1', this)">En Defensa de Mi Padre</a></p>
                         <p>
                             2024
-                            <a href="#" onclick="loadProject('proj5', this)">how life has felt ever since i turned 13</a>
+                            <a href="#" onclick="loadProject('proj5', this)"
+                                >how life has felt ever since i turned 13</a
+                            >
                         </p>
-                        <p>2023 <a href="#" onclick="loadProject('proj6', this)">EN/ES The Library of Babel</a></p>
-                        <p> 2024 <a href="#" onclick="loadProject('proj8', this)">Sex / Box</a></p>
+
+                        <p>2024 <a href="#" onclick="loadProject('proj8', this)">Sex / Box</a></p>
                         <p>2024 <a href="#" onclick="loadProject('proj7', this)">A Webcam Photo Series</a></p>
-                        <!--<p>2022 <a href="#" onclick="loadProject('proj3', this)">Otto</a></p>-->
+                        <p>2023 <a href="#" onclick="loadProject('proj6', this)">EN/ES The Library of Babel</a></p>
                         <p>2022 <a href="#" onclick="loadProject('proj4', this)">Self Portrait on Webcam</a></p>
                     </div>
+                    <!--
                     <div class="list" id="focusList" style="display: none">
                         <p onclick="loadProject('graphics')">Graphic Design</p>
                         <p onclick="loadProject('threed')">3D Modeling</p>
                         <p onclick="loadProject('fab')">Fabrication</p>
                         <p onclick="loadProject('sketches')">Sketches</p>
                     </div>
+                    -->
+                    
+                    <div class="list" id="blog" style="display: none">
+                        <p id="blogDates">
+                        </p>
+                    </div>
+                    
                     <div class="list" id="resumeList" style="display: none">
                         <p><a href="https://users.dma.ucla.edu/~hugoperez/">BA UCLA Design Media Arts (2025)</a></p>
                         <p>
@@ -71,6 +84,7 @@
                 <section>
                     <p id="caption"></p>
                     <div class="gallery" id="gallery"></div>
+                    <div class="blog-feed" id="blogFeed"></div>
                     <p class="footer">this website was handmade by me!☺</p>
                 </section>
             </section>

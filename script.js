@@ -1,3 +1,23 @@
+//BLOG ENTRIES//
+
+const blogEntries = [
+  {
+    date: "2025-06-30",
+    title: "kansas",
+    content: "I leave kansas tomorrow. Here is a book I got from the bookstore. Its titled 'manifesto' by anonymous. I had to look it up since the front n back are completly blank.",
+    images:[ "img/blog/IMG_8684.jpeg",]
+  },
+  {
+    date: "2025-06-29",
+    title: "idk what love is",
+    content: "I know my parents have warped ideas of love. I know that the love they have now. Is love that they know. I like to think that they are practcing everyday how to love with us, even if that means they are no longer head over heels for each other.",
+    images:[ "img/blog/IMG_8546.jpeg",
+            "img/blog/IMG_8542.jpeg",
+            ]
+  },
+];
+
+
 const projects = {
   proj1: {
     images: ["img/idomf1.png", "img/idomf2.jpeg"],
@@ -13,7 +33,7 @@ const projects = {
     year: "2025",
     medium: "Website",
     description:
-      "Inspired by early Tumblr, iheartwebcam.com is an online image-sharing platform stripped to its core, using only tags as its only searching method. The webcam image-sharing platform explores intimacy in the age of digital presence, blurring the line between artistic self-portraiture and cam modeling. It fosters a sense of anonymous connection, deliberately rejecting the engagement-focused mechanics of mainstream social media and reverting back to early internet interactions. UI/UX development by Hugo Adrian Marin. Web development and engineering by Diego Romero Ramirez and Hugo Adrian Marin."
+      "Inspired by early Tumblr, iheartwebcam.com is an online image-sharing platform stripped to its core, using only tags as iys sole search method. The webcam image-sharing platform explores intimacy in the age of digital presence, blurring the line between artistic self-portraiture and cam modeling. It fosters a sense of anonymous connection, deliberately rejecting the engagement-focused mechanics of mainstream social media. UI/UX design and development by Hugo Adrian Marin. Database development and engineering by Diego Romero Ramirez and Hugo Adrian Marin."
   },
   proj3: {
     images: ["img/monibel.png", "img/otto2.jpeg", "img/otto3.jpeg"],
@@ -29,7 +49,7 @@ const projects = {
     year: "2022",
     medium: "Webcam photography",
     description:
-      "A self portrait composed on the webcam. This collection of personal objects display a movement bewteen feminity and masculinity."
+      "A self portait composed on the webcam. This collection of personal objects display a movement bewteen feminity and masculinity. Como dijo Rebe, ''en mi espejo me veo tan guapx, pero en tu cuarto no lo se.''"
   },
   proj5: {
     images: ["img/howlifehasfelt.png", "img/howlifehasfelt2.png", "img/howlifehasfelt3.png"],
@@ -56,13 +76,13 @@ const projects = {
 
   proj7: {
     images: [
-      "img/webcam_photo_series/webcamphotoseries1.png",
-      "img/webcam_photo_series/webcamphotoseries2.png",
-      "img/webcam_photo_series/webcamphotoseries3.png",
-      "img/webcam_photo_series/webcamphotoseries4.png",
-      "img/webcam_photo_series/webcamphotoseries5.png",
-      "img/webcam_photo_series/webcamphotoseries6.png",
-      "img/webcam_photo_series/webcamphotoseries7.png",
+      "img/webcamphotoseries1.png",
+      "img/webcamphotoseries2.png",
+      "img/webcamphotoseries3.png",
+      "img/webcamphotoseries4.png",
+      "img/webcamphotoseries7.png",
+      "img/webcamphotoseries5.png",
+      "img/webcamphotoseries6.png",
     ],
     title: "A Webcam Photo Series",
     year: "2024",
@@ -79,7 +99,7 @@ const projects = {
     year: "2024",
     medium: "Wood, misc metal, found objects. 7.5 x 11 x 2.5", 
     description:
-      "In collaboration with Rachel Lee. Using a contact mic, this handmade box adorned with misc items including a zipper, buttons, and metal scraps acts as instrument. Fabrication and sound production by Hugo Adrian Marin and Rachel Lee. Development and video production by Rachel Lee."
+      "In collaboration with Rachel Lee. Using a contact mic, this handmade box adorned with misc items including a zipper, buttons, and metal scraps acts as instrument. Fabrication and sound production by Hugo Adrian Marin. Development, fabrication, video production, and sound production by Rachel Lee."
   },
   
   proj9: {
@@ -216,6 +236,7 @@ function toggleSection(clickedHeader) {
   const caption = document.getElementById("caption");
   gallery.innerHTML = "";
   caption.innerHTML = "";
+  if (blogFeed) blogFeed.innerHTML = "";
 
   const targetId = clickedHeader.getAttribute("data-toggle-id");
   const targetList = document.getElementById(targetId);
@@ -229,14 +250,60 @@ function toggleSection(clickedHeader) {
   if (!isOpen) {
     targetList.style.display = "block";
     clickedHeader.classList.add("active");
-    
+
     if (targetId === "worksList") {
-    const firstLink = targetList.querySelector("a");
-    if (firstLink) {
-      firstLink.click(); // Triggers the same onclick with 'this'
+      const firstLink = targetList.querySelector("a");
+      if (firstLink) {
+        firstLink.click();
+      }
+    }
+
+    // ✅ Moved outside the above block:
+    if (targetId === "blog") {
+      loadBlog();
     }
   }
-  }
+}
+
+function loadBlog() {
+  const gallery = document.getElementById("gallery");
+  const caption = document.getElementById("caption");
+  const blogList = document.getElementById("blog");
+  const blogDates = document.getElementById("blogDates");
+  const blogFeed = document.getElementById("blogFeed");
+  
+  gallery.innerHTML = "";
+  caption.innerHTML = "";
+  blogDates.innerHTML = ""; // clear previous
+
+  blogEntries.forEach((entry, index) => {
+    // Create blog nav link inside <p>
+    const link = document.createElement("a");
+    link.href = "#entry-" + index;
+    link.textContent = entry.date;
+    link.style.display = "block"; // optional: one per line
+    link.onclick = (e) => {
+      e.preventDefault();
+      document.getElementById("entry-" + index).scrollIntoView({ behavior: "smooth" });
+    };
+    blogDates.appendChild(link);
+
+
+    const post = document.createElement("div");
+    post.classList.add("blog-entry");
+    post.id = "entry-" + index;
+    post.innerHTML = `
+      <h2>${entry.title}</h2>
+      <p><il>${entry.date}</il></p>
+      <p>${entry.content}</p>
+      ${
+        entry.images && entry.images.length? entry.images.map(src => `<img src="${src}" alt="${entry.title}" loading="lazy" />`).join("")
+          : ""
+      }
+    `;
+
+    blogFeed.appendChild(post);
+  });
 }
 
 document.addEventListener("DOMContentLoaded", () => {

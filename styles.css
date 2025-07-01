@@ -116,7 +116,7 @@ h3.active {
 #caption {
     line-height: 1.4;
     color: black;
-    padding: 0 36px;
+    padding: 0 100px 0 36px;
 }
 
 #caption h2 {
@@ -142,6 +142,46 @@ h3.active {
 .list a.active {
   text-decoration: underline;
 }
+
+.blog-entry {
+    padding-bottom: 50px;
+}
+
+.blog-entry h2 {
+  font-size: small;
+  margin-bottom: 0.5em;
+}
+
+.blog-entry p {
+    line-height: 1.4;
+    color: black;
+    padding: 0 100px 0 36px;
+}
+
+
+.blog-feed{
+    padding: 0 36px;   
+}
+#blogDates a {
+  display: block;
+  margin: 13px 0; 
+}
+
+.blog-entry img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.blog-entry img[loading="lazy"] {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
 @media only screen and (min-device-width: 320px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 2) {
     body,
     p,
