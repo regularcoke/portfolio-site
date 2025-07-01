@@ -1,5 +1,5 @@
 body {
-    height: 100vh;
+    height: 100dvh;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
@@ -89,7 +89,7 @@ h3.active {
     flex-direction: column;
     min-width: fit-content;
     position: fixed;
-    height: 100vh;
+    height: 100dvh;
     justify-content: space-between;
     background-color: transparent;
 }
@@ -101,7 +101,7 @@ h3.active {
 
 .container {
     margin-left: 260px; /* adjust to match nav width */
-    height: 100vh;
+    height: 100dvh;
     overflow-y: scroll;
 }
 
@@ -182,7 +182,7 @@ h3.active {
 }
 
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 1012px) and (-webkit-min-device-pixel-ratio: 2) {
     body,
     p,
     h1,
