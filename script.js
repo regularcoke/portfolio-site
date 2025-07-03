@@ -4,7 +4,7 @@ const blogEntries = [
   {
     date: "2025-07-02",
     title: "caracol",
-    content: "hoy tengo mi vuelo a los angeles..<br>estos ultimos semenas fueron los dias mas dificiles, pero aun estoy aqui, inspirado",
+    content: "hoy tengo mi vuelo a los angeles..<br>estas últimas semanas fueron los días más difíciles, pero aún estoy aquí, inspirado.",
     images:["img/blog/IMG_6250.jpeg",]
   },
   
