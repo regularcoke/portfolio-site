@@ -4,8 +4,8 @@ const blogEntries = [
   {
     date: "2025-07-02",
     title: "caballo por botero",
-    content: "estos ultimos semenas fueron los dias mas dificiles, pero aun estoy aqui inspirado",
-    images:[ "img/blog/IMG_6461.jpeg",]
+    content: "hoy tengo mi vuelo a los angeles..<br>estos ultimos semenas fueron los dias mas dificiles, pero aun estoy aqui inspirado",
+    images:["img/blog/IMG_6250.jpeg",]
   },
   
   {
