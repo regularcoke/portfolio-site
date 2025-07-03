@@ -10,7 +10,7 @@ const blogEntries = [
   {
     date: "2025-07-03",
     title: "me gustas",
-    content: "hoy me voy a adelantantar. porq quiero ser feliz. le voy a mandar un mensaje. porque estoy pensando en el. Y manana sere feliz. escribire mi entry de mañana ya para aseugrarme de eso.",
+    content: "hoy me voy a adelantantar. <br>porq quiero ser feliz. <br>le voy a mandar un mensaje. porque estoy pensando en el. <br>Y manana sere feliz. <br>escribire mi entry de mañana ya para aseugrarme de eso.",
     images:[]
   },
   {
