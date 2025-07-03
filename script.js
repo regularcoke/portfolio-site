@@ -2,6 +2,13 @@
 
 const blogEntries = [
   {
+    date: "2025-07-02",
+    title: "caballo por botero",
+    content: "estos ultimos semenas fueron los dias mas dificiles, pero aun estoy aqui inspirado",
+    images:[ "img/blog/IMG_6461.jpeg",]
+  },
+  
+  {
     date: "2025-07-01",
     title: "new month",
     content: "on june 6th i went whale watching w my class <br><br>it is a new month<br><br>goals for the month~i will get back if i did achieve these or not<br>read jon rofman's nine(9) eyes<br>apply to 8 residencies<br>meditate 7 times<br>make 6k<br>5 ideas for projects<br><br>develep 3<br>read 2 books(the stranger, ???)<br>1.5 inch closer to the split<br>make a drawing",
@@ -272,10 +279,6 @@ function toggleSection(clickedHeader) {
       if (firstLink) {
         firstLink.click();
       }
-    }
-
-    if (targetId === "blog") {
-      loadBlog();
     }
   }
 }

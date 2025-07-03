@@ -44,8 +44,8 @@ a:hover {
 
 h1.active,
 h3.active {
-    color: white;
-    filter: brightness(.5);
+    color: gray;
+    
 }
 
 .gallery {
