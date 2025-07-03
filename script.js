@@ -2,6 +2,18 @@
 
 const blogEntries = [
   {
+    date: "2025-07-04",
+    title: "feliz hoy soy",
+    content: "hoy soy feliz.",
+    images:[]
+  },
+  {
+    date: "2025-07-03",
+    title: "me gustas",
+    content: "hoy me voy a adelantantar. porq quiero ser feliz. le voy a mandar un mensaje. porque estoy pensando en el. Y manana sere feliz. escribire mi entry de mañana ya para aseugrarme de eso.",
+    images:[]
+  },
+  {
     date: "2025-07-02",
     title: "caracol",
     content: "hoy tengo mi vuelo a los angeles..<br>estas últimas semanas fueron los días más difíciles, pero aún estoy aquí, inspirado.",
