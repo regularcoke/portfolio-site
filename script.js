@@ -4,7 +4,7 @@ const blogEntries = [
   {
     date: "2025-07-06",
     title: "me in 5 years",
-    content: "i didnt make an entry yesterday. I wasnt feeling good. <br> but i know now that i want to publish a book. I have to develop new life goals now that i dropped my other ones.<br>i want to be a published artist in 4 years. <br> i want to be a published author in 5 years. <br> i want to be a published designer in 6 years.",
+    content: "i didnt make an entry yesterday. I wasnt feeling good. <br> I have to develop new life goals now that i have dropped my other ones.<br>i want to ________  in 4 years. <br> i want to ________ in 5 years. <br> i want to ________ in 6 years.<br><br>i am not telling r u crazy",
     images:[]
   },
   {
