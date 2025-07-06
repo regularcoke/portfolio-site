@@ -2,6 +2,12 @@
 
 const blogEntries = [
   {
+    date: "2025-07-06",
+    title: "i need new life goals",
+    content: "i want to publish a book",
+    images:[]
+  },
+  {
     date: "2025-07-04",
     title: "feliz hoy soy",
     content: "hoy soy feliz.",
@@ -10,7 +16,7 @@ const blogEntries = [
   {
     date: "2025-07-03",
     title: "me gustas",
-    content: "hoy me voy a adelantantar. <br>porq quiero ser feliz. <br>le voy a mandar un mensaje. porque estoy pensando en el. <br>Y manana sere feliz. <br>escribire mi entry de mañana ya para aseugrarme de eso.",
+    content: "hoy me voy a adelantar. <br>porq quiero ser feliz. <br>le voy a mandar un mensaje. porque estoy pensando en el. <br>Y manana sere feliz. <br>escribire mi entry de mañana ya para aseugrarme de eso.",
     images:[]
   },
   {
