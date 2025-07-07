@@ -2,6 +2,12 @@
 
 const blogEntries = [
   {
+    date: "2025-07-07",
+    title: "i feel fine today",
+    content: "i felt better yesterday. i feel fine today, but i want to feel good. I think time and reflection is the answer",
+    images:[]
+  },
+  {
     date: "2025-07-06",
     title: "me in 5 years",
     content: "i didnt make an entry yesterday. I wasnt feeling good. <br> I have to develop new life goals now that i have dropped my other ones.<br>i want to ________  in 4 years. <br> i want to ________ in 5 years. <br> i want to ________ in 6 years.<br><br>i am not telling r u crazy",
