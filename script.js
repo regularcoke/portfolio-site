@@ -3,6 +3,12 @@
 const blogEntries = [
   {
     date: "2025-07-07",
+    title: "work",
+    content: "today is the first offical day of my new job",
+    images:[]
+  },
+  {
+    date: "2025-07-07",
     title: "i feel fine today",
     content: "i felt better yesterday. i feel fine today, but i want to feel good. I think time and reflection is the answer",
     images:[]
