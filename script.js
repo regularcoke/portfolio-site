@@ -168,13 +168,15 @@ const projects = {
       "img/quieromorir2.jpeg",
       "img/quieromorir3.jpeg",
       "img/quieromorir4.jpeg",
+      "img/blog/IMG_7259.jpeg",
+      "img/blog/IMG_7260.jpeg",
       "img/quieromorir5.jpeg"
     ],
     title: "quiero morir muy cerca de ti",
     year: "2025",
     medium: "Found photography, wooden panels", 
     description:
-      "Found google street images across the streets of Bogota & Villa de Leyva, Colombia, capture couples displaying physical acts of affection. These images are mounted on handmade wooden panels. Accompanying these photos is a text by the artist: <br><br><span style=font-style:italic>'I have overcomplicated my relationship with physical affection. I think my past lovers would say it is my love language. My mother would agree. And I, would not disagree with them. Yet, I find it difficult to admit to this. Not verbally as I am doing so now, but, I cannot perform this for others. In a stranger’s eyes I find doubt and judgment. Perhaps this comes from growing up in a place where I could not stray from the line that has been there for centuries. Or perhaps, it is an insecurity to how I love. <br><br>More than likely, it is the latter. All I can ask for is grace.'</span>" 
+      "Found google street images across the streets of Bogota & Villa de Leyva, Colombia, capture couples displaying physical acts of affection. These images are mounted on handmade wooden panels. Accompanying these photos is a text by the artist: <br><br><span style=font-style:italic>'I have overcomplicated my relationship with physical affection. I think my past lovers would say it is my love language. My mother would agree. And I, would not disagree with them. Yet, I find it difficult to admit to this. Not verbally as I am doing so now, but, I cannot perform this for others. In a stranger’s eyes I find doubt and judgment. Perhaps this comes from growing up in a place where I could not stray from the line that has been there for centuries. Or perhaps, it is an insecurity to how I love. <br><br>More than likely, it is the latter. So, I am asking for is grace.'</span>" 
   },
 
   graphics: {
