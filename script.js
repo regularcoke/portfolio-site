@@ -2,6 +2,12 @@
 
 const blogEntries = [
   {
+    date: "2025-07-09",
+    title: "H<<<mmm",
+    content: "When  i thn=ink about what happened i feel pressure and heat in th eback of my head above my beck, on my tail",
+    images:[]
+  },
+  {
     date: "2025-07-07",
     title: "work",
     content: "today is the first offical day of my new job",
@@ -71,12 +77,12 @@ const projects = {
       "Prototype welded steel belt buckle. Commemortaing bull riding, this piece reimagines the traditional buckle—transforming a symbol of masculinity into an object of protection. In this context, the belt buckle functions not only utilitarian but as an exaggerated symbol of hypermasculinity—often oversized, ornate, and awarded as a trophy. This piece critically reinterprets the buckle's role, transforming it from a performative emblem of dominance into a defensive form—recasting the object as both artifact and armor."
   },
   proj2: {
-    images: ["img/iheartwebcam1.png", "img/iheartwebcam2.png", "img/iheartwebcam3.png"],
+    images: ["img/iheartwebcam_still1.png", "img/iheartwebcam_still4.png", "img/iheartwebcam_still3.png", "img/iheartwebcam_still8.png", "img/iheartwebcam_still7.png"],
     title: "iheartwebcam.com",
     year: "2025",
     medium: "Website",
     description:
-      "Inspired by early Tumblr, iheartwebcam.com is an online image-sharing platform stripped to its core, using only tags as iys sole search method. The webcam image-sharing platform explores intimacy in the age of digital presence, blurring the line between artistic self-portraiture and cam modeling. It fosters a sense of anonymous connection, deliberately rejecting the engagement-focused mechanics of mainstream social media. UI/UX design and development by Hugo Adrian Marin. Database development and engineering by Diego Romero Ramirez and Hugo Adrian Marin."
+      "iheartwebcam.com is an online image-sharing platform that reinterpts the role of the webcam amongst <span style=color:red>#selfie</span> culture and internet performance. <br><br>iheartwebcam.com explores intimacy in the age of digital presence, blurring the line between self-portraiture and cam modeling. There is a sense of anonymous connection, deliberately rejecting the engagement-focused mechanics of mainstream social media. Pulling from Tumblr’s algorthim­­, or lack there of, iheartwebcam.com uses only user generated <span style=color:red>#tags</span> as its sole search method. UI/UX design and development by Hugo Adrian Marin. Database development and engineering by Diego Romero Ramirez and Hugo Adrian Marin."
   },
   proj3: {
     images: ["img/monibel.png", "img/otto2.jpeg", "img/otto3.jpeg"],
