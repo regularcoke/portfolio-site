@@ -2,9 +2,15 @@
 
 const blogEntries = [
   {
+    date: "2025-07-31",
+    title: "this was a failed attempt",
+    content: "i did not complete all my goals. but thats ok. i completed most of them.",
+    images: ["img/blog/0BEFF13A-FA18-4605-9A75-407CE4980392_1_105_c.jpeg"]
+  }
+  {
     date: "2025-07-09",
     title: "H<<<mmm",
-    content: "When  i thn=ink about what happened i feel pressure and heat in th eback of my head above my beck, on my tail",
+    content: "When  i think about what happened i feel pressure and heat in the back of my head above my neck, on my tail.",
     images:[]
   },
   {
