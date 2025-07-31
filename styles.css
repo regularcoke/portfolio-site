@@ -104,6 +104,7 @@ h3.active {
     margin-left: 260px; /* adjust to match nav width */
     height: 100dvh;
     overflow-y: scroll;
+    padding-right: 100px;
 }
 
 .footer {
@@ -111,7 +112,7 @@ h3.active {
     bottom: 0;
     right: 0;
     padding: 0 15px;
-    font-size: 9px;
+    font-size: x-small;
 }
 
 #caption {
@@ -190,7 +191,7 @@ h3.active {
     h3,
     #caption h2,
     .blog-entry h2{
-        font-size: x-large;
+        font-size: xx-large !important;
     }
 
     .footer {
@@ -207,6 +208,7 @@ h3.active {
     }
 
     .nav-body {
+        display: flex;
         flex-direction: row;
         justify-content: flex-start;
         gap: 10px;
