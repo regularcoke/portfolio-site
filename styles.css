@@ -44,7 +44,7 @@ a:hover {
 
 h1.active,
 h3.active {
-    color: gray;
+    text-decoration: underline;
     
 }
 
@@ -128,7 +128,7 @@ h3.active {
 }
 
 #caption il {
-    color: #777;
+    color: black;
 }
 
 #caption p {
