@@ -39,7 +39,7 @@ a,
 h1:hover,
 h3:hover,
 a:hover {
-  color: white;
+  color: transparent;
 }
 
 h1.active,
@@ -190,8 +190,15 @@ h3.active {
     h1,
     h3,
     #caption h2,
+    .list,
     .blog-entry h2{
-        font-size: xx-large !important;
+        font-size: 40px!important;
+    }
+
+    .blog-entry p,
+    #caption p
+    {
+        font-size: 30px!important;
     }
 
     .footer {
@@ -199,10 +206,15 @@ h3.active {
         position: absolute;
     }
     .nav {
-        width: 60%;
+        min-width: none;
+        width: 92%;
         height: 20px;
+          display: flex;
         flex-direction: row;
         padding: 10px 36px;
+        margin:0;
+        right:0;
+        left:0;
         justify-content: space-between;
         gap: 20px;
     }
@@ -211,14 +223,15 @@ h3.active {
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
-        gap: 10px;
+        gap: 40px;
     }
 
     .container {
-        padding-top: 50px;
+        padding-top: 100px;
         margin-left: 0;
-        height: calc(100vh - 60px); /* leave room for nav */
+        height: calc(100vh - 80px); /
         overflow-y: scroll;
+        padding-right: 0px;
     }
 
     .list {
@@ -232,5 +245,17 @@ h3.active {
         grid-template-columns: 1fr; /* 1 image per row */
         gap: 10px;
         padding: 20px 36px;
+    }
+    #caption {
+        padding: 0 36px 0 36px;
+    }
+    #blogDates a{
+        padding-bottom: 20px;
+    }
+    h1:hover,
+    h3:hover,
+    a:hover {
+  text-decoration: underline;
+        color: black;
     }
 }

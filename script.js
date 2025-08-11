@@ -2,9 +2,15 @@
 
 const blogEntries = [
   {
+    date: "2025-08-10",
+    title: "new month",
+    content: "my week is summed up: 1+1=3",
+    images: [""]
+  },
+  {
     date: "2025-07-31",
     title: "this was a failed attempt",
-    content: "i did not complete all my goals. but thats ok. i completed most of them.",
+    content: "i did not complete all my goals. but i completed most of them.",
     images: ["img/blog/0BEFF13A-FA18-4605-9A75-407CE4980392_1_105_c.jpeg"]
   },
   {
@@ -213,15 +219,25 @@ const projects = {
     description: "Fashion process drawings and visual development"
   },
 
-  bio: {
-    images: ["img/me.png"],
-    title: "",
-    year: "",
-    medium: "",
-    description:
-      "Artist first, designer second, Hugo A. Marin (b. 2001) is a Mexican multidisciplinary artist-designer working across physical and virtual spaces. Intimacy, community, and queerness are central to Marin's artistic practice, while essentialist and spartan design choices define their design and typographic work. They currently based in Los Angeles, CA. <span style=color:gray>#busy #me #lookingforwork</span>"
-  }
+  
 };
+function setBioMode() {
+  document.getElementById("bio-text").style.display = "block";
+  document.getElementById("name-heading").style.display = "none";
+
+  // Hide lists & deactivate nav
+  document.querySelectorAll(".list").forEach(list => list.style.display = "none");
+  document.querySelectorAll(".nav h3").forEach(h => h.classList.remove("active"));
+
+  // Clear gallery/caption
+  document.getElementById("gallery").innerHTML = "";
+  document.getElementById("caption").innerHTML = "";
+}
+
+function setNameMode() {
+  document.getElementById("bio-text").style.display = "none";
+  document.getElementById("name-heading").style.display = "block";
+}
 
 function preloadAllImages(projects, blogEntries) {
   Object.values(projects).forEach((project) => {
@@ -253,19 +269,16 @@ function loadProject(projectKey, clickedLink) {
   
   const allLinks = document.querySelectorAll(".list a");
   allLinks.forEach((link) => link.classList.remove("active"));
+  if (clickedLink) clickedLink.classList.add("active");
 
-  // Add 'active' to the clicked link
-  if (clickedLink) {
-    clickedLink.classList.add("active");
-  }
   
   if (projectKey === "bio") {
-    const allLists = document.querySelectorAll(".list");
-    allLists.forEach((list) => (list.style.display = "none"));
-
-    const allHeaders = document.querySelectorAll(".nav h3");
-    allHeaders.forEach((h) => h.classList.remove("active"));
+    setBioMode();
+  } else {
+    setNameMode();
   }
+
+
 
   if (project) {
     project.images.forEach((src, i) => {
@@ -382,4 +395,5 @@ document.addEventListener("DOMContentLoaded", () => {
 
 document.addEventListener("DOMContentLoaded", () => {
   preloadAllImages(projects, blogEntries);
+  loadProject("bio");
 });
