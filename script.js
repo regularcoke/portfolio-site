@@ -5,12 +5,14 @@ const blogEntries = [
     date: "2025-08-10",
     title: "new month",
     content: "my week summed up:",
+    images: []
   },
   {
     date: "2025-08-01",
     title: "hbd",
     content: "⠀",
-  }
+    images:[]
+  },
   {
     date: "2025-07-31",
     title: "this was a failed attempt",
