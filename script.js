@@ -4,9 +4,13 @@ const blogEntries = [
   {
     date: "2025-08-10",
     title: "new month",
-    content: "my week is summed up: 1+1=3",
-    images: [""]
+    content: "my week summed up:",
   },
+  {
+    date: "2025-08-01",
+    title: "hbd",
+    content: "⠀",
+  }
   {
     date: "2025-07-31",
     title: "this was a failed attempt",
