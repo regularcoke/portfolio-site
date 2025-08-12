@@ -2,6 +2,16 @@
 
 const blogEntries = [
   {
+    date: "2025-08-12",
+    title: "west",
+    content:"new york is 3000 miles away <br>cdmx is 1500 miles away <br> kansas is 1600 miles away <br> tokyo is 6000 miles away <br> berlin is 6000 miles away <br> london is 5500 miles away <br> u r 3000 miles away <br> ive closed my eyes and my bank account <br>and gone west"
+  },
+  {
+    date: "2025-08-11",
+    title: "dockweiler",
+    content: "hoy fui a la playa. tuve celos cuando los vi. "
+  },
+  {
     date: "2025-08-10",
     title: "new month",
     content: "my week summed up:",
@@ -10,8 +20,7 @@ const blogEntries = [
   {
     date: "2025-08-01",
     title: "hbd",
-    content: "⠀",
-    images:[]
+    content:""
   },
   {
     date: "2025-07-31",
