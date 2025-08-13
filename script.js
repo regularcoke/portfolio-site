@@ -2,6 +2,11 @@
 
 const blogEntries = [
   {
+    date: "2025-08-13",
+    title: "es que acoso no me oyes?",
+    content: ""
+  },
+  {
     date: "2025-08-12",
     title: "west",
     content:"new york is 3000 miles away <br>cdmx is 1500 miles away <br> kansas is 1600 miles away <br> tokyo is 6000 miles away <br> berlin is 6000 miles away <br> london is 5500 miles away <br> u r 3000 miles away <br> ive closed my eyes and my bank account <br>and gone west"
@@ -9,7 +14,8 @@ const blogEntries = [
   {
     date: "2025-08-11",
     title: "dockweiler",
-    content: "hoy fui a la playa. tuve celos cuando los vi. "
+    content: "hoy fui a la playa. tuve celos cuando los vi. ",
+    images: ["img/blog/4F3B3C4F-73B2-4E28-B391-D2B4B2E37778_1_201_a.heic","img/blog/D8DDFE8B-C73E-44E4-BCDF-A9BCF879F2F0_1_105_c.jpeg"]
   },
   {
     date: "2025-08-10",
@@ -286,13 +292,6 @@ function loadProject(projectKey, clickedLink) {
   allLinks.forEach((link) => link.classList.remove("active"));
   if (clickedLink) clickedLink.classList.add("active");
 
-  
-  if (projectKey === "bio") {
-    setBioMode();
-  } else {
-    setNameMode();
-  }
-
 
 
   if (project) {
@@ -331,7 +330,8 @@ function toggleSection(clickedHeader) {
   const caption = document.getElementById("caption");
   gallery.innerHTML = "";
   caption.innerHTML = "";
-  if (blogFeed) blogFeed.innerHTML = "";
+
+  setNameMode();
 
   const targetId = clickedHeader.getAttribute("data-toggle-id");
   const targetList = document.getElementById(targetId);
@@ -364,7 +364,7 @@ function loadBlog() {
   
   gallery.innerHTML = "";
   caption.innerHTML = "";
-  blogDates.innerHTML = ""; // clear previous
+  blogDates.innerHTML = "";
 
   blogEntries.forEach((entry, index) => {
     const link = document.createElement("a");
@@ -397,7 +397,8 @@ function loadBlog() {
 
 document.addEventListener("DOMContentLoaded", () => {
   const hash = window.location.hash;
-  
+  preloadAllImages(projects, blogEntries);
+  loadProject("bio");
   preloadAllProjectImages(projects);
 
   if (hash === "#blog") {
@@ -406,9 +407,4 @@ document.addEventListener("DOMContentLoaded", () => {
       toggleSection(blogHeader);
     }
   }
-});
-
-document.addEventListener("DOMContentLoaded", () => {
-  preloadAllImages(projects, blogEntries);
-  loadProject("bio");
 });
