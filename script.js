@@ -292,34 +292,29 @@ function loadProject(projectKey, clickedLink) {
   allLinks.forEach((link) => link.classList.remove("active"));
   if (clickedLink) clickedLink.classList.add("active");
 
-
-
   if (project) {
     project.images.forEach((src, i) => {
-      const a = document.createElement("a");
-      a.href = src; // link to the image itself
-      a.target = "_blank"; // open in a new tab
-      a.rel = "noopener";
-
       const img = document.createElement("img");
       img.src = src;
       img.alt = project.title || "Project image";
       img.loading = "lazy";
       img.classList.add("lazy");
-      if (projectKey === "graphics") {
-        img.classList.add("graphic-border");
-      }
-      a.appendChild(img);
-      gallery.appendChild(a);
+      if (projectKey === "graphics") img.classList.add("graphic-border");
+
+      // Add click listener to open viewer
+      img.addEventListener("click", () => openImageViewer(project.images, i));
+
+      gallery.appendChild(img);
     });
 
     caption.innerHTML = `
       <h2>${project.title || ""}</h2>
-      ${project.year || project.medium ? `<p><il>${project.year} ${project.medium ? "· " + project.medium : ""}</il></p>` : ""}
+      ${project.year || project.medium ? `<p><i>${project.year} ${project.medium ? "· " + project.medium : ""}</i></p>` : ""}
       <p>${project.description || ""}</p>
     `;
   }
 }
+
 
 function toggleSection(clickedHeader) {
   const allHeaders = document.querySelectorAll(".nav h3");
@@ -394,6 +389,76 @@ function loadBlog() {
     blogFeed.appendChild(post);
   });
 }
+
+let viewerOverlay, viewerImg, currentIndex, viewerImages;
+
+function openImageViewer(images, index) {
+  viewerImages = images;
+  currentIndex = index;
+
+  // Create overlay if it doesn't exist
+  if (!viewerOverlay) {
+    viewerOverlay = document.createElement("div");
+    viewerOverlay.id = "image-viewer-overlay";
+    viewerOverlay.style.cssText = `
+      position: fixed;
+      top: 0; left: 0; width: 100%; height: 100%;
+      background: white;;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+    `;
+    
+    // Image element
+    viewerImg = document.createElement("img");
+    viewerImg.style.cssText = "max-width: 90%; max-height: 90%;";
+    viewerOverlay.appendChild(viewerImg);
+
+    // Close on click outside image
+    viewerOverlay.addEventListener("click", (e) => {
+      if (e.target === viewerOverlay) closeImageViewer();
+    });
+
+    // Navigation buttons
+    const createButton = (text, action) => {
+      const btn = document.createElement("button");
+      btn.innerText = text;
+      btn.style.cssText = `
+        position: absolute; top: 50%; transform: translateY(-50%);
+        font-size: small; color: black; background: none; border: none; cursor: pointer;
+        user-select: none; padding: 0 1rem;
+      `;
+      btn.addEventListener("click", action);
+      return btn;
+    };
+
+    const prevBtn = createButton("back", () => showImage(currentIndex - 1));
+    prevBtn.style.left = "10px";
+    const nextBtn = createButton("next", () => showImage(currentIndex + 1));
+    nextBtn.style.right = "10px";
+
+    viewerOverlay.appendChild(prevBtn);
+    viewerOverlay.appendChild(nextBtn);
+
+    document.body.appendChild(viewerOverlay);
+  }
+
+  showImage(currentIndex);
+  viewerOverlay.style.display = "flex";
+}
+
+function showImage(index) {
+  if (index < 0) index = viewerImages.length - 1;
+  if (index >= viewerImages.length) index = 0;
+  currentIndex = index;
+  viewerImg.src = viewerImages[currentIndex];
+}
+
+function closeImageViewer() {
+  if (viewerOverlay) viewerOverlay.style.display = "none";
+}
+
 
 document.addEventListener("DOMContentLoaded", () => {
   const hash = window.location.hash;

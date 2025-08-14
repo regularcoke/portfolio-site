@@ -214,7 +214,6 @@ h3.active {
         width: 92%;
         height: 20px;
           display: flex;
-        flex-direction: row;
         padding: 10px 36px;
         margin:0;
         right:0;
@@ -231,9 +230,9 @@ h3.active {
     }
 
     .container {
-        padding-top: 100px;
+        padding-top: 340px;
         margin-left: 0;
-        height: calc(100vh - 80px); /
+        height: calc(100vh - 100px); /
         overflow-y: scroll;
         padding-right: 0px;
     }
@@ -261,5 +260,8 @@ h3.active {
     a:hover {
   text-decoration: underline;
         color: black;
+    }
+    .footer{
+        display: none;
     }
 }
