@@ -45,8 +45,7 @@ a:hover {
 
 h1.active,
 h3.active {
-    text-decoration: underline;
-    
+    text-decoration: underline;  
 }
 
 .gallery {
@@ -146,7 +145,7 @@ h3.active {
 }
 
 .list a.active {
-  text-decoration: underline;
+  display: none;
 }
 
 .blog-entry {
@@ -189,35 +188,26 @@ h3.active {
 
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 1012px) and (-webkit-min-device-pixel-ratio: 2) {
-    body,
-    p,
-    h1,
-    h3,
-    #caption h2,
-    .list,
-    .blog-entry h2{
-        font-size: 40px!important;
+    body, p, h1, h3, #caption h2, .list, .blog-entry h2 {
+        font-size: 40px !important;
+    }
+    .blog-entry p, #caption p {
+        font-size: 30px !important;
     }
 
-    .blog-entry p,
-    #caption p
-    {
-        font-size: 30px!important;
-    }
-
+    /* Footer */
     .footer {
-        font-size: small !important;
-        position: absolute;
+        display: none;
     }
+
     .nav {
-        min-width: none;
+        position: static !important;
+        top: auto !important;
         width: 92%;
-        height: 20px;
-          display: flex;
+        height: auto;
+        display: flex;
         padding: 10px 36px;
-        margin:0;
-        right:0;
-        left:0;
+        margin: 0 auto;
         justify-content: space-between;
         gap: 20px;
     }
@@ -229,39 +219,44 @@ h3.active {
         gap: 40px;
     }
 
+    /* Container */
     .container {
-        padding-top: 340px;
+        padding-top: 10px; /* reduced since nav is no longer sticky */
         margin-left: 0;
-        height: calc(100vh - 100px); /
-        overflow-y: scroll;
-        padding-right: 0px;
+        height: auto; /* allow natural scrolling */
+        overflow-y: visible;
+        padding-right: 0;
     }
 
+    /* Lists */
     .list {
         padding-left: 36px;
         padding-top: 0;
         z-index: 1;
     }
-    
+
+    /* Gallery */
     .gallery {
         display: grid;
-        grid-template-columns: 1fr; /* 1 image per row */
+        grid-template-columns: 1fr; /* single column for mobile */
         gap: 10px;
         padding: 20px 36px;
     }
+
+    /* Caption */
     #caption {
-        padding: 0 36px 0 36px;
+        padding: 0 36px;
     }
-    #blogDates a{
+
+    /* Blog links spacing */
+    #blogDates a {
         padding-bottom: 20px;
+        display: block;
     }
-    h1:hover,
-    h3:hover,
-    a:hover {
-  text-decoration: underline;
+
+    /* Hover styles */
+    h1:hover, h3:hover, a:hover {
+        text-decoration: underline;
         color: black;
-    }
-    .footer{
-        display: none;
     }
 }
