@@ -2,9 +2,23 @@
 
 const blogEntries = [
   {
+    date: "2025-08-15",
+    title: "payments and deer",
+    content:"DEER BLOG,<br><br> I AM BACK.<br>im back.<br><br>+++<br><br>visual reference obj/s i found at the thrift in petaluma and didnt buy but mayb i should have<br>i will post all my visual references i have found IRL<br>if i had money i would buy them all<br>scan them<br>and make a book<br> just bc<br><br>mayb i will go back",
+    images:["img/blog/0F71F412-CFF1-441C-B058-171470E7712C_1_102_o.jpeg"],
+    images2:["img/blog/56F7A5FF-1BB1-4B00-84FC-58E714C01E42_1_105_c.jpeg","img/blog/F9742454-D44F-495B-BC7D-BE8335EFC571_1_105_c.jpeg"]
+  },
+  {
+    date: "2025-08-14",
+    title: "san francisco",
+    content: "on the road<br>i saw alcatraz and a fire",
+    images:["img/blog/CBDC6163-D908-41BF-9990-E913A955FA30_1_105_c.jpeg"]
+  },
+  {
     date: "2025-08-13",
     title: "es que acoso no me oyes?",
-    content: ""
+    content: "yo y mis tontas preguntas<br>tan si quiera me gusta la ropa que me pongo<br><br>+++<br><br>creo que perdi mi puta camera",
+    images:["img/blog/8D3F9523-4144-4DA3-A088-AB686DE867BB_1_105_c.jpeg"]
   },
   {
     date: "2025-08-12",
@@ -20,13 +34,13 @@ const blogEntries = [
   {
     date: "2025-08-10",
     title: "new month",
-    content: "my week summed up:",
-    images: []
+    content: "my week summed up:<br><br>A de ADRIAN",
+    images: ["img/blog/85C15C65-8F70-4363-BA2A-1F09BCBEBFAE_1_105_c.jpeg","img/blog/1FED3FEA-FBF7-46CF-85E7-649929793D11_1_102_o.jpeg","img/blog/C448FCF0-A32C-4B22-9AD6-2C14A9F60EAF_1_105_c.jpeg","img/blog/992AA1A0-7EBE-4685-8F32-7BD4DF000CB0_1_105_c.jpeg","img/blog/48FF0BEB-7BDD-4DF3-BC53-926541D863D2_1_102_o.jpeg"]
   },
   {
     date: "2025-08-01",
     title: "hbd",
-    content:""
+    content:"there could be more to say<br>there could always be more"
   },
   {
     date: "2025-07-31",
@@ -309,7 +323,7 @@ function loadProject(projectKey, clickedLink) {
 
     caption.innerHTML = `
       <h2>${project.title || ""}</h2>
-      ${project.year || project.medium ? `<p><i>${project.year} ${project.medium ? "· " + project.medium : ""}</i></p>` : ""}
+      ${project.year || project.medium ? `<p>${project.year} ${project.medium ? "· " + project.medium : ""}</p>` : ""}
       <p>${project.description || ""}</p>
     `;
   }
@@ -382,6 +396,11 @@ function loadBlog() {
       <p>${entry.content}</p>
       ${
         entry.images && entry.images.length? entry.images.map(src => `<img src="${src}" alt="${entry.title}" loading="lazy" />`).join("")
+          : ""
+      }
+      <p>${entry.content2 || ""}</p>
+      ${
+        entry.images2 && entry.images2.length? entry.images2.map(src => `<img src="${src}" alt="${entry.title}" loading="lazy" />`).join("")
           : ""
       }
     `;
