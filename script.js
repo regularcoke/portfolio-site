@@ -331,7 +331,6 @@ function loadProject(projectKey, clickedLink) {
       img.alt = project.title || "Project image";
       img.loading = "lazy";
       img.classList.add("lazy");
-      if (projectKey === "graphics") img.classList.add("graphic-border");
 
       // Add click listener to open viewer
       img.addEventListener("click", () => openImageViewer(project.images, i));
@@ -508,5 +507,11 @@ document.addEventListener("DOMContentLoaded", () => {
     if (blogHeader) {
       toggleSection(blogHeader);
     }
+  }
+});
+
+document.addEventListener("contextmenu", function(e) {
+  if (e.target.tagName === "IMG") {
+    e.preventDefault();
   }
 });
