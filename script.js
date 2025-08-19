@@ -2,6 +2,24 @@
 
 const blogEntries = [
   {
+    date: "2025-08-18",
+    title:"they want me back",
+    content:"im not going back<br>is it possible? <br>peace, i mean<br>nothing else",
+    images:["img/blog/500141BA-0969-49F4-83D3-E4DC4E7C01E8_1_102_o.jpeg"]
+  },
+  {
+    date: "2025-08-17",
+    title:"nuclear disarment",
+    content:"fuck ai ohh my god<br>its not a job",
+    images:["img/blog/B67DB976-9948-41F1-8960-3FE28E4B0B46_1_102_o.jpeg","img/blog/973F8233-951C-4B97-AE01-0D2E4DC5E1B0_1_201_a.heic","img/blog/F53A1E55-5610-4A83-BFB1-81D7448062FB_1_201_a.heic","img/blog/F89564B1-C1EA-4D68-9F94-66FC54431922_1_201_a.heic"]
+  },
+  {
+    date: "2025-08-16",
+    title: "amar",
+    content:"me pica<br><br>every ping and lack thereof",
+    images:["img/blog/E244C794-ADD3-4C7A-BBCF-4A590493DDA5_1_105_c.jpeg","img/blog/1FFCCD54-91C6-447A-AD6D-E4E9A6EBA9C9_1_201_a.heic","img/blog/1796976F-6F53-4671-83BF-10D773B2C86B_1_105_c.jpeg","img/blog/6305DC05-E497-4D83-A82C-3F88DE4B4C46_1_102_o.jpeg","img/blog/D39B174C-BE98-4CCF-A68D-A5AB8C23DB0C_1_105_c.jpeg"],
+  },
+  {
     date: "2025-08-15",
     title: "payments and deer",
     content:"DEER BLOG,<br><br> I AM BACK.<br>im back.<br><br>+++<br><br>visual reference obj/s i found at the thrift in petaluma and didnt buy but mayb i should have<br>i will post all my visual references i have found IRL<br>if i had money i would buy them all<br>scan them<br>and make a book<br> just bc<br><br>mayb i will go back",
