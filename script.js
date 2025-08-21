@@ -2,15 +2,32 @@
 
 const blogEntries = [
   {
+    date: "2025-08-21",
+    title: "",
+    content: "",
+
+  },
+  {
+    date:"2025-08-20",
+    title:"how to say goodbye:",
+    content:"i saw r today. it was hard to say goodbye<br>i hope all her dreams come true because she deserves it all<br>bc we are deserving of things<br><br>the answer? a print",
+    images:["img/blog/4BD8CE9A-1B8D-4E2E-A97F-84DF648E33FA_1_105_c.jpeg","img/blog/76D802C5-354E-473D-8C4D-14B11A41CE18_1_105_c.jpeg"]
+  },
+  {
+    date:"2025-08-19",
+    title:"how to say thank you:",
+    content:"i like her family, a lot<br>4vr gr8ful...<br><br>the answer? yellow roses"
+  },
+  {
     date: "2025-08-18",
-    title:"they want me back",
-    content:"im not going back<br>is it possible? <br>peace, i mean<br>nothing else",
+    title:"dim sum",
+    content:"they want me back<br>but im not going back<br><br>is it possible? <br>peace, i mean<br>nothing else",
     images:["img/blog/500141BA-0969-49F4-83D3-E4DC4E7C01E8_1_102_o.jpeg"]
   },
   {
     date: "2025-08-17",
     title:"nuclear disarment",
-    content:"fuck ai ohh my god<br>its not a job",
+    content:"fuck ai ohh my god<br>there ",
     images:["img/blog/B67DB976-9948-41F1-8960-3FE28E4B0B46_1_102_o.jpeg","img/blog/973F8233-951C-4B97-AE01-0D2E4DC5E1B0_1_201_a.heic","img/blog/F53A1E55-5610-4A83-BFB1-81D7448062FB_1_201_a.heic","img/blog/F89564B1-C1EA-4D68-9F94-66FC54431922_1_201_a.heic"]
   },
   {
