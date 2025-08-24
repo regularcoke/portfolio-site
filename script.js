@@ -2,9 +2,21 @@
 
 const blogEntries = [
   {
+    date: "2025-08-23",
+    title: "so this is goodbye",
+    content: "creo q si te viera en el pasillo del aeropuerto, seguiria tras de ti",
+  },
+  {
+    date: "2025-08-22",
+    title: "another one thank u",
+    content: "la cagamos",
+    images:["img/blog/4347511E-61E7-460F-8D54-57932B4FA4D4_1_105_c.jpeg","img/blog/53EC802F-9EB2-4E6A-BC13-0D6BAFB34707_1_105_c.jpeg"]
+  },
+  {
     date: "2025-08-21",
-    title: "",
-    content: "",
+    title: "a day",
+    content: "1. a print from oscar<br>2. me, leanne, and rachel<br>3. shooting w lorenzo + gray<br>4. waiting at the train station for rachel",
+    images:["img/blog/E3B29A83-9057-406A-AD34-4677EA460994_1_105_c.jpeg","img/blog/40FFAEEF-A4E6-454B-97F0-6248FA395A43_1_105_c.jpeg","img/blog/1A7DB2A0-66B3-4E87-8F5A-F8376828C9C4_1_102_o.jpeg","img/blog/5E3423D8-B95F-4171-B884-D80CF2EB60FC_1_102_o.jpeg"]
 
   },
   {
