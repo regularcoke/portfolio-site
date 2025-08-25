@@ -95,6 +95,10 @@ h3.active {
     background-color: transparent;
 }
 
+/* .nav-gray, .nav-gray a {
+  color: rgb(180, 180, 180) !important;
+} */
+
 .nav-body {
     display: flex;
     flex-direction: column;

@@ -1,6 +1,11 @@
 //BLOG ENTRIES//
 
 const blogEntries = [
+  {date: "2025-08-24",
+   title: "",
+   content: "desde que yo estoy aqui solo me siento morir, pero quiero morir muy lejos de ti",
+   images:[]
+  },
   {
     date: "2025-08-23",
     title: "so this is goodbye",
@@ -306,6 +311,7 @@ const projects = {
 function setBioMode() {
   document.getElementById("bio-text").style.display = "block";
   document.getElementById("name-heading").style.display = "none";
+  document.getElementById("nav").classList.remove("nav-gray");
 
   // Hide lists & deactivate nav
   document.querySelectorAll(".list").forEach(list => list.style.display = "none");
@@ -319,6 +325,7 @@ function setBioMode() {
 function setNameMode() {
   document.getElementById("bio-text").style.display = "none";
   document.getElementById("name-heading").style.display = "block";
+  document.getElementById("nav").classList.add("nav-gray");
 }
 
 function preloadAllImages(projects, blogEntries) {
