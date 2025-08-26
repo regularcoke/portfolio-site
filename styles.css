@@ -7,6 +7,8 @@ body {
 
 p {
     /*margin:0.3em;*/
+    font-size: 30px;
+    font-weight: 100;
     font-size: small;
 }
 h1 {
@@ -84,7 +86,7 @@ h3.active {
 }
 
 .nav {
-    padding-left: 20px;
+    padding-left: 15px;
     display: flex;
     flex-direction: column;
     min-width: fit-content;
@@ -119,13 +121,13 @@ h3.active {
     bottom: 0;
     right: 0;
     padding: 0 15px;
-    font-size: x-small;
+    font-size: small;
 }
 
 #caption {
     line-height: 1.4;
     color: black;
-    padding: 0 100px 0 36px;
+    padding: 10px 100px 0 36px;
 }
 
 #caption h2 {

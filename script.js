@@ -1,10 +1,11 @@
 //BLOG ENTRIES//
 
 const blogEntries = [
-  {date: "2025-08-24",
-   title: "",
-   content: "desde que yo estoy aqui solo me siento morir, pero quiero morir muy lejos de ti",
-   images:[]
+  {
+    date: "2025-08-24",
+    title: "... ... ..",
+    content: "desde que yo estoy aqui solo me siento morir, pero quiero morir muy lejos de ti",
+    images:[]
   },
   {
     date: "2025-08-23",
