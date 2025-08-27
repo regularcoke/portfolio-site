@@ -326,4 +326,7 @@ h3.active {
         text-decoration: underline;
         color: black;
     }
+    #user-clock {
+        font-size: 30px !important;
+    }
 }
