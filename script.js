@@ -17,7 +17,7 @@ const fotosEntries = [
 },
 {
   src:"img/blog2/75B1CC45-C7F7-4231-8D60-0D757AEE6649_1_102_o.jpeg",
-  caption:"i <3 the mall"
+  caption:"i <333 the mall"
 },
 {
   src:"img/blog2/0485F19C-C227-4A76-BC5F-CBEF37BA58EB_1_102_o.jpeg",
