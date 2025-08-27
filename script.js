@@ -51,10 +51,6 @@ const fotosEntries = [
   caption:"roma"
 },
 {
-  src:"img/blog2/IMG_0607.jpg",
-  caption:"un dia nacional"
-},
-{
   src:"img/blog2/IMG_0637.png",
   caption:"i will miss us"
 },
@@ -64,7 +60,7 @@ const fotosEntries = [
 },
 {
   src:"img/blog2/IMG_0721.jpg",
-  caption:"what's another year"
+  caption:"what's another year?"
 }
 ];
 
