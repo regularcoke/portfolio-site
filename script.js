@@ -4,7 +4,7 @@ const fotosEntries = [
 
  { 
   src: "img/blog2/BB5111F5-6294-4F61-A02C-7C91F0215A0A_1_102_o.jpeg", 
-  caption: "oakpark mall, kansas", 
+  caption: "oak park mall, kansas", 
   date: "2025 08 26" 
 },
 {
@@ -17,7 +17,7 @@ const fotosEntries = [
 },
 {
   src:"img/blog2/75B1CC45-C7F7-4231-8D60-0D757AEE6649_1_102_o.jpeg",
-  caption:"i ♡ the mall"
+  caption:"i <3 the mall"
 },
 {
   src:"img/blog2/0485F19C-C227-4A76-BC5F-CBEF37BA58EB_1_102_o.jpeg",
@@ -27,6 +27,44 @@ const fotosEntries = [
 {  src:"img/blog2/CD7EE6A9-32B6-40E8-B325-E048C7FEBA23_1_102_a.jpeg",
    caption:"me",
    date:"me"
+},
+{
+  src:"img/blog2/IMG_0921.JPG",
+  caption:"moving out",
+  date:"2025 08 23"
+},
+{
+  src:"img/blog2/IMG_0829.JPG",
+  caption:"born in arkansas",
+  date:"2025 08 02"
+},
+{
+  src:"img/blog2/IMG_0830.JPG",
+  caption:"raised in kansas",
+},
+{
+  src:"img/blog2/IMG_0838.JPG",
+  caption:"currently in los angeles"
+},
+{
+  src:"img/blog2/IMG_0871.JPG",
+  caption:"roma"
+},
+{
+  src:"img/blog2/IMG_0607.jpg",
+  caption:"un dia nacional"
+},
+{
+  src:"img/blog2/IMG_0637.png",
+  caption:"i will miss us"
+},
+{
+  src:"img/blog2/IMG_0647.jpg",
+  caption:""
+},
+{
+  src:"img/blog2/IMG_0721.jpg",
+  caption:"feliz cumpleaños"
 }
 ];
 
@@ -471,35 +509,38 @@ function loadFotos() {
     // --- Create feed entry container ---
     const entryDiv = document.createElement("div");
     entryDiv.className = "feed-entry";
-    entryDiv.id = `entry-${index}`;
+    entryDiv.id = entry.id || `entry-${index}`;
 
     const wrapper = document.createElement("div");
     wrapper.className = "image-wrapper";
 
-    // --- Create image ---
     const img = document.createElement("img");
     img.alt = entry.caption || "foto";
-    img.style.opacity = 0; // start invisible
+    img.style.opacity = 0; 
+     
 
-    // --- Overlay ---
     const overlay = document.createElement("div");
     overlay.className = "overlay";
-    overlay.innerHTML = `<div>${entry.caption}</div>`;
+    if (entry.id === "bio-photo") {
+  overlay.innerHTML = `<div style="color:black;">${entry.caption}</div>`;
+} else {
+  overlay.innerHTML = `<div>${entry.caption}</div>`;
+}
+
 
     wrapper.appendChild(img);
     wrapper.appendChild(overlay);
     entryDiv.appendChild(wrapper);
 
-    // --- Append entry after image loads ---
     img.onload = () => {
       img.style.transition = "opacity 1s ease";
-      img.style.opacity = 1; // fade in
+      img.style.opacity = 1; 
     };
-    img.src = entry.src; // start loading
+    img.src = entry.src; 
 
     camFeed.appendChild(entryDiv);
 
-    // --- Add date to nav ---
+
     const dateLink = document.createElement("a");
     dateLink.href = `#entry-${index}`;
     dateLink.textContent = entry.date;
@@ -646,4 +687,15 @@ document.addEventListener("contextmenu", function(e) {
     e.preventDefault();
   }
 });
-          document.addEventListener("DOMContentLoaded", loadFotos);
+
+document.addEventListener("DOMContentLoaded", () => {
+  loadFotos();
+
+  const bioBtn = document.getElementById("nav-bio");
+  bioBtn.addEventListener("click", () => {
+    const target = document.getElementById("bio-photo"); 
+    if (target) {
+      target.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  });
+});
