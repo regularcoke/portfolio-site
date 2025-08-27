@@ -21,7 +21,7 @@ const fotosEntries = [
 },
 {
   src:"img/blog2/0485F19C-C227-4A76-BC5F-CBEF37BA58EB_1_102_o.jpeg",
-  caption:"mi madre",
+  caption:"",
   date:"madre"
 },
 {  src:"img/blog2/CD7EE6A9-32B6-40E8-B325-E048C7FEBA23_1_102_a.jpeg",
@@ -64,7 +64,7 @@ const fotosEntries = [
 },
 {
   src:"img/blog2/IMG_0721.jpg",
-  caption:"feliz cumpleaños"
+  caption:"what's another year"
 }
 ];
 
