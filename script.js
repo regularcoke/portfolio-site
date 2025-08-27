@@ -468,28 +468,46 @@ function loadFotos() {
   camNav.innerHTML = "";
 
   fotosEntries.forEach((entry, index) => {
-    // --- Add image with overlay ---
-    camFeed.innerHTML += `
-      <div class="feed-entry" id="entry-${index}">
-        <div class="image-wrapper">
-          <img src="${entry.src}" alt="${entry.caption || "foto"}">
-          <div class="overlay">
-            <div>${entry.caption}</div>
-          </div>
-        </div>
-      </div>
-    `;
+    // --- Create feed entry container ---
+    const entryDiv = document.createElement("div");
+    entryDiv.className = "feed-entry";
+    entryDiv.id = `entry-${index}`;
+
+    const wrapper = document.createElement("div");
+    wrapper.className = "image-wrapper";
+
+    // --- Create image ---
+    const img = document.createElement("img");
+    img.alt = entry.caption || "foto";
+    img.style.opacity = 0; // start invisible
+
+    // --- Overlay ---
+    const overlay = document.createElement("div");
+    overlay.className = "overlay";
+    overlay.innerHTML = `<div>${entry.caption}</div>`;
+
+    wrapper.appendChild(img);
+    wrapper.appendChild(overlay);
+    entryDiv.appendChild(wrapper);
+
+    // --- Append entry after image loads ---
+    img.onload = () => {
+      img.style.transition = "opacity 1s ease";
+      img.style.opacity = 1; // fade in
+    };
+    img.src = entry.src; // start loading
+
+    camFeed.appendChild(entryDiv);
 
     // --- Add date to nav ---
     const dateLink = document.createElement("a");
     dateLink.href = `#entry-${index}`;
     dateLink.textContent = entry.date;
-    dateLink.style.display = "block"; // each date on its own line
+    dateLink.style.display = "block";
     dateLink.onclick = (e) => {
       e.preventDefault();
       document.getElementById(`entry-${index}`).scrollIntoView({ behavior: "smooth" });
     };
-
     camNav.appendChild(dateLink);
   });
 }

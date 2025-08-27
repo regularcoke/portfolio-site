@@ -35,10 +35,7 @@ a,
     padding-top: 5px;
     font-size: small;
 }
-.blog-list{
-     cursor: pointer;
-    padding-left: 3px;
-    padding-top: 10px;
+.nav-content{
     font-size: small;
 }
 
@@ -238,6 +235,13 @@ h3.active {
   font-size: 14px;
   text-align: center;      /
   pointer-events: none; 
+}
+
+.blog-list{
+     cursor: pointer;
+    padding-left: 3px;
+    padding-top: 10px;
+    font-size: small;
 }
 
 #user-clock {
