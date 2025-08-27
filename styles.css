@@ -21,6 +21,7 @@ h3 {
     font-weight: 100;
     margin: 0;
 }
+
 a,
 .list {
     color: black;
@@ -32,6 +33,13 @@ a,
     cursor: pointer;
     padding-left: 3px;
     padding-top: 5px;
+    font-size: small;
+}
+.blog-list{
+     cursor: pointer;
+    padding-left: 3px;
+    padding-top: 10px;
+    font-size: small;
 }
 
 #focusList,
@@ -155,7 +163,7 @@ h3.active {
 }
 
 .blog-entry {
-    padding-bottom: 50px;
+    padding-bottom: 40px;
 }
 
 .blog-entry h2 {
@@ -166,7 +174,7 @@ h3.active {
 .blog-entry p {
     line-height: 1.5;
     color: black;
-    padding: 0 100px 15px 36px;
+    padding: 0 100px 15px 0px;
 }
 
 
@@ -179,7 +187,7 @@ h3.active {
 }
 
 .blog-entry img {
-  display: block;   /* kills inline spacing */
+  display: block;   
   width: 100%;
   height: auto;
   margin: 0;
@@ -197,6 +205,40 @@ h3.active {
   transform: translateY(0);
 }
 
+//fotos//
+
+.feed-entry {
+  display: inline-block;
+  margin: 10px;
+  width: 300px; /* adjust as needed */
+}
+
+.image-wrapper {
+  position: relative; /* makes overlay positioned over image */
+  width: 100%;
+  display: block;
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.image-wrapper .overlay {
+  position: absolute; 
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* center horizontally & vertically */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  text-align: center;      /
+  pointer-events: none; 
+}
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 1012px) and (-webkit-min-device-pixel-ratio: 2) {
     body, p, h1, h3, #caption h2, .list, .blog-entry h2 {

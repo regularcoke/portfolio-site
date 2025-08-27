@@ -1,11 +1,46 @@
 //BLOG ENTRIES//
 
+const fotosEntries = [
+
+ { 
+  src: "img/blog2/BB5111F5-6294-4F61-A02C-7C91F0215A0A_1_102_o.jpeg", 
+  caption: "oakpark mall, kansas", 
+  date: "2025 08 26" 
+},
+{
+  src:"img/blog2/2EAF08FC-D90A-4E7E-8CCD-7D16CCA7CD79_1_102_o.jpeg",
+  caption: ""
+},
+{
+  src:"img/blog2/164C2B94-6D01-46F4-AAD7-2190658597DD_1_102_o.jpeg",
+  caption:"experimenting"
+},
+{
+  src:"img/blog2/75B1CC45-C7F7-4231-8D60-0D757AEE6649_1_102_o.jpeg",
+  caption:"i ♡ the mall"
+},
+{
+  src:"img/blog2/0485F19C-C227-4A76-BC5F-CBEF37BA58EB_1_102_o.jpeg",
+  caption:"mi madre",
+  date:"madre"
+},
+{  src:"img/blog2/CD7EE6A9-32B6-40E8-B325-E048C7FEBA23_1_102_a.jpeg",
+   caption:"me",
+   date:"me"
+}
+];
+
 const blogEntries = [
+  {
+    date: "2025-08-26",
+    title: "archive",
+    content: "this is the final entry of this blog<br>bc what the hell is the point of a public diary<br>move on<br>delete<br>archive<br>forget<br><a href=blog.html>remember</a>",
+    images:["img/blog/5BE475E2-AAAE-49A6-8F3D-2B20830F19B8_1_102_o.jpeg"]
+  },
   {
     date: "2025-08-24",
     title: "... ... ..",
-    content: "desde que yo estoy aqui solo me siento morir, pero quiero morir muy lejos de ti",
-    images:[]
+    content: "desde que yo estoy aqui solo me siento morir",
   },
   {
     date: "2025-08-23",
@@ -418,6 +453,47 @@ function toggleSection(clickedHeader) {
   }
 }
 
+function loadFotos() {
+  console.log("loadFotos running, entries:", fotosEntries);
+
+  const camFeed = document.getElementById("camFeed");
+  const camNav = document.getElementById("cam");
+
+  if (!camFeed || !camNav) {
+    console.error("camFeed or camNav not found");
+    return;
+  }
+
+  camFeed.innerHTML = "";
+  camNav.innerHTML = "";
+
+  fotosEntries.forEach((entry, index) => {
+    // --- Add image with overlay ---
+    camFeed.innerHTML += `
+      <div class="feed-entry" id="entry-${index}">
+        <div class="image-wrapper">
+          <img src="${entry.src}" alt="${entry.caption || "foto"}">
+          <div class="overlay">
+            <div>${entry.caption}</div>
+          </div>
+        </div>
+      </div>
+    `;
+
+    // --- Add date to nav ---
+    const dateLink = document.createElement("a");
+    dateLink.href = `#entry-${index}`;
+    dateLink.textContent = entry.date;
+    dateLink.style.display = "block"; // each date on its own line
+    dateLink.onclick = (e) => {
+      e.preventDefault();
+      document.getElementById(`entry-${index}`).scrollIntoView({ behavior: "smooth" });
+    };
+
+    camNav.appendChild(dateLink);
+  });
+}
+
 function loadBlog() {
   const gallery = document.getElementById("gallery");
   const caption = document.getElementById("caption");
@@ -552,3 +628,4 @@ document.addEventListener("contextmenu", function(e) {
     e.preventDefault();
   }
 });
+          document.addEventListener("DOMContentLoaded", loadFotos);
