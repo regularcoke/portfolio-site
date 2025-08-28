@@ -667,6 +667,11 @@ function closeImageViewer() {
   if (viewerOverlay) viewerOverlay.style.display = "none";
 }
 
+const el = document.getElementById("me");
+
+if (el && window.innerWidth > 1000) {  // only for desktop
+  el.addEventListener("click", yourFunction);
+}
 
 document.addEventListener("DOMContentLoaded", () => {
   const hash = window.location.hash;
