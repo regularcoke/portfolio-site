@@ -401,19 +401,10 @@ function setNameMode() {
   document.getElementById("nav").classList.add("nav-gray");
 }
 
-function preloadAllImages(projects, blogEntries) {
+function preloadAllImages(projects) {
   Object.values(projects).forEach((project) => {
     if (Array.isArray(project.images)) {
       project.images.forEach((src) => {
-        const img = new Image();
-        img.src = src;
-      });
-    }
-  });
-
-  blogEntries.forEach((entry) => {
-    if (Array.isArray(entry.images)) {
-      entry.images.forEach((src) => {
         const img = new Image();
         img.src = src;
       });
@@ -689,7 +680,7 @@ if (el && window.innerWidth > 1000) {  // only for desktop
 
 document.addEventListener("DOMContentLoaded", () => {
   const hash = window.location.hash;
-  preloadAllImages(projects, blogEntries);
+  preloadAllImages(projects);
   loadProject("bio");
   preloadAllProjectImages(projects);
 
