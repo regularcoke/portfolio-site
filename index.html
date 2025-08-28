@@ -1,9 +1,9 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8"/>
+        <meta charset="UTF-8" />
         <meta name="description" content="Hugo A. Marin is a Mexican multidisciplinary artist-designer creating work across physical and virtual spaces." />
-        <title>Hugo Adrian Marin</title>
+        <title>hugo adrian marin</title>
         <link rel="stylesheet" href="styles.css" />
         <script src="script.js" defer></script>
     </head>
@@ -17,65 +17,93 @@
 </script>
     <body>
         <div class="main">
-            <section class="nav" id="nav">
-                <section>
-                    <header>
-                        <h1 id="name-heading" style="display:none;" onclick="setBioMode()">Hugo Adrian Marin<br><br></h1>
-                    <p id="bio-text">Hugo Adrian Marin (b. 2001) is a Mexican multidisciplinary artist-designer working across physical and virtual spaces. Intimacy, performance, and queerness are central to Marin's artistic practice, while essentialist and spartan design choices define their design and typographic work. Their work is critical of internet culture and the performance of identities. They are currently based in Los Angeles, CA. #TIME2HAVEBOTH</p>
-                    </header>
-                </section>
-                <div class="nav-body">
-                    <section>
-                        <h3 style="cursor: pointer" data-toggle-id="worksList" onclick="toggleSection(this)">WORK</h3>
-                    </section>
-                    <section>
-                        <h3 style="cursor: pointer" data-toggle-id="resumeList" onclick="toggleSection(this)">
-                        #ME  
-                        </h3>
-                    </section>
-                     <section>
-                         <h3><a href="blog.html">Bloggggggggg</a></h3>
-                    </section>
-                </div>
-                <footer>
-                    <p><a href="mailto:hugoparizs@gmail.com">Email</a></p>
-                </footer>
-            </section>
-
-            <section class="container">
-                <section>
-                    <div class="list" id="worksList" style="display: none">
-    <p>2025 <a href="#" onclick="loadProject('proj2', this)">iheartwebcam.com</a></p>
-    <p>2025 <a href="#" onclick="loadProject('proj9', this)">MY SON IS A SOL(DIE)R</a></p>
-    <p>2025 <a href="#" onclick="loadProject('proj10', this)">quiero morir muy cerca de ti</a></p>
-    <p>2024 <a href="#" onclick="loadProject('proj1', this)">En Defensa de Mi Padre</a></p>
-    <p>2024 <a href="#" onclick="loadProject('proj5', this)">how life has felt ever since i turned 13</a></p>
-    <p>2024 <a href="#" onclick="loadProject('proj8', this)">Sex / Box</a></p>
-    <p>2024 <a href="#" onclick="loadProject('proj7', this)">A Webcam Photo Series</a></p>
-    <p>2023 <a href="#" onclick="loadProject('proj6', this)">EN/ES The Library of Babel</a></p>
-    <p>2022 <a href="#" onclick="loadProject('proj4', this)">Self Portrait on Webcam</a></p>
-</div>                   
-                    
-                    <div class="list" id="resumeList" style="display: none" >
-                        <p><a href="https://users.dma.ucla.edu/~hugoperez/">BA UCLA Design Media Arts (2025)</a></p>
-                        <p>
-                            <a
-                                href="https://docs.google.com/document/d/e/2PACX-1vTMGdbEE7yDFOYvxL4mQwBKC4P9VLan03VWlPu8n_QAPYPTUk0EHJEECBl_sbxUFWLt0MCw2Lm9Ak-y/pub">
-                                Resume
-                            </a>
+            <section class="nav">
+                <div>
+                    <p><a href="index.html">hugo adrian marin</a></p>
+                    <div class="nav-content">
+                    <br>
+                    <div><a href="work.html">work</a></div>
+                    <div id="bioToggle" style="cursor:pointer;"><a href="#me">bio</a></div>
+                    <div><a href="mailto:hugoparizs@gmail.com">contact</a></div>
+                    <br></br>
+                    <div><a href="blog.html">blog</a></div>
+                    <div><a href="https://www.instagram.com/withugo"
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        >instagram</a></div>
+                    <div class="blog-list" id="cam" style="display: none;">
+                        <p id="camDates">
                         </p>
-                        <p>
-                            <a href="https://www.instagram.com/withugo">www.instagram.com/withugo</a>
-                        </p>
+                    </div>
+                    </div>
+                <br><br>
+                <section>
+                    <div class="nav-content bio" id="bio">
+                        hugo a. marin (b. 2001) is a mexican multidisciplinary artist-designer creating work across physical and virtual spaces. their work is critical of internet culture and the performance of identities. their pratice consists of web, print, object, and image making. they are currently based in los angeles, ca. 
+                        <br><br>
+                        <a href="https://users.dma.ucla.edu/~hugoperez/"
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        >ba ucla design media arts</a>
+                        <br>
+                        <a href="https://docs.google.com/document/d/e/2PACX-1vTMGdbEE7yDFOYvxL4mQwBKC4P9VLan03VWlPu8n_QAPYPTUk0EHJEECBl_sbxUFWLt0MCw2Lm9Ak-y/pub"
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        >cv</a>
+                        <br>
+                        <a href="#me">
+                            me
+                        </a>
+                        <br><br> 
+                        #TIME2HAVEBOTH
                     </div>
                 </section>
                 <section>
-                    <p id="caption"></p>
-                    <div class="gallery" id="gallery"></div>
-                    <div class="blog-feed" id="blogFeed"></div>
-                    <p class="footer"><a href="blog-archived.html">☺</a></p>
+                    <footer class="nav-footer">
+                        <div>
+                            <div>© hugo adrian marin 2025</div>
+                        </div>
+                    </footer>
                 </section>
             </section>
+            <section class="container">
+                <section>
+                </section>
+                <section>
+                    <div class="cam-feed" id="camFeed"></div>
+                    <p class="footer"><a href="blog-archived.html">☹</a></p>
+                </section>
+            </section>
+            <div id="user-clock"></div>
         </div>
+        <script>
+            function updateClock() {
+  const clockEl = document.getElementById("user-clock");
+  if (!clockEl) return;
+
+  const now = new Date();
+
+  // Format date & time
+  const options = {
+    weekday: "short",    
+    year: "numeric",
+    month: "short",      
+    day: "numeric",
+    hour: "2-digit",
+    minute: "2-digit",
+    second: "2-digit",
+    hour12: false        
+  };
+
+  clockEl.textContent = now.toLocaleString(undefined, options);
+}
+
+setInterval(updateClock, 1000);
+updateClock(); 
+document.getElementById("bioToggle").addEventListener("click", function() {
+    const bio = document.getElementById("bio");
+    bio.classList.toggle("active");
+  });
+        </script>
     </body>
 </html>

@@ -23,7 +23,9 @@ const fotosEntries = [
   src:"img/blog2/0485F19C-C227-4A76-BC5F-CBEF37BA58EB_1_102_o.jpeg",
   caption:"",
 },
-{  src:"img/blog2/CD7EE6A9-32B6-40E8-B325-E048C7FEBA23_1_102_a.jpeg",
+{ 
+  id:"me",
+  src:"img/blog2/CD7EE6A9-32B6-40E8-B325-E048C7FEBA23_1_102_a.jpeg",
    caption:"me",
    date:"me"
 },
@@ -51,7 +53,8 @@ const fotosEntries = [
 },
 {
   src:"img/blog2/IMG_0637.png",
-  caption:"i will miss us"
+  caption:"i will miss us",
+  date:"you"
 },
 {
   src:"img/blog2/IMG_0647.jpg",
@@ -59,7 +62,8 @@ const fotosEntries = [
 },
 {
   src:"img/blog2/IMG_0721.jpg",
-  caption:"what's another year?"
+  caption:"what's another year?",
+  date:"happy birthday"
 }
 ];
 
@@ -542,7 +546,7 @@ function loadFotos() {
     dateLink.style.display = "block";
     dateLink.onclick = (e) => {
       e.preventDefault();
-      document.getElementById(`entry-${index}`).scrollIntoView({ behavior: "smooth" });
+      document.getElementById(`entry-${index}`).scrollIntoView({ behavior: "smooth", block:"start", inline:"nearest" });
     };
     camNav.appendChild(dateLink);
   });
@@ -592,6 +596,7 @@ function loadBlog() {
     blogFeed.appendChild(post);
   });
 }
+
 
 let viewerOverlay, viewerImg, currentIndex, viewerImages;
 
@@ -674,6 +679,10 @@ document.addEventListener("DOMContentLoaded", () => {
     if (blogHeader) {
       toggleSection(blogHeader);
     }
+  }
+  if (window.location.pathname.includes("work.html")) {
+    const firstLink = document.querySelector("#worksList a"); 
+    loadProject("proj2", firstLink);
   }
 });
 

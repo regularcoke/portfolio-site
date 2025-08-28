@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="description" content="Hugo A. Marin is a Mexican multidisciplinary artist-designer creating work across physical and virtual spaces." />
+        <title>Hugo Adrian Marin</title>
+        <link rel="stylesheet" href="styles.css" />
+        <script src="script.js" defer></script>
+    </head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HZF988JHMQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-HZF988JHMQ');
+</script>
+    <body>
+        <div class="main">
+            <section class="nav" id="nav">
+                <section>
+                    <header>
+                        <h1 id="name-heading" style="display:none;" onclick="setBioMode()">Hugo Adrian Marin<br><br></h1>
+                    <p id="bio-text">Hugo Adrian Marin (b. 2001) is a Mexican multidisciplinary artist-designer working across physical and virtual spaces. Intimacy, performance, and queerness are central to Marin's artistic practice, while essentialist and spartan design choices define their design and typographic work. Their work is critical of internet culture and the performance of identities. They are currently based in Los Angeles, CA. #TIME2HAVEBOTH</p>
+                    </header>
+                </section>
+                <div class="nav-body">
+                    <section>
+                        <h3 style="cursor: pointer" data-toggle-id="worksList" onclick="toggleSection(this)">WORK</h3>
+                    </section>
+                    <section>
+                        <h3 style="cursor: pointer" data-toggle-id="resumeList" onclick="toggleSection(this)">
+                        #ME  
+                        </h3>
+                    </section>
+                     <section>
+                         <h3><a href="blog.html">Bloggggggggg</a></h3>
+                    </section>
+                </div>
+                <div>
+                    <p><a href="mailto:hugoparizs@gmail.com">Email</a></p>
+                </div>
+            </section>
+
+            <section class="container">
+                <section>
+                    <div class="list" id="worksList" style="display: none">
+    <p>2025 <a href="#" onclick="loadProject('proj2', this)">iheartwebcam.com</a></p>
+    <p>2025 <a href="#" onclick="loadProject('proj9', this)">MY SON IS A SOL(DIE)R</a></p>
+    <p>2025 <a href="#" onclick="loadProject('proj10', this)">quiero morir muy cerca de ti</a></p>
+    <p>2024 <a href="#" onclick="loadProject('proj1', this)">En Defensa de Mi Padre</a></p>
+    <p>2024 <a href="#" onclick="loadProject('proj5', this)">how life has felt ever since i turned 13</a></p>
+    <p>2024 <a href="#" onclick="loadProject('proj8', this)">Sex / Box</a></p>
+    <p>2024 <a href="#" onclick="loadProject('proj7', this)">A Webcam Photo Series</a></p>
+    <p>2023 <a href="#" onclick="loadProject('proj6', this)">EN/ES The Library of Babel</a></p>
+    <p>2022 <a href="#" onclick="loadProject('proj4', this)">Self Portrait on Webcam</a></p>
+</div>                   
+                    
+                    <div class="list" id="resumeList" style="display: none" >
+                        <p><a href="https://users.dma.ucla.edu/~hugoperez/"
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            >BA UCLA Design Media Arts (2025)</a></p>
+                        <p>
+                            <a
+                                href="https://docs.google.com/document/d/e/2PACX-1vTMGdbEE7yDFOYvxL4mQwBKC4P9VLan03VWlPu8n_QAPYPTUk0EHJEECBl_sbxUFWLt0MCw2Lm9Ak-y/pub"
+                                target="_blank" 
+                                rel="noopener noreferrer"
+                                >Resume
+                            </a>
+                        </p>
+                        <p>
+                            <a href="https://www.instagram.com/withugo">www.instagram.com/withugo</a>
+                        </p>
+                    </div>
+                </section>
+                <section>
+                    <p id="caption"></p>
+                    <div class="gallery" id="gallery"></div>
+                    <div class="blog-feed" id="blogFeed"></div>
+                    <p class="footer"><a href="blog-archived.html">☺</a></p>
+                </section>
+            </section>
+        </div>
+    </body>
+</html>

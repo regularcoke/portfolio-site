@@ -29,15 +29,22 @@ a,
 }
 
 .list {
-    line-height: 5px;
-    cursor: pointer;
-    padding-left: 3px;
-    padding-top: 5px;
+    font-size: small;
+}
+
+.worksList{
+    margin-top:10px;
     font-size: small;
 }
 .nav-content{
+    min-width: 200px;
     max-width: 225px;
     font-size: small;
+}
+
+.nav-footer{
+    font-size: small;
+    margin-bottom: 10px;
 }
 
 #focusList,
@@ -121,7 +128,10 @@ h3.active {
     overflow-y: scroll;
     padding-right: 100px;
 }
-
+footer{
+    position: absolute;
+    bottom:0;
+}
 .footer {
     position: absolute;
     bottom: 0;
@@ -131,16 +141,14 @@ h3.active {
 }
 
 #caption {
-    line-height: 1.4;
+    line-height: 1.2;
     color: black;
-    padding: 10px 100px 0 36px;
+    padding: 0 200px 100px 90px;
 }
 
 #caption h2 {
-    text-decoration: underline;
     font-size: small;
     font-weight: 100;
-    margin-bottom: 0.5rem;
 }
 
 #caption il {
@@ -149,7 +157,6 @@ h3.active {
 
 #caption p {
     margin: 0.5rem 0;
-    line-height: 1.5em;
 }
 
 .graphic-border {
@@ -203,6 +210,17 @@ h3.active {
   transform: translateY(0);
 }
 
+#bio {
+  opacity: 0;
+  max-height: 0;    
+  transition: opacity 1s ease, max-height 1s ease;
+}
+
+#bio.active {
+  opacity: 1;
+  max-height: 1000px;    
+}
+
 //fotos//
 
 .feed-entry {
@@ -227,14 +245,14 @@ h3.active {
   position: absolute; 
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); /* center horizontally & vertically */
+  transform: translate(-50%, -50%); 
   color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: 14px;
-  text-align: left;      
+  font-size: small;
+  text-align: center;      
   text-transform: lowercase;
 }
 
@@ -260,8 +278,9 @@ h3.active {
   z-index: 10;
 }
 
+
 @media only screen and (min-device-width: 320px) and (max-device-width: 1012px) and (-webkit-min-device-pixel-ratio: 2) {
-    body, p, h1, h3, #caption h2, .list, .blog-entry h2 {
+    p, h1, h3, #caption h2, .blog-entry h2 {
         font-size: 40px !important;
     }
     .blog-entry p, #caption p {
@@ -294,7 +313,6 @@ h3.active {
 
     /* Container */
     .container {
-        padding-top: 10px; /* reduced since nav is no longer sticky */
         margin-left: 0;
         height: auto; /* allow natural scrolling */
         overflow-y: visible;
@@ -303,9 +321,7 @@ h3.active {
 
     /* Lists */
     .list {
-        padding-left: 36px;
-        padding-top: 0;
-        z-index: 1;
+        font-size: 30px;
     }
 
     /* Gallery */
@@ -313,12 +329,11 @@ h3.active {
         display: grid;
         grid-template-columns: 1fr; /* single column for mobile */
         gap: 10px;
-        padding: 20px 36px;
     }
 
     /* Caption */
     #caption {
-        padding: 0 36px;
+        padding: 0 36px 136px 36px;
     }
 
     /* Blog links spacing */
@@ -334,5 +349,22 @@ h3.active {
     }
     #user-clock {
         font-size: 30px !important;
+    }
+    .nav-content{
+        font-size: 30px ;
+        max-width: 100%;
+    }
+    .blog-list{
+        font-size: 30px;
+    }
+
+    .nav-footer{
+        position: fixed;
+        bottom:0;
+        z-index: 10;
+        font-size: 30px;
+    }
+    .image-wrapper .overlay {
+        font-size: medium;
     }
 }
