@@ -63,7 +63,7 @@ const fotosEntries = [
 {
   src:"img/blog2/IMG_0721.jpg",
   caption:"what's another year?",
-  date:"happy birthday"
+  date:"feliz"
 }
 ];
 
