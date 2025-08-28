@@ -505,7 +505,6 @@ function loadFotos() {
   camNav.innerHTML = "";
 
   fotosEntries.forEach((entry, index) => {
-    // --- Create feed entry container ---
     const entryDiv = document.createElement("div");
     entryDiv.className = "feed-entry";
     entryDiv.id = entry.id || `entry-${index}`;
@@ -513,32 +512,42 @@ function loadFotos() {
     const wrapper = document.createElement("div");
     wrapper.className = "image-wrapper";
 
+    // 🔹 Added: ensure relative positioning for loader/overlay
+    wrapper.style.position = "relative";  
+
+    const loader = document.createElement("div");
+    loader.className = "loader";
+    loader.innerText = "loading...";
+    wrapper.appendChild(loader);
+
     const img = document.createElement("img");
     img.alt = entry.caption || "foto";
-    img.style.opacity = 0; 
-     
+    img.loading = "lazy"; 
+    img.style.opacity = 0;
+
+    // 🔹 Moved here: set transition before image load
+    img.style.transition = "opacity 1s ease";  
 
     const overlay = document.createElement("div");
     overlay.className = "overlay";
     if (entry.id === "bio-photo") {
-  overlay.innerHTML = `<div style="color:black;">${entry.caption}</div>`;
-} else {
-  overlay.innerHTML = `<div>${entry.caption}</div>`;
-}
-
+      overlay.innerHTML = `<div style="color:black;">${entry.caption}</div>`;
+    } else {
+      overlay.innerHTML = `<div>${entry.caption}</div>`;
+    }
 
     wrapper.appendChild(img);
     wrapper.appendChild(overlay);
     entryDiv.appendChild(wrapper);
 
     img.onload = () => {
-      img.style.transition = "opacity 1s ease";
+      // 🔹 Added safety check before removing loader
+      if (loader && loader.parentNode) loader.remove();  
       img.style.opacity = 1; 
     };
+
     img.src = entry.src; 
-
     camFeed.appendChild(entryDiv);
-
 
     const dateLink = document.createElement("a");
     dateLink.href = `#entry-${index}`;
@@ -546,11 +555,16 @@ function loadFotos() {
     dateLink.style.display = "block";
     dateLink.onclick = (e) => {
       e.preventDefault();
-      document.getElementById(`entry-${index}`).scrollIntoView({ behavior: "smooth", block:"start", inline:"nearest" });
+      document.getElementById(`entry-${index}`).scrollIntoView({ 
+        behavior: "smooth", 
+        block: "start", 
+        inline: "nearest" 
+      });
     };
     camNav.appendChild(dateLink);
   });
 }
+
 
 function loadBlog() {
   const gallery = document.getElementById("gallery");
@@ -670,7 +684,7 @@ function closeImageViewer() {
 const el = document.getElementById("me");
 
 if (el && window.innerWidth > 1000) {  // only for desktop
-  el.addEventListener("click", yourFunction);
+  el.addEventListener("click", me);
 }
 
 document.addEventListener("DOMContentLoaded", () => {
