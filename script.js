@@ -1,7 +1,11 @@
 //BLOG ENTRIES//
 
 const fotosEntries = [
-
+  {
+    src:"img/blog2/IMG_1015.JPG",
+    caption:"maybe if we looked alike it would have worked",
+    date:"$7.99"
+  },
  { 
   src: "img/blog2/BB5111F5-6294-4F61-A02C-7C91F0215A0A_1_102_o.jpeg", 
   caption: "oak park mall, kansas", 
@@ -26,8 +30,11 @@ const fotosEntries = [
 { 
   id:"me",
   src:"img/blog2/CD7EE6A9-32B6-40E8-B325-E048C7FEBA23_1_102_a.jpeg",
-   caption:"me",
-   date:"me"
+  caption:"me",
+  date:"me"
+},
+{
+  src:"img/blog2/IMG_0974.jpg"
 },
 {
   src:"img/blog2/IMG_0921.JPG",
@@ -49,7 +56,7 @@ const fotosEntries = [
 },
 {
   src:"img/blog2/IMG_0871.JPG",
-  caption:"roma"
+  caption:"roma",
 },
 {
   src:"img/blog2/IMG_0637.png",
@@ -64,6 +71,10 @@ const fotosEntries = [
   src:"img/blog2/IMG_0721.jpg",
   caption:"what's another year?",
   date:"feliz"
+},
+{
+  src:"img/blog2/IMG_0727.jpg",
+  caption:"it could be sweet"
 }
 ];
 
