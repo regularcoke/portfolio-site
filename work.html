@@ -19,10 +19,10 @@
         <div class="main">
             <section class="nav">
                 <div>
-                    <p><a href="index.html">hugo adrian marin</a></p>
+                    <p><a href="https://hugoadrianmarin.online">hugo adrian marin</a></p>
                     <div class="nav-content">
                     <br>
-                    <div>los angeles</div>
+                    <div>los angeles ↔ mexico city</div>
                     <div><a href="mailto:hugoparizs@gmail.com">hugoparizs@gmail.com</a></div>
                     <div><a href="https://www.instagram.com/withugo"
                         target="_blank" 
@@ -40,7 +40,7 @@
     <div><a href="#" onclick="loadProject('proj7', this)">A Webcam Photo Series</a></div>
     <div><a href="#" onclick="loadProject('proj6', this)">EN/ES The Library of Babel</a></div>
     <div><a href="#" onclick="loadProject('proj4', this)">Self Portrait on Webcam</a></div>
-    <div><a href="blog.html">blogggggggggg</a></div>
+    <div><a href="https://hugoadrianmarin.online/blog" target="_blank" rel="noopener noreferrer">blogggggggggg</a></div>
 </section>
                     </div>
                     </div>
@@ -60,6 +60,33 @@
                     <p class="footer"><a href="blog-archived.html">☺</a></p>
                 </section>
             </section>
+            <div id="user-clock"></div>
         </div>
+        <script>
+            function updateClock() {
+  const clockEl = document.getElementById("user-clock");
+  if (!clockEl) return;
+
+  const now = new Date();
+
+  // Format date & time
+  const options = {
+    weekday: "long",    
+    year: "numeric",
+    month: "short",      
+    day: "numeric",
+    hour: "2-digit",
+    minute: "2-digit",
+    second: "2-digit",
+    hour12: false        
+  };
+
+  clockEl.textContent = now.toLocaleString(undefined, options);
+  clockEl.style.color = "black";
+}
+
+setInterval(updateClock, 1000);
+updateClock(); 
+        </script>
     </body>
 </html>
