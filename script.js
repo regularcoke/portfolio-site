@@ -252,6 +252,7 @@ const blogEntries = [
 
 const projects = {
   proj1: {
+    slug: "en-defensa-de-mi-padre",
     images: ["img/idomf1.png", "img/idomf2.jpeg"],
     title: "En Defensa de Mi Padre",
     year: "2024",
@@ -260,6 +261,7 @@ const projects = {
       "Prototype welded steel belt buckle. Commemortaing bull riding, this piece reimagines the traditional buckle—transforming a symbol of masculinity into an object of protection. In this context, the belt buckle functions not only utilitarian but as an exaggerated symbol of hypermasculinity—often oversized, ornate, and awarded as a trophy. This piece critically reinterprets the buckle's role, transforming it from a performative emblem of dominance into a defensive form—recasting the object as both artifact and armor."
   },
   proj2: {
+    slug: "iheartwebcam",
     images: ["img/iheartwebcam_still1.png", "img/iheartwebcam_still4.png", "img/iheartwebcam_still3.png", "img/iheartwebcam_still8.png", "img/iheartwebcam_still7.png"],
     title: "iheartwebcam.com",
     year: "2025",
@@ -276,6 +278,7 @@ const projects = {
       "Otto is a digital plush brought into the physical world. Otto was created as a digital gift to comfort a loved one 3000 miles away. Existing in the digital world, Otto reflects how virtual spaces offer the ability to connect when loved ones are far away."
   },
   proj4: {
+    slug: "self-portrait",
     images: ["img/self portrait img 1.jpg", "img/self portrait img 2.jpg", "img/selfportrait-4.jpg"],
     title: "Untitled (Self Portrait on Webcam)",
     year: "2022",
@@ -284,6 +287,7 @@ const projects = {
       "A self portait composed on the webcam. This collection of personal objects display a movement bewteen feminity and masculinity."
   },
   proj5: {
+    slug: "how-life-has-felt-ever-since-i-turned-13",
     images: ["img/howlifehasfelt.png", "img/howlifehasfelt2.png", "img/howlifehasfelt3.png"],
     title: "how life has felt ever since i have turned 13",
     year: "2024",
@@ -292,6 +296,7 @@ const projects = {
       'A scroll-through web story depicting adolescent dysphoria, told through the captions of femcel memes. This net.art piece depicts  gender dysphoria in response to popular internet cultures. By configuring and distorting adobe stock images with unexpected silohuetts, these new genre of silhouettes disrupt the homogeneity of commercial stock imagery. Find a live version here: <a href=" https://users.dma.ucla.edu/~hugoperez/p3/" target="_blank" rel="noopener">how life has felt ever since i turned 13</a>'
   },
   proj6: {
+    slug: "library-of-babel",
     images: [
       "img/libraryofbabel1.jpeg",
       "img/libraryofbabel2.jpeg",
@@ -307,6 +312,7 @@ const projects = {
   },
 
   proj7: {
+    slug: "a-webcam-photo-series",
     images: [
       "img/webcamphotoseries1.png",
       "img/webcamphotoseries2.png",
@@ -324,6 +330,7 @@ const projects = {
   },
   
    proj8: {
+    slug: "sex-box",
     images: [
       "img/sex:box1.png"
     ],
@@ -335,6 +342,7 @@ const projects = {
   },
   
   proj9: {
+    slug: "my-son-is-a-soldier",
     images: [
       "img/mysonisasoldier9.png",
       "img/mysonisasoldier2.png",
@@ -352,6 +360,7 @@ const projects = {
   },
   
   proj10: {
+    slug: "quiero-morir-muy-cerca-de-ti",
     images: [
       "img/quieromorir1.jpeg",
       "img/quieromorir2.jpeg",
@@ -423,6 +432,40 @@ function preloadAllImages(projects) {
   });
 }
 
+// function loadProject(projectKey, clickedLink) {
+//   const gallery = document.getElementById("gallery");
+//   const caption = document.getElementById("caption");
+//   gallery.innerHTML = "";
+//   caption.innerHTML = "";
+
+//   const project = projects[projectKey];
+  
+//   const allLinks = document.querySelectorAll(".list a");
+//   allLinks.forEach((link) => link.classList.remove("active"));
+//   if (clickedLink) clickedLink.classList.add("active");
+
+//   if (project) {
+//     project.images.forEach((src, i) => {
+//       const img = document.createElement("img");
+//       img.src = src;
+//       img.alt = project.title || "Project image";
+//       img.loading = "lazy";
+//       img.classList.add("lazy");
+
+//       // Add click listener to open viewer
+//       img.addEventListener("click", () => openImageViewer(project.images, i));
+
+//       gallery.appendChild(img);
+//     });
+
+//     caption.innerHTML = `
+//       <h2>${project.title || ""}</h2>
+//       ${project.year || project.medium ? `<p>${project.year} ${project.medium ? "· " + project.medium : ""}</p>` : ""}
+//       <p>${project.description || ""}</p>
+//     `;
+//   }
+// }
+
 function loadProject(projectKey, clickedLink) {
   const gallery = document.getElementById("gallery");
   const caption = document.getElementById("caption");
@@ -431,11 +474,13 @@ function loadProject(projectKey, clickedLink) {
 
   const project = projects[projectKey];
   
+  // Remove active class from all links
   const allLinks = document.querySelectorAll(".list a");
   allLinks.forEach((link) => link.classList.remove("active"));
   if (clickedLink) clickedLink.classList.add("active");
 
   if (project) {
+    // --- Build Gallery ---
     project.images.forEach((src, i) => {
       const img = document.createElement("img");
       img.src = src;
@@ -449,13 +494,38 @@ function loadProject(projectKey, clickedLink) {
       gallery.appendChild(img);
     });
 
+    // --- Build Caption ---
     caption.innerHTML = `
       <h2>${project.title || ""}</h2>
-      ${project.year || project.medium ? `<p>${project.year} ${project.medium ? "· " + project.medium : ""}</p>` : ""}
+      ${
+        project.year || project.medium
+          ? `<p>${project.year} ${project.medium ? "· " + project.medium : ""}</p>`
+          : ""
+      }
       <p>${project.description || ""}</p>
     `;
+
+    // --- Generate Slug from Title ---
+    if (project.title) {
+      const slug = project.title
+        .toLowerCase()
+        .normalize("NFD")                   // split accents
+        .replace(/[\u0300-\u036f]/g, "")    // remove accents
+        .replace(/[^a-z0-9\s-]/g, "")       // remove punctuation/symbols
+        .trim()
+        .replace(/\s+/g, "-");              // spaces → hyphens
+
+      // Update URL without reload
+      const url = new URL(window.location);
+      url.pathname = "/" + slug;
+      window.history.pushState({}, "", url);
+    }
   }
 }
+
+
+
+
 
 
 function toggleSection(clickedHeader) {
