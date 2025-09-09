@@ -3,24 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <title>Redirecting...</title>
+  <link rel="stylesheet" href="styles.css" />
   <script>
-    (function() {
-      // Get the current path, e.g. /my-son-is-a-soldier
-      const path = window.location.pathname;
+(function() {
+  // Get the current path, e.g. /my-son-is-a-soldier
+  const path = window.location.pathname;
 
-      // Extract the last segment as slug
-      const parts = path.split("/").filter(Boolean);
-      const slug = parts.length ? parts[parts.length - 1] : null;
+  // Extract parts, ignoring "work"
+  const parts = path.split("/").filter(Boolean);
+  let slug = null;
 
-      if (slug) {
-        // Always go to /work/#/slug
-        window.location.replace("/work/#/" + slug);
-      } else {
-        // If no slug, just go to /work
-        window.location.replace("/work/");
-      }
-    })();
-  </script>
+  // If the path is only "work", don’t treat it as a slug
+  if (parts.length > 0 && parts[0] !== "work") {
+    slug = parts[parts.length - 1];
+  }
+
+  if (slug) {
+    // Redirect to /work/#/slug
+    window.location.replace("/work/#/" + slug);
+  } else {
+    // Just go to /work if no slug
+    window.location.replace("/work/");
+  }
+})();
+</script>
 </head>
 <body>
   <p style="font-family: Helvetica, sans-serif;"><a href="https://hugoadrianmarin.online/work">click here if you are not redirected</a></p>
