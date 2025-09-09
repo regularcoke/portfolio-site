@@ -5,13 +5,18 @@
   <title>Redirecting...</title>
   <script>
     (function() {
-      const path = window.location.pathname;   // e.g. /my-son-is-a-soldier
-      const slug = path.split("/").filter(Boolean).pop();
+      // Get the current path, e.g. /my-son-is-a-soldier
+      const path = window.location.pathname;
+
+      // Extract the last segment as slug
+      const parts = path.split("/").filter(Boolean);
+      const slug = parts.length ? parts[parts.length - 1] : null;
 
       if (slug) {
-        // Redirect to /work/ but keep slug in hash
+        // Always go to /work/#/slug
         window.location.replace("/work/#/" + slug);
       } else {
+        // If no slug, just go to /work
         window.location.replace("/work/");
       }
     })();
