@@ -505,22 +505,22 @@ function loadProject(projectKey, clickedLink) {
       <p>${project.description || ""}</p>
     `;
 
-    // --- Generate Slug from Title ---
-if (project.title) {
-  const slug = project.title
-    .toLowerCase()
-    .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "")
-    .replace(/[^a-z0-9\s-]/g, "")
-    .trim()
-    .replace(/\s+/g, "-");
+//     // --- Generate Slug from Title ---
+// if (project.title) {
+//   const slug = project.title
+//     .toLowerCase()
+//     .normalize("NFD")
+//     .replace(/[\u0300-\u036f]/g, "")
+//     .replace(/[^a-z0-9\s-]/g, "")
+//     .trim()
+//     .replace(/\s+/g, "-");
 
-  // Keep clean URL in address bar
-  const url = new URL(window.location);
-  url.pathname = "/" + slug;
-  url.hash = ""; // clear hash
-  window.history.pushState({}, "", url);
-}
+//   // Keep clean URL in address bar
+//   const url = new URL(window.location);
+//   url.pathname = "/" + slug;
+//   url.hash = ""; // clear hash
+//   window.history.pushState({}, "", url);
+// }
   }
 }
 
