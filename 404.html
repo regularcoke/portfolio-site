@@ -5,18 +5,14 @@
   <title>Redirecting...</title>
   <script>
     (function() {
-      // Get the full path after your domain, e.g. "/my-son-is-a-soldier"
-      const path = window.location.pathname;
-
-      // Extract just the slug (last segment)
+      const path = window.location.pathname;   // e.g. /my-son-is-a-soldier
       const slug = path.split("/").filter(Boolean).pop();
 
       if (slug) {
-        // Redirect to /work with slug preserved
-        window.location.replace("/work?slug=" + slug);
+        // Redirect to /work/ but keep slug in hash
+        window.location.replace("/work/#/" + slug);
       } else {
-        // Fallback to main work page
-        window.location.replace("/work");
+        window.location.replace("/work/");
       }
     })();
   </script>

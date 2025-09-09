@@ -506,22 +506,55 @@ function loadProject(projectKey, clickedLink) {
     `;
 
     // --- Generate Slug from Title ---
-    if (project.title) {
-      const slug = project.title
-        .toLowerCase()
-        .normalize("NFD")                   // split accents
-        .replace(/[\u0300-\u036f]/g, "")    // remove accents
-        .replace(/[^a-z0-9\s-]/g, "")       // remove punctuation/symbols
-        .trim()
-        .replace(/\s+/g, "-");              // spaces → hyphens
+if (project.title) {
+  const slug = project.title
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/[^a-z0-9\s-]/g, "")
+    .trim()
+    .replace(/\s+/g, "-");
 
-      // Update URL without reload
-      const url = new URL(window.location);
-      url.pathname = "/" + slug;
-      window.history.pushState({}, "", url);
-    }
+  // Keep clean URL in address bar
+  const url = new URL(window.location);
+  url.pathname = "/" + slug;
+  url.hash = ""; // clear hash
+  window.history.pushState({}, "", url);
+}
   }
 }
+
+function getSlugFromHash() {
+  const hash = window.location.hash; // e.g. "#/my-son-is-a-soldier"
+  if (!hash.startsWith("#/")) return null;
+  return hash.slice(2); // remove "#/"
+}
+
+window.addEventListener("DOMContentLoaded", () => {
+  const slug = getSlugFromHash();
+  if (!slug) return;
+
+  // Find matching project
+  const projectKey = Object.keys(projects).find(key => {
+    const project = projects[key];
+    if (!project.title) return false;
+
+    const projectSlug = project.title
+      .toLowerCase()
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .replace(/[^a-z0-9\s-]/g, "")
+      .trim()
+      .replace(/\s+/g, "-");
+
+    return projectSlug === slug;
+  });
+
+  if (projectKey) {
+    loadProject(projectKey);
+  }
+});
+
 
 
 
