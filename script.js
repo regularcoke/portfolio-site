@@ -551,8 +551,9 @@ window.addEventListener("DOMContentLoaded", () => {
   });
 
   if (projectKey) {
-    loadProject(projectKey);
-  }
+  const link = document.querySelector(`.list a[href="/${slug}"]`);
+  loadProject(projectKey, link);
+}
 });
 
 
