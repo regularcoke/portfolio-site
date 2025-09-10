@@ -515,14 +515,13 @@ if (project.title) {
     .trim()
     .replace(/\s+/g, "-");
 
-  // Only rewrite if not already at /work/#/slug
-  if (!window.location.hash.startsWith("#/")) {
-    const url = new URL(window.location);
-    url.pathname = "/" + slug;
-    url.hash = "";
-    window.history.pushState({}, "", url);
-  }
+  // Keep clean URL in address bar
+  const url = new URL(window.location);
+  url.pathname = "/" + slug;
+  url.hash = ""; // clear hash
+  window.history.pushState({}, "", url);
 }
+  }
 }
 
 function getSlugFromHash() {

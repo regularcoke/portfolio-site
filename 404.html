@@ -5,20 +5,6 @@
   <title>Redirecting...</title>
   <link rel="stylesheet" href="styles.css" />
   <script>
-(function() {
-  const path = window.location.pathname;
-  const parts = path.split("/").filter(Boolean);
-
-  // If path is empty or just "work", don't redirect
-  if (parts.length === 0 || parts[0] === "work") {
-    window.location.replace("/work/");
-    return;
-  }
-
-  // Otherwise, assume last part is slug
-  const slug = parts[parts.length - 1];
-  window.location.replace("/work/#/" + slug);
-})();
 </script>
 </head>
 <body>
