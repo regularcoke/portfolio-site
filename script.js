@@ -2,9 +2,49 @@
 
 const fotosEntries = [
   {
+    src:"img/blog2/IMG_1375.JPG",
+    caption:"ahora ya no se",
+    date:"",
+  },
+  {
+    src:"img/blog2/IMG_1376.JPG",
+    caption:"",
+    date:"",
+  },
+  {
+    src:"img/blog2/IMG_1373.JPG",
+    caption:"",
+    date:"",
+  },
+  {
+    src:"img/blog2/IMG_1370.JPG",
+    caption:"",
+    date:"",
+  },
+  {
+    src:"img/blog2/IMG_1368.JPG",
+    caption:"san luis potosi, slp",
+    date:"SLP",
+  },
+  {
+    src:"img/blog2/IMG_1312.JPG",
+    caption:"i wear pink",
+    date:"pink",
+  },
+  {
+    src:"img/blog2/IMG_1309.JPG",
+    caption:"me 2",
+    date:"",
+  },
+  {
+    src:"img/blog2/IMG_1169.JPG",
+    caption:"what's another year...?",
+    date:"bday"
+  },
+  {
     src:"img/blog2/IMG_1015.JPG",
     caption:"maybe if we looked alike it would have worked",
-    date:"$7.99"
+    date:"$0.99"
   },
  { 
   src: "img/blog2/BB5111F5-6294-4F61-A02C-7C91F0215A0A_1_102_o.jpeg", 
