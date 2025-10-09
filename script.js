@@ -2,6 +2,80 @@
 
 const fotosEntries = [
   {
+    src:"img/blog2/IMG_2262.JPG",
+    caption:"algo contigo",
+    date:"contigo"
+  },
+  {
+    src:"img/blog2/IMG_2256.JPG",
+    caption:"como alejar"
+  },
+  {
+    src:"img/blog2/IMG_2255.JPG",
+    caption:"como dejar"
+  },
+  {
+    src:"img/blog2/IMG_2239.JPG",
+    caption:"envidia o quierer"
+  },
+  {
+    src:"img/blog2/IMG_2203.JPG",
+    caption:""
+  },
+  {
+    src:"img/blog2/IMG_2147.JPG",
+    caption:"cerca de ti"
+  },
+  {
+    src:"img/blog2/IMG_2115.JPG",
+    caption:"atterrado"
+  },
+  {
+    src:"img/blog2/IMG_1691.JPG",
+    caption:"",
+  },
+  {
+    src:"img/blog2/IMG_1611.JPG",
+    caption:"civil wedding",
+  },
+   {
+    src:"img/blog2/IMG_1466.JPG",
+    caption:"las colonias",
+    date:"colonias",
+  },
+   {
+    src:"img/blog2/IMG_1483.JPG",
+    caption:"",
+  },
+   {
+    src:"img/blog2/IMG_1490.JPG",
+    caption:"",
+  },
+   {
+    src:"img/blog2/IMG_1487.JPG",
+    caption:"",
+  },
+  {
+    src:"img/blog2/IMG_1463.JPG",
+    caption:"",
+  },
+  {
+    src:"img/blog2/IMG_1443.JPG",
+    caption:"is it really real?",
+    date:"",
+  },
+  {
+    src:"img/blog2/IMG_1410.JPG",
+    caption:"",
+    date:"",
+  },
+  {
+    src:"img/blog2/IMG_1409.JPG",
+    caption:"pretty real",
+    date:"real",
+
+  },
+  {
     src:"img/blog2/IMG_1375.JPG",
     caption:"ahora ya no se",
     date:"",
