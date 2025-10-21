@@ -2,6 +2,28 @@
 
 const fotosEntries = [
   {
+    src:"img/blog2/IMG_2384.JPG",
+    caption:"a straw",
+    date:"party"
+  },
+  {
+    src:"img/blog2/IMG_2373.JPG",
+    caption:"i dont want to anymore",
+  },
+  {
+    src:"img/blog2/IMG_2352.JPG",
+    caption:"me bc i almost fell for it",
+    date:"realization"
+  },
+  {
+    src:"img/blog2/IMG_2272.JPG",
+    caption:""
+  },
+  {
+    src: "img/blog2/IMG_2171.JPG",
+    caption:"so many things to cross out"
+  },
+  {
     src:"img/blog2/IMG_2262.JPG",
     caption:"algo contigo",
     date:"contigo"
@@ -27,12 +49,21 @@ const fotosEntries = [
     caption:"cerca de ti"
   },
   {
-    src:"img/blog2/IMG_2115.JPG",
-    caption:"atterrado"
+    src:"img/blog2/IMG_1808.JPG",
+    caption:"september"
   },
   {
-    src:"img/blog2/IMG_1691.JPG",
-    caption:"",
+    src:"img/blog2/IMG_1727.JPG",
+    caption:"virus",
+    date:"bone"
+  },
+  {
+    src:"img/blog2/IMG_1575.JPG",
+    caption:"todo y mas"
+  },
+  {
+    src:"img/blog2/IMG_2115.JPG",
+    caption:"atterrado"
   },
   {
     src:"img/blog2/IMG_1611.JPG",
