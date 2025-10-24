@@ -1,14 +1,10 @@
 //BLOG ENTRIES//
 
 const fotosEntries = [
-  {
-    src:"img/blog2/IMG_2384.JPG",
-    caption:"a straw",
-    date:"party"
-  },
+
   {
     src:"img/blog2/IMG_2373.JPG",
-    caption:"i dont want to anymore",
+    caption:"ya @noquier99",
   },
   {
     src:"img/blog2/IMG_2352.JPG",
@@ -16,8 +12,13 @@ const fotosEntries = [
     date:"realization"
   },
   {
+    src:"img/blog2/IMG_2338.JPG", 
+    caption:"te tienes que acordar",
+    date:"101025"
+  },
+  {
     src:"img/blog2/IMG_2272.JPG",
-    caption:""
+    caption:"u.u"
   },
   {
     src: "img/blog2/IMG_2171.JPG",
@@ -50,7 +51,8 @@ const fotosEntries = [
   },
   {
     src:"img/blog2/IMG_1808.JPG",
-    caption:"september"
+    caption:"september",
+    date:"092025"
   },
   {
     src:"img/blog2/IMG_1727.JPG",
