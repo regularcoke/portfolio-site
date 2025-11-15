@@ -992,13 +992,6 @@ window.addEventListener("DOMContentLoaded", () => {
   Object.keys(shopItems).forEach(key => {
     const item = shopItems[key];
 
-    const slug = item.title
-      .toLowerCase()
-      .normalize("NFD").replace(/[\u0300-\u036f]/g, "")
-      .replace(/[^a-z0-9\s-]/g, "")
-      .trim()
-      .replace(/\s+/g, "-");
-
     const div = document.createElement("div");
     div.innerHTML = `<a href="/${slug}" onclick="loadItem('${key}', this); return false;">${item.title}</a>`;
     listEl.appendChild(div);

@@ -43,7 +43,7 @@ gtag('config', 'G-HZF988JHMQ');
 
             <section>
                 <footer class="nav-footer">
-                    <div>☺ hugo adrian marin 2025</div>
+                    <div>© hugo adrian marin 2025</div>
                 </footer>
             </section>
         </section>
@@ -87,28 +87,11 @@ updateClock();
 
 
 window.addEventListener("DOMContentLoaded", () => {
-  const slug = window.location.pathname.replace(/^\/+|\/+$/g, "");
-
-  if (slug) {
-    const itemKey = Object.keys(shopItems).find(key => {
-      const item = shopItems[key];
-      if (!item.title) return false;
-
-      const itemSlug = item.title
-        .toLowerCase()
-        .normalize("NFD").replace(/[\u0300-\u036f]/g, "")
-        .replace(/[^a-z0-9\s-]/g, "")
-        .trim()
-        .replace(/\s+/g, "-");
-
-      return itemSlug === slug;
-    });
-
     if (itemKey) {
       loadItem(itemKey, document.querySelector(`.list a[href="/${slug}"]`));
     }
   }
-});
+);
 </script>
 
 </body>
