@@ -879,7 +879,7 @@ function loadItem(key, element) {
   if (element) element.classList.add("active");
 
   // images
-  const gallery = document.getElementById("gallery");
+  const gallery = document.getElementById("shop-gallery");
   gallery.innerHTML = item.images.map(img => `<img src="${img}" />`).join("");
 
   // caption
@@ -1004,7 +1004,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 window.addEventListener("DOMContentLoaded", () => {
-  const gallery = document.getElementById("gallery");
+  const gallery = document.getElementById("shop-gallery");
 
 
   gallery.classList.add("shop-grid");
