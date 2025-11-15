@@ -879,7 +879,7 @@ function loadItem(key, element) {
   document.querySelectorAll(".list a").forEach(a => a.classList.remove("active"));
   if (element) element.classList.add("active");
 
-  // load images
+  // images
   const gallery = document.getElementById("gallery");
   gallery.innerHTML = item.images.map(img => `<img src="${src}" />`).join("");
 
@@ -985,21 +985,6 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
-window.addEventListener("DOMContentLoaded", () => {
-  const listEl = document.getElementById("shopList");
-  listEl.innerHTML = "";
-
-  Object.keys(shopItems).forEach(key => {
-    const item = shopItems[key];
-
-    const div = document.createElement("div");
-    // no slug, no URL
-    div.innerHTML = `<a href="#" onclick="loadItem('${key}', this); return false;">${item.title}</a>`;
-    listEl.appendChild(div);
-  });
-});
-
-
 document.addEventListener("contextmenu", function(e) {
   if (e.target.tagName === "IMG") {
     e.preventDefault();
@@ -1015,5 +1000,19 @@ document.addEventListener("DOMContentLoaded", () => {
     if (target) {
       target.scrollIntoView({ behavior: "smooth", block: "start" });
     }
+  });
+});
+
+window.addEventListener("DOMContentLoaded", () => {
+  const listEl = document.getElementById("shopList");
+  listEl.innerHTML = "";
+
+  Object.keys(shopItems).forEach(key => {
+    const item = shopItems[key];
+
+    const div = document.createElement("div");
+    // no slug, no URL
+    div.innerHTML = `<a href="#" onclick="loadItem('${key}', this); return false;">${item.title}</a>`;
+    listEl.appendChild(div);
   });
 });
