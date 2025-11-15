@@ -287,6 +287,27 @@ footer{
   z-index: 10;
 }
 
+shop-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.shop-item {
+  text-align: left;
+}
+
+.shop-item img {
+  width: 33%;
+  height: auto;
+  display: block;
+}
+
+.shop-caption p {
+  margin: 5px 0 0 0;
+  line-height: 1.3;
+}
+
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 1012px) and (-webkit-min-device-pixel-ratio: 2) {
     p, h1, h3, #caption h2, .blog-entry h2 {

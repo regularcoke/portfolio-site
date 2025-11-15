@@ -51,7 +51,7 @@ gtag('config', 'G-HZF988JHMQ');
         <section class="container">
             <section>
                 <div class="gallery" id="gallery"></div>
-                <p id="caption"></p>
+                <p id="shop-caption"></p>
                 <p class="footer"><a href="blog-archived.html">☺</a></p>
             </section>
         </section>
@@ -84,13 +84,6 @@ function updateClock() {
 
 setInterval(updateClock, 1000);
 updateClock();
-
-window.addEventListener("DOMContentLoaded", () => {
-  const firstKey = Object.keys(shopItems)[0];
-  if (firstKey) {
-    loadItem(firstKey, document.querySelector("#shopList a"));
-  }
-});
 
 </script>
 

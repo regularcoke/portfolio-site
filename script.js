@@ -553,8 +553,7 @@ const shopItems = {
   item1: {
     title: "Do Urs Press Mine? Finger Contortion",
     price: "$offer",
-    description: "2.5 x 2 inches, cherry wood",
-    images: [
+    thumbnail: [
       "img/shop/IMG_2920.jpg",
     ]
   },
@@ -881,7 +880,7 @@ function loadItem(key, element) {
 
   // images
   const gallery = document.getElementById("gallery");
-  gallery.innerHTML = item.images.map(img => `<img src="${src}" />`).join("");
+  gallery.innerHTML = item.images.map(img => `<img src="${img}" />`).join("");
 
   // caption
   const caption = document.getElementById("caption");
@@ -1003,16 +1002,25 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+
 window.addEventListener("DOMContentLoaded", () => {
-  const listEl = document.getElementById("shopList");
-  listEl.innerHTML = "";
+  const gallery = document.getElementById("gallery");
 
-  Object.keys(shopItems).forEach(key => {
-    const item = shopItems[key];
 
-    const div = document.createElement("div");
-    // no slug, no URL
-    div.innerHTML = `<a href="#" onclick="loadItem('${key}', this); return false;">${item.title}</a>`;
-    listEl.appendChild(div);
-  });
+  gallery.classList.add("shop-grid");
+
+  gallery.innerHTML = Object.keys(shopItems)
+    .map(key => {
+      const item = shopItems[key];
+      return `
+        <div class="shop-item">
+          <img src="${item.thumbnail}" alt="${item.title}">
+          <div class="shop-caption">
+            <p>${item.title}</p>
+            <p>${item.price}</p>
+          </div>
+        </div>
+      `;
+    })
+    .join("");
 });
