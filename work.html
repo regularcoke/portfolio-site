@@ -113,6 +113,13 @@ window.addEventListener("DOMContentLoaded", () => {
       loadProject(projectKey, document.querySelector(`.list a[href="/${slug}"]`));
     }
   }
+  if (!loaded) {
+    const firstKey = Object.keys(projects)[0];
+    const firstLink = document.querySelector(".list a");
+    if (firstKey && firstLink) {
+      loadProject(firstKey, firstLink);
+    }
+  }
 });
         </script>
     </body>
