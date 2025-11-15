@@ -548,6 +548,18 @@ const projects = {
 
   
 };
+
+const shopItems = {
+  item1: {
+    title: "Do Urs Press Mine? Finger Contortion",
+    price: "$offer",
+    description: "2.5 x 2 inches, cherry wood",
+    images: [
+      "img/shop/IMG_2920.jpg",
+    ]
+  },
+}
+
 function setBioMode() {
   document.getElementById("bio-text").style.display = "block";
   document.getElementById("name-heading").style.display = "none";
@@ -702,11 +714,6 @@ window.addEventListener("DOMContentLoaded", () => {
   loadProject(projectKey, link);
 }
 });
-
-
-
-
-
 
 
 function toggleSection(clickedHeader) {
@@ -864,6 +871,26 @@ function loadBlog() {
   });
 }
 
+function loadItem(key, element) {
+  const item = shopItems[key];
+  if (!item) return;
+
+  // highlight active link
+  document.querySelectorAll(".list a").forEach(a => a.classList.remove("active"));
+  if (element) element.classList.add("active");
+
+  // load images
+  const gallery = document.getElementById("gallery");
+  gallery.innerHTML = item.images.map(img => `<img src="${src}" />`).join("");
+
+  // caption
+  const caption = document.getElementById("caption");
+  caption.innerHTML = `
+    <h2>${item.title}</h2>
+    ${item.price}
+    <p>${item.description}</p>
+  `;
+}
 
 let viewerOverlay, viewerImg, currentIndex, viewerImages;
 
@@ -956,6 +983,26 @@ document.addEventListener("DOMContentLoaded", () => {
     const firstLink = document.querySelector("#worksList a"); 
     loadProject("proj2", firstLink);
   }
+});
+
+window.addEventListener("DOMContentLoaded", () => {
+  const listEl = document.getElementById("shopList");
+  listEl.innerHTML = "";
+
+  Object.keys(shopItems).forEach(key => {
+    const item = shopItems[key];
+
+    const slug = item.title
+      .toLowerCase()
+      .normalize("NFD").replace(/[\u0300-\u036f]/g, "")
+      .replace(/[^a-z0-9\s-]/g, "")
+      .trim()
+      .replace(/\s+/g, "-");
+
+    const div = document.createElement("div");
+    div.innerHTML = `<a href="/${slug}" onclick="loadItem('${key}', this); return false;">${item.title}</a>`;
+    listEl.appendChild(div);
+  });
 });
 
 document.addEventListener("contextmenu", function(e) {
