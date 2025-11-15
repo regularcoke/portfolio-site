@@ -993,10 +993,12 @@ window.addEventListener("DOMContentLoaded", () => {
     const item = shopItems[key];
 
     const div = document.createElement("div");
-    div.innerHTML = `<a href="/${slug}" onclick="loadItem('${key}', this); return false;">${item.title}</a>`;
+    // no slug, no URL
+    div.innerHTML = `<a href="#" onclick="loadItem('${key}', this); return false;">${item.title}</a>`;
     listEl.appendChild(div);
   });
 });
+
 
 document.addEventListener("contextmenu", function(e) {
   if (e.target.tagName === "IMG") {

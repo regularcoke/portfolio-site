@@ -85,13 +85,13 @@ function updateClock() {
 setInterval(updateClock, 1000);
 updateClock();
 
-
 window.addEventListener("DOMContentLoaded", () => {
-    if (itemKey) {
-      loadItem(itemKey, document.querySelector(`.list a[href="/${slug}"]`));
-    }
+  const firstKey = Object.keys(shopItems)[0];
+  if (firstKey) {
+    loadItem(firstKey, document.querySelector("#shopList a"));
   }
-);
+});
+
 </script>
 
 </body>
