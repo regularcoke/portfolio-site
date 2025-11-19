@@ -9,24 +9,24 @@ const shopItems = {
   }
 };
 
-// function loadItem(key, element) {
-//   const item = shopItems[key];
-//   if (!item) return;
+function loadItem(key, element) {
+  const item = shopItems[key];
+  if (!item) return;
 
-//   // images
-//   const gallery = document.getElementById("shop-gallery");
-//   gallery.innerHTML = item.images
-//     .map(img => `<img src="${img}" />`)
-//     .join("");
+  // images
+  const gallery = document.getElementById("shop-gallery");
+  gallery.innerHTML = item.images
+    .map(img => `<img src="${img}" />`)
+    .join("");
 
-//   // caption
-//   const caption = document.getElementById("caption");
-//   caption.innerHTML = `
-//     <h1>${item.title}</h1>
-//     <p>${item.price}</p>
-//     <p>${item.description || ""}</p>
-//   `;
-// }
+  // caption
+  const caption = document.getElementById("caption");
+  caption.innerHTML = `
+    <h1>${item.title}</h1>
+    <p>${item.price}</p>
+    <p>${item.description || ""}</p>
+  `;
+}
 
 function openDescription(key) {
   const item = shopItems[key];
