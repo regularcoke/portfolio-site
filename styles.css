@@ -10,6 +10,7 @@ p {
     font-size: 30px;
     font-size: small;
 }
+
 h1 {
     font-size: small;
     cursor: pointer;
@@ -222,12 +223,6 @@ footer{
 
 /*fotos*/
 
-.feed-entry {
-  display: inline-block;
-  margin: 10px;
-  width: 300px; /* adjust as needed */
-}
-
 .image-wrapper {
   position: relative; /* makes overlay positioned over image */
   width: 100%;
@@ -284,6 +279,8 @@ footer{
   font-size: small;
   z-index: 10;
 }
+
+
 
 .shop-grid {
   display: grid;
