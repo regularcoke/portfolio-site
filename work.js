@@ -125,6 +125,21 @@ const projects = {
       "Found google street images across the streets of Bogota & Villa de Leyva, Colombia, capture couples displaying physical acts of affection. These images are mounted on handmade wooden panels. Accompanying these photos is a text by the artist: <br><br><span style=font-style:italic>'I have overcomplicated my relationship with physical affection. I think my past lovers would say it is my love language. My mother would agree. And I, would not disagree with them. Yet, I find it difficult to admit to this. Not verbally as I am doing so now, but, I cannot perform this for others. In a stranger’s eyes I find doubt and judgment. Perhaps this comes from growing up in a place where I could not stray from the line that has been there for centuries. Or perhaps, it is an insecurity to how I love. <br><br>More than likely, it is the latter.'</span>" 
   },
 
+  proj11: {
+    slug: "itsalwaysbeenyou",
+    images: [
+      "img/itsalwaysbeenyou1.png",
+      "img/itsalwaysbeenyou2.png",
+      "img/itsalwaysbeenyou6.png",
+      "img/itsalwaysbeenyou5.png",
+      "img/itsalwaysbeenyou3.png",
+    ],
+    title: "ITS ALWAYS BEEN YOU",
+    year: "2025",
+    medium: "Generative art, Processing", 
+    description: "A generative art piece created using Processing that explores themes of love and sanity through pop culture images. Through algorithmic design, the artwork generates unique visual representations of romantic obsession and emotional turmoil tied to parasocial relationships. Images of celeberity mugshots are overlayed each other creating a chaotic mass of distorted faces, with valentines texts above flipping through each frame."
+  },
+
   graphics: {
     images: ["img/Dean Blunt Poster.png", "img/lolinaflyer.png", "img/dw_suit.png"],
     title: "Graphic Design",
