@@ -7,7 +7,6 @@ body {
 
 p {
     /*margin:0.3em;*/
-    font-size: 30px;
     font-size: small;
 }
 
@@ -308,11 +307,11 @@ footer{
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 1012px) and (-webkit-min-device-pixel-ratio: 2) {
     p, h1, h3, #caption h2, .blog-entry h2 {
-        font-size: 40px !important;
+        /* font-size: 40px !important; */
     }
     
     .blog-entry p, #caption p {
-        font-size: 30px !important;
+        /* font-size: 30px !important; */
     }
 
     /* Footer */
@@ -349,7 +348,7 @@ footer{
 
     /* Lists */
     .list {
-        font-size: 30px;
+        /* font-size: 30px; */
     }
 
     /* Gallery */
