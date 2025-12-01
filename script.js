@@ -9,12 +9,12 @@ const fotosEntries = [
   {
     src:"img/blog2/IMG_2352.JPG",
     caption:"me bc i almost fell for it",
-    date:"realization"
+    date:"10 25"
   },
   {
     src:"img/blog2/IMG_2338.JPG", 
     caption:"te tienes que acordar",
-    date:"101025"
+    date:""
   },
   {
     src:"img/blog2/IMG_2272.JPG",
@@ -27,7 +27,7 @@ const fotosEntries = [
   {
     src:"img/blog2/IMG_2262.JPG",
     caption:"algo contigo",
-    date:"contigo"
+    date:""
   },
   {
     src:"img/blog2/IMG_2256.JPG",
@@ -52,12 +52,12 @@ const fotosEntries = [
   {
     src:"img/blog2/IMG_1808.JPG",
     caption:"september",
-    date:"092025"
+    date:"09 25"
   },
   {
     src:"img/blog2/IMG_1727.JPG",
     caption:"virus",
-    date:"bone"
+    date:""
   },
   {
     src:"img/blog2/IMG_1575.JPG",
@@ -74,7 +74,7 @@ const fotosEntries = [
    {
     src:"img/blog2/IMG_1466.JPG",
     caption:"las colonias",
-    date:"colonias",
+    date:"",
   },
    {
     src:"img/blog2/IMG_1483.JPG",
@@ -105,7 +105,7 @@ const fotosEntries = [
   {
     src:"img/blog2/IMG_1409.JPG",
     caption:"pretty real",
-    date:"real",
+    date:"",
 
   },
   {
@@ -131,12 +131,12 @@ const fotosEntries = [
   {
     src:"img/blog2/IMG_1368.JPG",
     caption:"san luis potosi, slp",
-    date:"SLP",
+    date:"",
   },
   {
     src:"img/blog2/IMG_1312.JPG",
     caption:"i wear pink",
-    date:"pink",
+    date:"08 25",
   },
   {
     src:"img/blog2/IMG_1309.JPG",
@@ -146,17 +146,17 @@ const fotosEntries = [
   {
     src:"img/blog2/IMG_1169.JPG",
     caption:"what's another year...?",
-    date:"bday"
+    date:""
   },
   {
     src:"img/blog2/IMG_1015.JPG",
     caption:"maybe if we looked alike it would have worked",
-    date:"$0.99"
+    date:""
   },
  { 
   src: "img/blog2/BB5111F5-6294-4F61-A02C-7C91F0215A0A_1_102_o.jpeg", 
   caption: "oak park mall, kansas", 
-  date: "2025 08 26" 
+  date: "" 
 },
 {
   src:"img/blog2/2EAF08FC-D90A-4E7E-8CCD-7D16CCA7CD79_1_102_o.jpeg",
@@ -178,7 +178,7 @@ const fotosEntries = [
   id:"me",
   src:"img/blog2/CD7EE6A9-32B6-40E8-B325-E048C7FEBA23_1_102_a.jpeg",
   caption:"me",
-  date:"me"
+  date:""
 },
 {
   src:"img/blog2/IMG_0974.jpg"
@@ -186,12 +186,12 @@ const fotosEntries = [
 {
   src:"img/blog2/IMG_0921.JPG",
   caption:"moving out",
-  date:"2025 08 23"
+  date:""
 },
 {
   src:"img/blog2/IMG_0829.JPG",
   caption:"born in arkansas",
-  date:"2025 08 02"
+  date:""
 },
 {
   src:"img/blog2/IMG_0830.JPG",
@@ -204,20 +204,22 @@ const fotosEntries = [
 {
   src:"img/blog2/IMG_0871.JPG",
   caption:"roma",
+  date:"07 25"
 },
 {
   src:"img/blog2/IMG_0637.png",
   caption:"i will miss us",
-  date:"you"
+  date:""
 },
 {
   src:"img/blog2/IMG_0647.jpg",
-  caption:""
+  caption:"",
+  date:"06 25"
 },
 {
   src:"img/blog2/IMG_0721.jpg",
   caption:"what's another year?",
-  date:"feliz"
+  date:""
 },
 {
   src:"img/blog2/IMG_0727.jpg",
