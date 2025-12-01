@@ -1,10 +1,23 @@
 //BLOG ENTRIES//
 
 const fotosEntries = [
-
+  {
+  src:"img/blog2/IMG_3212.JPG",
+  caption:"tooth bag clip",
+  },
+  {
+  src:"img/blog2/IMG_3209.JPG",
+  caption:"in aluminum",
+  },
+  {
+  src:"img/blog2/IMG_3200.JPG",
+  caption:"for me",
+  date:"12 25"
+  },
   {
     src:"img/blog2/IMG_2373.JPG",
     caption:"ya @noquier99",
+    date:"11 25"
   },
   {
     src:"img/blog2/IMG_2352.JPG",
