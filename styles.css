@@ -311,8 +311,8 @@ footer{
         /* font-size: 40px !important; */
     }
     
-    .blog-entry p, #caption p {
-        /* font-size: 30px !important; */
+    p, {
+        font-size: 30px !important;
     }
 
     /* Footer */
@@ -326,7 +326,7 @@ footer{
         width: 92%;
         height: auto;
         display: flex;
-        padding: 10px 36px;
+        padding: 10px 25px;
         margin: 0 auto;
         justify-content: space-between;
         gap: 20px;

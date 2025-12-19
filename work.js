@@ -10,7 +10,7 @@ const projects = {
   },
   proj2: {
     slug: "iheartwebcam",
-    images: ["img/iheartwebcam_still1.png", "img/iheartwebcam_still4.png", "img/iheartwebcam_still3.png", "img/iheartwebcam_still8.png", "img/iheartwebcam_still7.png"],
+    images: ["img/work/iheartwebcam/iheartwebcam1.png", "img/work/iheartwebcam/iheartwebcam2.png", "img/work/iheartwebcam/iheartwebcam3.png", "img/work/iheartwebcam/iheartwebcam4.png", "img/work/iheartwebcam/iheartwebcam5.png", "img/work/iheartwebcam/iheartwebcam6.png"],
     title: "iheartwebcam.com",
     year: "2025",
     medium: "Website",
