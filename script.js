@@ -10,10 +10,6 @@ const fotosEntries = [
   caption:"dante",
   },
   {
-  src:"img/blog2/IMG_3349.JPG",
-  caption:"",
-  },
-  {
   src:"img/blog2/IMG_3272.JPG",
   caption:"following through, it costed me a good deal to be here",
   },
