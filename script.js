@@ -3,11 +3,11 @@
 const fotosEntries = [
   {
   src:"img/blog2/IMG_3236.JPG",
-  caption:"",
+  caption:"concept",
   },
   {
   src:"img/blog2/IMG_3232.JPG",
-  caption:"",
+  caption:"waiting and more",
   },
   {
   src:"img/blog2/IMG_3212.JPG",
