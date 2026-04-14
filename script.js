@@ -2,6 +2,30 @@
 
 const fotosEntries = [
   {
+  src:"img/blog2/IMG_3568.JPG",
+  caption:"vero",
+  },
+  {
+  src:"img/blog2/IMG_3376.JPG",
+  caption:"dante",
+  },
+  {
+  src:"img/blog2/IMG_3349.JPG",
+  caption:"",
+  },
+  {
+  src:"img/blog2/IMG_3272.JPG",
+  caption:"following through, it costed me a good deal to be here",
+  },
+  {
+  src:"img/blog2/IMG_3271.JPG",
+  caption:"cicada birthday party",
+  },
+  {
+  src:"img/blog2/IMG_3239.JPG",
+  caption:"",
+  },
+  {
   src:"img/blog2/IMG_3236.JPG",
   caption:"concept",
   },
