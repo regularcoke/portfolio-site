@@ -62,6 +62,10 @@ const fotosEntries = [
     date:""
   },
   {
+    src:"img/blog2/IMG_2212.JPG", 
+    caption:"is in me + u",
+  },
+  {
     src:"img/blog2/IMG_2272.JPG",
     caption:"u.u"
   },
