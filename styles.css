@@ -268,13 +268,12 @@ footer{
 }
 #user-clock {
   position: fixed;
-  top: 10px;
+  top: 15px;
   right: 15%;
   /* background: rgba(122, 122, 122, 0.3);  
   backdrop-filter: blur(5px);       
   -webkit-backdrop-filter: blur(5px);  */
   color: white;
-  padding: 5px 10px;
   border-radius: 5px;
   font-size: small;
   z-index: 10;
@@ -321,9 +320,9 @@ footer{
     }
 
     .nav {
-        position: static !important;
+    
         top: auto !important;
-        width: 92%;
+        width: 100%;
         height: auto;
         display: flex;
         padding: 10px 25px;
@@ -376,7 +375,9 @@ footer{
         color: black;
     }
     #user-clock {
+        top: 25px;
         font-size: 30px !important;
+        right: 8%;
     }
     .nav-content{
         font-size: 30px ;
@@ -395,4 +396,13 @@ footer{
     .image-wrapper .overlay {
         font-size: medium;
     }
+    
+   body.index .nav a,
+body.index .list,
+body.index .list a,
+body.blog .nav a,
+body.blog .list,
+body.blog .list a {
+    color: white !important;
+}
 }
