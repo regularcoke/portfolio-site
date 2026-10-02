@@ -397,12 +397,12 @@ footer{
         font-size: medium;
     }
     
-   body.index .nav a,
+   /* body.index .nav a,
 body.index .list,
 body.index .list a,
 body.blog .nav a,
 body.blog .list,
 body.blog .list a {
     color: white !important;
-}
+} */
 }
