@@ -20,7 +20,7 @@ const fotosEntries = [
   },
   {
     src:"img/blog2/IMG_3908.JPG",
-    caption:"a gift, a gift",
+    caption:"a gift is a gift",
     date:"03 26"
   },
   {
@@ -47,7 +47,7 @@ const fotosEntries = [
   },
   {
     src:"img/blog2/IMG_3487.JPG",
-    caption:"online chat room",
+    caption:"chatting online",
   },
   {
   src:"img/blog2/IMG_3568.JPG",
