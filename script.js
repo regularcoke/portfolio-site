@@ -2,8 +2,9 @@
 
 const fotosEntries = [
   {
-    src:"img/blog2/IMG_3935.JPG",
+    src:"img/blog2/IMG_4235.JPG",
     caption:"",
+    date:"04 26"
   },
   {
     src:"img/blog2/IMG_3924.JPG",
