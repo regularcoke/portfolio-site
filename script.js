@@ -1,11 +1,7 @@
 //BLOG ENTRIES//
 
 const fotosEntries = [
-  {
-    src:"img/blog2/IMG_4235.JPG",
-    caption:"",
-    date:"04 26"
-  },
+
   {
     src:"img/blog2/IMG_3924.JPG",
     caption:"sea through me, please",
