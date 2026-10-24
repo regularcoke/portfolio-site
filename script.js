@@ -32,16 +32,16 @@ const fotosEntries = [
   },
   {
     src:"img/blog2/IMG_3694.JPG",
-    caption:"",
+    caption:"lost to some of the worst",
   },
   {
     src:"img/blog2/IMG_3649.JPG",
-    caption:"",
+    caption:"nino dios",
     date:"02 26"
   },
   {
     src:"img/blog2/IMG_3628.JPG",
-    caption:"",
+    caption:"me part 3",
   },
   {
     src:"img/blog2/IMG_3620.JPG",
