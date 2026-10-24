@@ -147,6 +147,14 @@ const fotosEntries = [
     caption:"cerca de ti"
   },
   {
+    src:"img/blog2/IMG_1997.JPG",
+    caption:"quiero estar"
+  },
+  {
+    src:"img/blog2/IMG_1611.JPG",
+    caption:""
+  },
+  {
     src:"img/blog2/IMG_1808.JPG",
     caption:"september",
     date:"09 25"
