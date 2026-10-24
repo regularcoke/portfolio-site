@@ -2,6 +2,35 @@
 
 const fotosEntries = [
   {
+    src:"img/blog2/IMG_3935.JPG",
+    caption:"",
+  },
+  {
+    src:"img/blog2/IMG_3924.JPG",
+    caption:"",
+  },
+  {
+    src:"img/blog2/IMG_3921.JPG",
+    caption:"",
+  },
+   {
+    src:"img/blog2/IMG_3919.JPG",
+    caption:"",
+  },
+  {
+    src:"img/blog2/IMG_3913.JPG",
+    caption:"",
+  },
+  {
+    src:"img/blog2/IMG_3908.JPG",
+    caption:"",
+    date:"03 26"
+  },
+  {
+    src:"img/blog2/IMG_3808.JPG",
+    caption:"",
+  },
+  {
     src:"img/blog2/IMG_3694.JPG",
     caption:"",
   },
@@ -17,7 +46,7 @@ const fotosEntries = [
   {
     src:"img/blog2/IMG_3620.JPG",
     caption:"",
-     date:"01 26",
+     date:"01 26"
   },
   {
     src:"img/blog2/IMG_3487.JPG",
