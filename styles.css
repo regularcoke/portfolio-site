@@ -7,15 +7,15 @@ body {
 
 p {
     /*margin:0.3em;*/
-    font-size: small;
+    font-size: x-small;
 }
 
 h1 {
-    font-size: small;
+    font-size: x-small;
     cursor: pointer;
 }
 h3 {
-    font-size: small;
+    font-size: x-small;
     font-weight: 100;
     margin: 0;
 }
@@ -27,7 +27,7 @@ a,
 }
 
 .list {
-    font-size: small;
+    font-size: x-small;
 }
 
 .worksList{
@@ -38,7 +38,7 @@ a,
     margin-top: 15px;
     min-width: 200px;
     max-width: 225px;
-    font-size: small;
+    font-size: x-small;
 }
 
 .nav-footer{
@@ -137,7 +137,7 @@ footer{
     bottom: 0;
     right: 0;
     padding: 0 15px;
-    font-size: small;
+    font-size: x-small;
 }
 
 #caption {
@@ -172,7 +172,7 @@ footer{
 }
 
 .blog-entry h2 {
-  font-size: small;
+  font-size: x-small;
   margin-bottom: 0.5em;
 }
 
