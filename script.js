@@ -2,12 +2,34 @@
 
 const fotosEntries = [
   {
+    src:"img/blog2/IMG_3694.JPG",
+    caption:"",
+  },
+  {
+    src:"img/blog2/IMG_3649.JPG",
+    caption:"",
+    date:"02 26"
+  },
+  {
+    src:"img/blog2/IMG_3628.JPG",
+    caption:"",
+  },
+  {
+    src:"img/blog2/IMG_3620.JPG",
+    caption:"",
+     date:"01 26",
+  },
+  {
+    src:"img/blog2/IMG_3487.JPG",
+    caption:"online chat room",
+  },
+  {
   src:"img/blog2/IMG_3568.JPG",
   caption:"vero",
   },
   {
   src:"img/blog2/IMG_3376.JPG",
-  caption:"dante",
+  caption:"",
   },
   {
   src:"img/blog2/IMG_3272.JPG",
