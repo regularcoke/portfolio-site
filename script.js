@@ -7,7 +7,7 @@ const fotosEntries = [
   },
   {
     src:"img/blog2/IMG_3924.JPG",
-    caption:"",
+    caption:"sea through me, please",
   },
   {
     src:"img/blog2/IMG_3921.JPG",
@@ -15,20 +15,20 @@ const fotosEntries = [
   },
    {
     src:"img/blog2/IMG_3919.JPG",
-    caption:"",
+    caption:"an invitation",
   },
   {
     src:"img/blog2/IMG_3913.JPG",
-    caption:"",
+    caption:"rachel",
   },
   {
     src:"img/blog2/IMG_3908.JPG",
-    caption:"",
+    caption:"a gift, a gift",
     date:"03 26"
   },
   {
     src:"img/blog2/IMG_3808.JPG",
-    caption:"",
+    caption:"not my place",
   },
   {
     src:"img/blog2/IMG_3694.JPG",
