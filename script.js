@@ -17,7 +17,7 @@ const fotosEntries = [
   },
   {
     src:"img/blog2/IMG_4338.JPG",
-    caption:"rachel ily",
+    caption:"rachel",
     date:"05 26"
   },
   {
@@ -65,10 +65,6 @@ const fotosEntries = [
   {
     src:"img/blog2/IMG_4042.JPG",
     caption:":puerto escondido",
-  },
-  {
-    src:"img/blog2/IMG_4067.JPG",
-    caption:"camera shy",
   },
   {
     src:"img/blog2/IMG_4073.JPG",
