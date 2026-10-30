@@ -44,10 +44,6 @@ const fotosEntries = [
     src:"img/blog2/IMG_4462.JPG",
     caption:"",
   },
-   {
-    src:"img/blog2/IMG_4504.JPG",
-    caption:"girl",
-  },
   {
     src:"img/blog2/IMG_4515.JPG",
     caption:"my favorite",
