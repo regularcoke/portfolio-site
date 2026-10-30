@@ -37,11 +37,11 @@ const fotosEntries = [
     caption:"",
   },
   {
-    src:"img/blog2/IMG_4361.JPG",
+    src:"img/blog2/IMG_4461.JPG",
     caption:"charm(ing)",
   },
   {
-    src:"img/blog2/IMG_4362.JPG",
+    src:"img/blog2/IMG_4462.JPG",
     caption:"",
   },
    {
