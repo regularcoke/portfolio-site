@@ -1,10 +1,82 @@
 //BLOG ENTRIES//
 
 const fotosEntries = [
-
+  {
+    src:"img/blog2/IMG_4691.JPG",
+    caption:"familiar right?",
+    date:"08 26"
+  },
+  {
+    src:"img/blog2/IMG_4338.JPG",
+    caption:"i went back for the baby",
+  },
+  {
+    src:"img/blog2/IMG_4338.JPG",
+    caption:"rachel ily",
+    date:"05 26"
+  },
+  {
+    src:"img/blog2/IMG_4340.JPG",
+    caption:"post rebe",
+  },
+  {
+    src:"img/blog2/IMG_4348.JPG",
+    caption:"vika",
+  },
+  {
+    src:"img/blog2/IMG_4354.JPG",
+    caption:"oh haha ur so funny i hate u",
+  },
+  {
+    src:"img/blog2/IMG_4373.JPG",
+    caption:"",
+  },
+  {
+    src:"img/blog2/IMG_4361.JPG",
+    caption:"charm(ing)",
+  },
+  {
+    src:"img/blog2/IMG_4362.JPG",
+    caption:"",
+  },
+   {
+    src:"img/blog2/IMG_4504.JPG",
+    caption:"girl",
+  },
+  {
+    src:"img/blog2/IMG_4515.JPG",
+    caption:"my favorite",
+  },
+  {
+    src:"img/blog2/IMG_4091.JPG",
+    caption:"wicked people",
+    date:"04 26"
+  },
+  {
+    src:"img/blog2/IMG_4094.JPG",
+    caption:"disturb me",
+  },
+  {
+    src:"img/blog2/IMG_4044.JPG",
+    caption:"sleep walking",
+    date:"03 26"
+  },
+  {
+    src:"img/blog2/IMG_4042.JPG",
+    caption:":puerto escondido",
+  },
+  {
+    src:"img/blog2/IMG_4067.JPG",
+    caption:"camera shy",
+  },
+  {
+    src:"img/blog2/IMG_4073.JPG",
+    caption:"oh i think i remember, it was for me",
+  },
   {
     src:"img/blog2/IMG_3924.JPG",
     caption:"sea through me, please",
+    date:"02 26"
   },
   {
     src:"img/blog2/IMG_3921.JPG",
@@ -21,7 +93,6 @@ const fotosEntries = [
   {
     src:"img/blog2/IMG_3908.JPG",
     caption:"a gift is a gift",
-    date:"03 26"
   },
   {
     src:"img/blog2/IMG_3808.JPG",
@@ -30,11 +101,11 @@ const fotosEntries = [
   {
     src:"img/blog2/IMG_3694.JPG",
     caption:"lost to some of the worst",
+    date:"01 26"
   },
   {
     src:"img/blog2/IMG_3649.JPG",
-    caption:"nino dios",
-    date:"02 26"
+    caption:"niño dios",
   },
   {
     src:"img/blog2/IMG_3628.JPG",
@@ -43,7 +114,6 @@ const fotosEntries = [
   {
     src:"img/blog2/IMG_3620.JPG",
     caption:"",
-     date:"01 26"
   },
   {
     src:"img/blog2/IMG_3487.JPG",
@@ -52,6 +122,7 @@ const fotosEntries = [
   {
   src:"img/blog2/IMG_3568.JPG",
   caption:"vero",
+  date:"12 25"
   },
   {
   src:"img/blog2/IMG_3376.JPG",
@@ -88,7 +159,6 @@ const fotosEntries = [
   {
   src:"img/blog2/IMG_3200.JPG",
   caption:"for me",
-  date:"12 25"
   },
   {
     src:"img/blog2/IMG_2373.JPG",
