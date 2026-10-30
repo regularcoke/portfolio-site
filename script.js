@@ -2,12 +2,17 @@
 
 const fotosEntries = [
   {
+    src:"img/blog2/IMG_4880.JPG",
+    caption:"performing man bat",
+    date:"10 26"
+  },
+  {
     src:"img/blog2/IMG_4691.JPG",
     caption:"familiar right?",
     date:"08 26"
   },
   {
-    src:"img/blog2/IMG_4338.JPG",
+    src:"img/blog2/IMG_4692.JPG",
     caption:"i went back for the baby",
   },
   {
