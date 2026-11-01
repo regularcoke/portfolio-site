@@ -389,6 +389,9 @@ footer{
     .blog-list a{
         color: white;
     }
+    .nav-content a{
+        color: white;
+    }
 
     .nav-footer{
         position: fixed;
