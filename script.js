@@ -26,10 +26,6 @@ const fotosEntries = [
     caption:"grounding",
   },
   {
-    src:"img/blog2/IMG_5054.JPG", 
-    caption:"grounding",
-  },
-  {
     src:"img/blog2/IMG_5048.JPG", 
     caption:"the greatest creation",
   },
