@@ -2,6 +2,50 @@
 
 const fotosEntries = [
   {
+    src:"img/blog2/IMG_5075.JPG", 
+    caption:"lmk when it's over",
+  },
+  {
+    src:"img/blog2/IMG_5069.JPG", 
+    caption:"feels like i am in a never ending garden, where only weeds grow",
+  },
+  {
+    src:"img/blog2/IMG_5065.JPG", 
+    caption:"wanna quit all the time",
+  },
+  {
+    src:"img/blog2/IMG_5062.JPG", 
+    caption:"",
+  },
+  {
+    src:"img/blog2/IMG_5060.JPG", 
+    caption:"feels like i've witnessed many things",
+  },
+  {
+    src:"img/blog2/IMG_5054.JPG", 
+    caption:"grounding",
+  },
+  {
+    src:"img/blog2/IMG_5054.JPG", 
+    caption:"grounding",
+  },
+  {
+    src:"img/blog2/IMG_5048.JPG", 
+    caption:"the greatest creation",
+  },
+  {
+    src:"img/blog2/IMG_5042.JPG", 
+    caption:"",
+  },
+  {
+    src:"img/blog2/IMG_5034.JPG", 
+    caption:"",
+  },
+  {
+    src:"img/blog2/IMG_5033.JPG",
+    caption:"a butterfly weekend",
+  },
+  {
     src:"img/blog2/IMG_5027.JPG",
     caption:"a butterfly afternoon",
   },
