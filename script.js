@@ -7,7 +7,7 @@ const fotosEntries = [
   },
   {
     src:"img/blog2/IMG_5069.JPG", 
-    caption:"feels like i am in a never ending garden, where only weeds grow",
+    caption:"a never ending garden, where only weeds grow",
   },
   {
     src:"img/blog2/IMG_5065.JPG", 
@@ -19,7 +19,7 @@ const fotosEntries = [
   },
   {
     src:"img/blog2/IMG_5060.JPG", 
-    caption:"feels like i've witnessed many things",
+    caption:"witnessed many things",
   },
   {
     src:"img/blog2/IMG_5054.JPG", 
@@ -73,6 +73,23 @@ const fotosEntries = [
     src:"img/blog2/IMG_4741.JPG",
     caption:"he hasn't even touched his drink",
     date:"10 26"
+  },
+  {
+    src:"img/blog2/IMG_4700.JPG",
+    caption:"just in case",
+  },
+  {
+    src:"img/blog2/IMG_4699.JPG",
+    caption:"alive in case something good happens",
+  },
+  {
+    src:"img/blog2/IMG_4698.JPG",
+    caption:"change",
+  },
+  {
+    src:"img/blog2/IMG_4697.JPG",
+    caption:"virgo season",
+    date:"09 26"
   },
   {
     src:"img/blog2/IMG_4691.JPG",
