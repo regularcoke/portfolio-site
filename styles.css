@@ -380,11 +380,13 @@ footer{
         right: 8%;
     }
     .nav-content{
-        font-size: 30px ;
+        font-size: 30px !important ;
         max-width: 100%;
     }
     .blog-list{
-        font-size: 30px;
+        font-size: 30px !important;
+    }
+    .blog-list a{
         color: white;
     }
 
