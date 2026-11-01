@@ -144,10 +144,6 @@ const fotosEntries = [
     date:"03 26"
   },
   {
-    src:"img/blog2/IMG_4042.JPG",
-    caption:":puerto escondido",
-  },
-  {
     src:"img/blog2/IMG_4073.JPG",
     caption:"oh i think i remember, it was for me",
   },
@@ -184,10 +180,6 @@ const fotosEntries = [
   {
     src:"img/blog2/IMG_3649.JPG",
     caption:"niño dios",
-  },
-  {
-    src:"img/blog2/IMG_3628.JPG",
-    caption:"me part 3",
   },
   {
     src:"img/blog2/IMG_3620.JPG",
