@@ -2,8 +2,32 @@
 
 const fotosEntries = [
   {
+    src:"img/blog2/IMG_5027.JPG",
+    caption:"a butterfly afternoon",
+  },
+  {
+    src:"img/blog2/IMG_5022.JPG",
+    caption:"so fleeting",
+  },
+  {
+    src:"img/blog2/IMG_5021.JPG",
+    caption:"fleeting",
+  },
+  {
+    src:"img/blog2/IMG_4785.JPG", 
+    caption:"light of day",
+  },
+  {
+    src:"img/blog2/IMG_4756.JPG",
+    caption:"",
+  },
+  {
     src:"img/blog2/IMG_4880.JPG",
     caption:"performing man bat",
+  },
+  {
+    src:"img/blog2/IMG_4741.JPG",
+    caption:"he hasn't even touched his drink",
     date:"10 26"
   },
   {
