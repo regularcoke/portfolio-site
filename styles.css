@@ -386,9 +386,8 @@ footer{
     .blog-list{
         font-size: 30px !important;
     }
-    body.blog .list,
-body.blog .list a {
-        color: white !important;
+    .blog-list a{
+        color: white;
     }
 
     .nav-footer{
