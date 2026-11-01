@@ -389,7 +389,7 @@ footer{
     .blog-list a{
         color: white;
     }
-    .nav-content a{
+    body.blog .nav-content a{
         color: white;
     }
 
